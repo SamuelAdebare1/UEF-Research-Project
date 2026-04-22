@@ -1,0 +1,30 @@
+#,Question,Answer,Section,Difficulty,Type,DeepSeek-R1-Distill-Qwen-14B,Llama 3.1 8B Instruct 128k,Mistral ınstruct
+1,Who is the protagonist of the story?,Nathan Blake,early,easy,entity,0,0,0
+2,What is Eldoria?,A chocoletto girl,early,easy,entity,0,0,0
+3,What planet's sector contains Eldoria's hut?,Dubhe 4,early,medium,location,1,1,1
+4,What book is Deirdre reading when Blake meets her?,Xenophon's Anabasis,early,medium,fact,0,1,1
+5,How old is Deirdre when Blake meets her?,14,early,easy,fact,1,1,1
+6,What profession does Deirdre hope to become?,A psychiatrist,early,easy,fact,0,0,0
+7,What happened to Deirdre's parents?,They died of yellow-water dysentery while indentured to the Great Starway Cartel,early,medium,event,0,0,0
+8,What is Blake's profession?,A psycheye,middle,easy,entity,0,0.5,0
+9,Who is Blake pursuing inside his mind?,Sabrina York,middle,easy,entity,0,1,0
+10,Where is Sabrina York hiding?,Inside Blake's mind,middle,medium,concept,0,0,0
+11,What unusual strategy did Sabrina York use to evade capture?,She hid inside the pursuer's mind,middle,medium,reasoning,0,0,0
+12,Who discovered how to enter mind-countries?,Trevor,middle,easy,entity,0,1,1
+13,What organization tracks criminals hiding in mind-worlds?,The psyche-police,middle,easy,concept,1,1,1
+14,What object revealed Sabrina York's presence in Blake's office memory?,A woman's handkerchief with the initials SB,middle,medium,evidence,0,0,0
+15,Name one of the three women pursuing Blake inside his mind.,Miss Stoddart,late,medium,entity,0,0,0
+16,Name another of the three women pursuing Blake inside his mind.,Officer Finch,late,medium,entity,0,1,1
+17,Name the third woman pursuing Blake inside his mind.,Vera Velvetskin,late,medium,entity,1,1,0
+18,What city is stated as the most populous city in Turkey?,Konya,middle,hard,needle,1,1,0
+19,What temperature is Mars Station Alpha?,73°C,late,hard,needle,1,1,1
+20,What number is assigned to Samuel?,531457,early,hard,needle,1,1,1
+21,What detergent brand mascot appears in Blake's memory?,Vera Velvetskin,middle,medium,entity,1,1,1
+22,What university is Deirdre planning to attend?,Trevor University,late,medium,location,1,1,1
+,,,,,,,,
+,,,,,Metrics,DeepSeek-R1-Distill-Qwen-14B,Llama 3.1 8B Instruct 128k,Mistral ınstruct
+,,,,,Accuracy,"%40,9","%61,4","%45,5"
+,,,,,Needle Retrieval Score,"%100,0","%100,0","%66,7"
+,,,,,Section Recall Accuracy (early),"%37,5","%50,0","%50,0"
+,,,,,Section Recall Accuracy (middle),"%33,3","%61,1","%33,3"
+,,,,,Section Recall Accuracy (late),"%60,0","%80,0","%60,0"
