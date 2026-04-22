@@ -23,19 +23,19 @@ Each model was tested by submitting **all 22 questions one per tab** (i.e. in a 
 
 **Exception — follow-up question triples:** Three questions are structurally linked and ask the model to name each of the three women pursuing Blake inside his mind. Because they reference one another, these were submitted together in a single session rather than in isolated tabs:
 
-1. *"Name one of the three women pursuing Blake inside his mind."*
-2. *"Name another of the three women pursuing Blake inside his mind."*
-3. *"Name the third woman pursuing Blake inside his mind."*
+1. _"Name one of the three women pursuing Blake inside his mind."_
+2. _"Name another of the three women pursuing Blake inside his mind."_
+3. _"Name the third woman pursuing Blake inside his mind."_
 
 ---
 
 ## Models Evaluated
 
-| Model | Context window |
-|---|---|
-| DeepSeek-R1-Distill-Qwen-14B | 128k |
-| Llama 3.1 8B Instruct | 128k |
-| Mistral Instruct | 128k |
+| Model                        | Context window |
+| ---------------------------- | -------------- |
+| DeepSeek-R1-Distill-Qwen-14B | 128k           |
+| Llama 3.1 8B Instruct        | 128k           |
+| Mistral Instruct             | 128k           |
 
 ---
 
@@ -43,17 +43,15 @@ Each model was tested by submitting **all 22 questions one per tab** (i.e. in a 
 
 ![Metrics Summary](Metrics%20Summary.png)
 
-Full per-question scores are in [Metrics (52845-final).csv](Metrics%20(52845-final).csv).
+Full per-question scores are in [Metrics (52845-final).csv](<Metrics%20(52845-final).csv>).
 
-### Aggregate results
-
-| Metric | DeepSeek-R1-Distill-Qwen-14B | Llama 3.1 8B Instruct 128k | Mistral Instruct |
-|---|---|---|---|
-| **Overall Accuracy** | 40.9% | 61.4% | 45.5% |
-| **Needle Retrieval Score** | 100.0% | 100.0% | 66.7% |
-| **Section Recall — early** | 37.5% | 50.0% | 50.0% |
-| **Section Recall — middle** | 33.3% | 61.1% | 33.3% |
-| **Section Recall — late** | 60.0% | 80.0% | 60.0% |
+| Metric                      | DeepSeek-R1-Distill-Qwen-14B | Llama 3.1 8B Instruct 128k | Mistral Instruct |
+| --------------------------- | ---------------------------- | -------------------------- | ---------------- |
+| **Overall Accuracy**        | 40.9%                        | 61.4%                      | 45.5%            |
+| **Needle Retrieval Score**  | 100.0%                       | 100.0%                     | 66.7%            |
+| **Section Recall — early**  | 37.5%                        | 50.0%                      | 50.0%            |
+| **Section Recall — middle** | 33.3%                        | 61.1%                      | 33.3%            |
+| **Section Recall — late**   | 60.0%                        | 80.0%                      | 60.0%            |
 
 ---
 
