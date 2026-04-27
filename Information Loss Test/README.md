@@ -41,8 +41,6 @@ Each model was tested by submitting **all 22 questions one per tab** (i.e. in a 
 
 ## Metrics Summary
 
-![Metrics Summary](Metrics%20Summary.png)
-
 Full per-question scores are in [Metrics (52845-final).csv](<Metrics%20(52845-final).csv>).
 
 | Metric                      | DeepSeek-R1-Distill-Qwen-14B | Llama 3.1 8B Instruct 128k | Mistral Instruct |
