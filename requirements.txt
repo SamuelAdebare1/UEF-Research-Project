@@ -1,0 +1,7 @@
+pymupdf
+tiktoken
+sentence-transformers
+fastapi
+uvicorn
+gpt4all
+scikit-learn

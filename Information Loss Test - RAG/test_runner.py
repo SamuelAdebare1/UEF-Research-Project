@@ -191,10 +191,10 @@ QUESTIONS = [
         "type": "needle_adjacent",
     },
 
-    # ── BIBLICAL FACT QUESTIONS (15) ─────────────────────────────────────────
-    # Facts from the Genesis text itself.
-    # The LLM is likely pre-trained on the Bible, so it may answer these
-    # CORRECTLY from memorised knowledge even if RAG fails to retrieve the chunk.
+    # ── FACT QUESTIONS (15) ──────────────────────────────────────────────────
+    # Facts from the document text itself.
+    # The LLM may answer these CORRECTLY from memorised knowledge even if RAG
+    # fails to retrieve the chunk.
     # Low scores here therefore implicate retrieval AND LLM recall together.
     # High scores do NOT confirm RAG worked — see retrieved_chunks column.
     {
@@ -491,7 +491,7 @@ metrics = [
     ("Overall Accuracy (all 30)",        lambda r: True),
     ("Needle Score (Q1-Q5)",             lambda r: r["type"] == "needle"),
     ("Adjacent-to-Needle (Q6-Q15)",      lambda r: r["type"] == "needle_adjacent"),
-    ("Biblical Facts (Q16-Q30)",         lambda r: r["type"] in ("fact", "entity", "location", "event")),
+    ("Facts (Q16-Q30)",                  lambda r: r["type"] in ("fact", "entity", "location", "event")),
     ("Section Recall — early",           lambda r: r["section"] == "early"),
     ("Section Recall — middle",          lambda r: r["section"] == "middle"),
     ("Section Recall — late",            lambda r: r["section"] == "late"),
