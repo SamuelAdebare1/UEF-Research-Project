@@ -1,0 +1,44 @@
+Test 1: The Corporate Compliance Manual
+The Needle: "While the standard dress code applies to all warehouse departments, employees operating the TS-500 machinery in Sector 4 must explicitly wear the neon-orange anti-static wristband on their left arm at all times."
+
+The Question: Which specific wristband must employees wear when operating the TS-500 machinery?
+
+Target Answer: The neon-orange anti-static wristband.
+
+Location: Chapter 1:16 (Page 1)
+
+Test 2: The Scientific Research Paper
+The Needle: "Although the majority of the control group exhibited expected mild lethargy, subject 402-B reported a distinct metallic taste in their mouth exactly forty-five minutes after the administration of the placebo."
+
+The Question: What specific sensory anomaly did subject 402-B report after receiving the placebo?
+
+Target Answer: A distinct metallic taste.
+
+Location: Chapter 12:6 (Page 15)
+
+Test 3: The Financial Contract
+The Needle: "In the event of a force majeure lasting longer than thirty consecutive days, the subcontractor is entitled to a standard termination fee, provided they submit the Request for Dissolution form directly to the managing director's office in Helsinki."
+
+The Question: To which city must the Request for Dissolution form be submitted in the event of a prolonged force majeure?
+
+Target Answer: Helsinki.
+
+Location: Chapter 19:31 (Page 25)
+
+Test 4: The Deep Space Telemetry Log
+The Needle: "While scanning the Perseus arm for standard anomalous signatures, the secondary probe telemetry unexpectedly indicated a sudden temperature drop of 14 Kelvin near the coordinates of the minor asteroid designated Xylanthia-9."
+
+The Question: What is the name of the asteroid where the probe telemetry indicated a sudden 14 Kelvin temperature drop?
+
+Target Answer: Xylanthia-9.
+
+Location: Chapter 25:11 (Page 35)
+
+Test 5: The Municipal Historical Archive
+The Needle: "The final shipment of grain intended for the winter rations of 1842 was severely delayed because the primary transport vessel, the Windsor Merchant, lost its secondary rudder during a sudden squall off the coast of Yarmouth."
+
+The Question: What specific part of the Windsor Merchant was lost during a squall, causing the grain delay?
+
+Target Answer: Its secondary rudder.
+
+Location: Chapter 32:23 (Page 50)

@@ -10,8 +10,8 @@ Download GPT4All from [https://www.nomic.ai/gpt4all](https://www.nomic.ai/gpt4al
 2. Click **"+Add Model"**.
 3. Download a model of your choice. Suggestions:
    - DeepSeek-R1-Distill-Qwen-14B *(requires 16GB of RAM)*
-   - Llama 3.1 8B Instruct 128k
-   - Mistral Instruct
+   - Llama 3.1 8B Instruct 128k *(requires 8GB of RAM)*
+   - Mistral Instruct *(requires 8GB of RAM)*
 
 ## 3. Add a Local Document Collection
 
