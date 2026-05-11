@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Linguistic Analysis Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg: #f8fafc; --surface: #ffffff; --border: #e2e8f0;
+    --text: #0f172a; --muted: #64748b;
+    --red: #dc2626; --orange: #ea580c; --yellow: #ca8a04;
+    --green: #16a34a; --blue: #2563eb; --teal: #0d9488;
+  }
+  [data-theme="dark"] {
+    --bg: #0f172a; --surface: #1e293b; --border: #334155;
+    --text: #f1f5f9; --muted: #94a3b8;
+    --red: #ef4444; --orange: #f97316; --yellow: #eab308;
+    --green: #22c55e; --blue: #3b82f6; --teal: #14b8a6;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: system-ui, sans-serif; padding: 2rem; transition: background 0.2s, color 0.2s; }
+  h1 { font-size: 1.75rem; font-weight: 700; margin-bottom: 0.25rem; }
+  .subtitle { color: var(--muted); margin-bottom: 2rem; font-size: 0.9rem; }
+  .header-row { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 2rem; }
+  .toggle-btn {
+    display: flex; align-items: center; gap: 0.5rem;
+    background: var(--surface); border: 1px solid var(--border);
+    color: var(--text); border-radius: 999px; padding: 0.4rem 1rem;
+    font-size: 0.85rem; font-weight: 500; cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+  }
+  .toggle-btn:hover { border-color: var(--blue); }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 2rem; }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 0.75rem; padding: 1.25rem; transition: background 0.2s, border-color 0.2s; }
+  .stat-card { text-align: center; }
+  .stat-card .value { font-size: 2rem; font-weight: 800; }
+  .stat-card .label { color: var(--muted); font-size: 0.8rem; margin-top: 0.25rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  .section-title { font-size: 1.1rem; font-weight: 600; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .badge { font-size: 0.7rem; padding: 0.2rem 0.5rem; border-radius: 999px; font-weight: 600; }
+  .badge-red { background: #fee2e2; color: #991b1b; }
+  .badge-blue { background: #dbeafe; color: #1e40af; }
+  [data-theme="dark"] .badge-red { background: #7f1d1d; color: #fca5a5; }
+  [data-theme="dark"] .badge-blue { background: #1e3a5f; color: #93c5fd; }
+  canvas { max-height: 320px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+  th { text-align: left; padding: 0.5rem 0.75rem; color: var(--muted); border-bottom: 1px solid var(--border); font-weight: 500; }
+  td { padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  .score-negative { color: var(--red); font-weight: 700; }
+  .score-low { color: var(--orange); font-weight: 700; }
+  .score-mid { color: var(--yellow); font-weight: 600; }
+  .sent { color: var(--muted); font-style: italic; }
+  @media (max-width: 900px) { .grid-4 { grid-template-columns: 1fr 1fr; } .grid-2 { grid-template-columns: 1fr; } }
+  .info-wrap { position: relative; display: inline-flex; align-items: center; margin-left: 0.35rem; }
+  .info-icon {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 1.1rem; height: 1.1rem; border-radius: 50%;
+    background: var(--blue); color: #fff;
+    font-size: 0.65rem; font-weight: 700; cursor: default;
+    font-style: normal; line-height: 1; flex-shrink: 0;
+  }
+  .tooltip {
+    display: none; position: absolute; bottom: calc(100% + 6px); left: 50%;
+    transform: translateX(-50%);
+    background: var(--text); color: var(--bg);
+    font-size: 0.78rem; font-weight: 400; line-height: 1.45;
+    padding: 0.5rem 0.75rem; border-radius: 0.5rem;
+    width: 220px; text-align: left; white-space: normal;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); z-index: 10;
+    pointer-events: none;
+  }
+  .tooltip::after {
+    content: ''; position: absolute; top: 100%; left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: var(--text);
+  }
+  .info-wrap:hover .tooltip { display: block; }
+  .hapax-search {
+    width: 100%; padding: 0.5rem 0.75rem; margin-bottom: 1rem;
+    border: 1px solid var(--border); border-radius: 0.5rem;
+    background: var(--bg); color: var(--text); font-size: 0.85rem;
+    outline: none; transition: border-color 0.2s;
+  }
+  .hapax-search:focus { border-color: var(--blue); }
+  .hapax-cloud {
+    display: flex; flex-wrap: wrap; gap: 0.4rem;
+    max-height: 320px; overflow-y: auto;
+    padding-right: 0.25rem;
+  }
+  .hapax-pill {
+    display: inline-block; padding: 0.2rem 0.6rem;
+    background: #eff6ff; color: #1e40af;
+    border: 1px solid #bfdbfe; border-radius: 999px;
+    font-size: 0.78rem; font-weight: 500;
+  }
+  [data-theme="dark"] .hapax-pill {
+    background: #1e3a5f; color: #93c5fd; border-color: #1e40af;
+  }
+  .hapax-pill.hidden { display: none; }
+  .hapax-none { color: var(--muted); font-size: 0.85rem; display: none; }
+</style>
+</head>
+<body>
+
+<div class="header-row">
+  <div>
+    <h1>Linguistic Analysis Dashboard</h1>
+    <p class="subtitle">Genesis (50-pages.pdf) — injection detection &amp; vocabulary profiling</p>
+  </div>
+  <button class="toggle-btn" onclick="toggleTheme()" id="themeBtn">🌙 Dark mode</button>
+</div>
+
+<!-- ── STAT CARDS ── -->
+<div class="grid-4">
+  <div class="card stat-card">
+    <div class="value" style="color:var(--blue)">23,863</div>
+    <div class="label" style="display:inline-flex;align-items:center;justify-content:center">
+      Total Tokens
+      <span class="info-wrap"><i class="info-icon">i</i><span class="tooltip">The total number of word pieces (tokens) in the document after splitting the text. A token is roughly one word or punctuation mark.</span></span>
+    </div>
+  </div>
+  <div class="card stat-card">
+    <div class="value" style="color:var(--teal)">1,922</div>
+    <div class="label" style="display:inline-flex;align-items:center;justify-content:center">
+      Unique Types
+      <span class="info-wrap"><i class="info-icon">i</i><span class="tooltip">The number of distinct word forms found in the document. A high count means a rich, varied vocabulary.</span></span>
+    </div>
+  </div>
+  <div class="card stat-card">
+    <div class="value" style="color:var(--red)">46</div>
+    <div class="label" style="display:inline-flex;align-items:center;justify-content:center">
+      Anomalies Found
+      <span class="info-wrap"><i class="info-icon">i</i><span class="tooltip">Sentences whose semantic similarity to their neighbours falls below the threshold (0.3). Low scores signal sentences that are stylistically out of place — likely injected content.</span></span>
+    </div>
+  </div>
+  <div class="card stat-card">
+    <div class="value" style="color:var(--yellow)">839</div>
+    <div class="label" style="display:inline-flex;align-items:center;justify-content:center">
+      Hapax Legomena
+      <span class="info-wrap"><i class="info-icon">i</i><span class="tooltip">Words that appear exactly once in the entire document. A high hapax count indicates a wide vocabulary with many rare or unique words.</span></span>
+    </div>
+  </div>
+</div>
+
+<!-- ── ROW 1: Anomaly chart + Word freq ── -->
+<div class="grid-2">
+  <div class="card">
+    <div class="section-title">Semantic Anomalies <span class="badge badge-red">Injection Detection</span><span class="info-wrap"><i class="info-icon">i</i><span class="tooltip">Each sentence is embedded as a vector and compared to its 5 nearest neighbours. Sentences with a mean similarity below 0.3 are flagged — they are semantically isolated from surrounding text.</span></span></div>
+    <canvas id="anomalyChart"></canvas>
+  </div>
+  <div class="card">
+    <div class="section-title">Top 20 Content Words <span class="badge badge-blue">Vocabulary</span><span class="info-wrap"><i class="info-icon">i</i><span class="tooltip">Content words (nouns, verbs, adjectives) ranked by how often they appear. Stop words like "the", "and", "of" are excluded. High-frequency words reveal the document's key themes and entities.</span></span></div>
+    <canvas id="wordFreqChart"></canvas>
+  </div>
+</div>
+
+<!-- ── ROW 2: Anomaly table ── -->
+<div class="card" style="margin-bottom:2rem">
+  <div class="section-title">Top Anomalous Sentences <span class="badge badge-red">Ranked by Score</span></div>
+  <table>
+    <thead><tr><th>#</th><th>Score</th><th>Sentence (truncated)</th></tr></thead>
+    <tbody>
+      <tr><td>18</td><td class="score-negative">-0.0871</td><td class="sent">While  the  standard  dress  code  applies  to  all  warehouse  departments,  employees  operating…</td></tr><tr><td>441</td><td class="score-negative">-0.0531</td><td class="sent">In the  event  of  a  force  majeure  lasting  longer  than  thirty  consecutive  days,  the  subcon…</td></tr><tr><td>259</td><td class="score-low">0.0515</td><td class="sent">Although the majority of the control group  exhibited  expected  mild  lethargy,  subject  402-B  re…</td></tr><tr><td>617</td><td class="score-low">0.0615</td><td class="sent">While  scanning  the  Perseus  arm  for  standard  anomalous  signatures, the secondary probe teleme…</td></tr><tr><td>902</td><td class="score-low">0.0813</td><td class="sent">The  final  shipment  of  grain  intended  for  the  winter rations of 1842 was severely  delayed be…</td></tr><tr><td>232</td><td class="score-low">0.1173</td><td class="sent">And they had brick for stone, and slime had they for morter.…</td></tr><tr><td>747</td><td class="score-low">0.1433</td><td class="sent">tell me, what shall thy wages be?…</td></tr><tr><td>745</td><td class="score-low">0.1494</td><td class="sent">And he abode with   him the space of a month.…</td></tr><tr><td>433</td><td class="score-mid">0.1814</td><td class="sent">Therefore the name of the city was called Zoar.…</td></tr><tr><td>831</td><td class="score-mid">0.1938</td><td class="sent">for he  hath sold us, and hath quite devoured also our money.…</td></tr><tr><td>856</td><td class="score-mid">0.1942</td><td class="sent">And he searched but found not the images.…</td></tr><tr><td>860</td><td class="score-mid">0.2038</td><td class="sent">set  it here before my brethren and thy brethren, that they may judge betwixt us both.…</td></tr><tr><td>897</td><td class="score-mid">0.2243</td><td class="sent">For  he  said,  I  will  appease  him  with  the  present  that  goeth  before  me,  and  afterward…</td></tr><tr><td>91</td><td class="score-mid">0.2250</td><td class="sent">And he said, I know not:  Am  I  my  brother’s  keeper?…</td></tr><tr><td>571</td><td class="score-mid">0.2271</td><td class="sent">And he said, Speak on.…</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<script>
+const CHART_DEFAULTS = {
+  plugins: { legend: { labels: { color: '#0f172a' } } },
+  scales: {
+    x: { ticks: { color: '#64748b' }, grid: { color: '#e2e8f0' } },
+    y: { ticks: { color: '#64748b' }, grid: { color: '#e2e8f0' } },
+  }
+};
+
+const anomalyChartObj = new Chart(document.getElementById('anomalyChart'), {
+  type: 'bar',
+  data: {
+    labels: ["[18] While  the  standard  dress  code  appli\u2026", "[441] In the  event  of  a  force  majeure  la\u2026", "[259] Although the majority of the control gro\u2026", "[617] While  scanning  the  Perseus  arm  for \u2026", "[902] The  final  shipment  of  grain  intende\u2026", "[232] And they had brick for stone, and slime \u2026", "[747] tell me, what shall thy wages be?\u2026", "[745] And he abode with   him the space of a m\u2026", "[433] Therefore the name of the city was calle\u2026", "[831] for he  hath sold us, and hath quite dev\u2026", "[856] And he searched but found not the images\u2026", "[860] set  it here before my brethren and thy \u2026", "[897] For  he  said,  I  will  appease  him  w\u2026", "[91] And he said, I know not:  Am  I  my  bro\u2026", "[571] And he said, Speak on.\u2026"],
+    datasets: [{ label: 'Similarity Score', data: [-0.0871, -0.0531, 0.0515, 0.0615, 0.0813, 0.1173, 0.1433, 0.1494, 0.1814, 0.1938, 0.1942, 0.2038, 0.2243, 0.225, 0.2271],
+      backgroundColor: ["#ef4444", "#ef4444", "#f97316", "#f97316", "#f97316", "#f97316", "#f97316", "#f97316", "#facc15", "#facc15", "#facc15", "#facc15", "#facc15", "#facc15", "#facc15"], borderRadius: 4 }]
+  },
+  options: { ...CHART_DEFAULTS, indexAxis: 'y',
+    plugins: { ...CHART_DEFAULTS.plugins, legend: { display: false } },
+    scales: { x: CHART_DEFAULTS.scales.x, y: { ticks: { color: '#94a3b8', font: { size: 10 } }, grid: { color: '#334155' } } }
+  }
+});
+
+const wordFreqChartObj = new Chart(document.getElementById('wordFreqChart'), {
+  type: 'bar',
+  data: {
+    labels: ["will", "abraham", "son", "earth", "jacob", "father", "years", "came", "wife", "went", "every", "called", "man", "behold", "sons", "isaac", "name", "begat", "land", "shalt"],
+    datasets: [{ label: 'Count', data: [135, 126, 122, 113, 101, 92, 84, 79, 78, 76, 75, 73, 73, 71, 70, 70, 69, 67, 66, 63],
+      backgroundColor: '#3b82f6', borderRadius: 4 }]
+  },
+  options: { ...CHART_DEFAULTS, indexAxis: 'y',
+    plugins: { ...CHART_DEFAULTS.plugins, legend: { display: false } }
+  }
+});
+</script>
+
+<!-- ── ROW 3: Hapax Legomena ── -->
+<div class="card" style="margin-bottom:2rem">
+  <div class="section-title">
+    Hapax Legomena
+    <span class="badge badge-blue">839 words</span>
+    <span class="info-wrap"><i class="info-icon">i</i><span class="tooltip">Words that appear exactly once in the document. These reveal rare, specialised, or injected vocabulary. Use the search box to filter.</span></span>
+  </div>
+  <input class="hapax-search" id="hapaxSearch" type="search" placeholder="Search hapax legomena…" oninput="filterHapax(this.value)"/>
+  <div class="hapax-cloud" id="hapaxCloud">
+    <span class="hapax-pill">abidah</span><span class="hapax-pill">abimael</span><span class="hapax-pill">abode</span><span class="hapax-pill">about</span><span class="hapax-pill">absent</span><span class="hapax-pill">accad</span><span class="hapax-pill">accept</span><span class="hapax-pill">adbeel</span><span class="hapax-pill">add</span><span class="hapax-pill">administration</span><span class="hapax-pill">afar</span><span class="hapax-pill">afterwards</span><span class="hapax-pill">ahuzzath</span><span class="hapax-pill">aileth</span><span class="hapax-pill">almodad</span><span class="hapax-pill">although</span><span class="hapax-pill">altogether</span><span class="hapax-pill">always</span><span class="hapax-pill">amalekites</span><span class="hapax-pill">ammon</span><span class="hapax-pill">anamim</span><span class="hapax-pill">anointedst</span><span class="hapax-pill">anomalous</span><span class="hapax-pill">answer</span><span class="hapax-pill">anti</span><span class="hapax-pill">anything</span><span class="hapax-pill">appease</span><span class="hapax-pill">applies</span><span class="hapax-pill">appoint</span><span class="hapax-pill">aprons</span><span class="hapax-pill">ararat</span><span class="hapax-pill">archer</span><span class="hapax-pill">arkite</span><span class="hapax-pill">armed</span><span class="hapax-pill">army</span><span class="hapax-pill">artificer</span><span class="hapax-pill">arvadite</span><span class="hapax-pill">ascending</span><span class="hapax-pill">ashamed</span><span class="hapax-pill">asher</span><span class="hapax-pill">ashes</span><span class="hapax-pill">ashkenaz</span><span class="hapax-pill">ashteroth</span><span class="hapax-pill">asketh</span><span class="hapax-pill">asshurim</span><span class="hapax-pill">asswaged</span><span class="hapax-pill">asteroid</span><span class="hapax-pill">avenged</span><span class="hapax-pill">awaked</span><span class="hapax-pill">awoke</span><span class="hapax-pill">badest</span><span class="hapax-pill">bake</span><span class="hapax-pill">bashemath</span><span class="hapax-pill">battle</span><span class="hapax-pill">bdellium</span><span class="hapax-pill">beautiful</span><span class="hapax-pill">beeri</span><span class="hapax-pill">beerlahairoi</span><span class="hapax-pill">beget</span><span class="hapax-pill">begin</span><span class="hapax-pill">begotten</span><span class="hapax-pill">believed</span><span class="hapax-pill">belly</span><span class="hapax-pill">benammi</span><span class="hapax-pill">bera</span><span class="hapax-pill">bered</span><span class="hapax-pill">besides</span><span class="hapax-pill">betimes</span><span class="hapax-pill">better</span><span class="hapax-pill">beware</span><span class="hapax-pill">bird</span><span class="hapax-pill">birds</span><span class="hapax-pill">birsha</span><span class="hapax-pill">bitter</span><span class="hapax-pill">blesseth</span><span class="hapax-pill">blindness</span><span class="hapax-pill">bones</span><span class="hapax-pill">border</span><span class="hapax-pill">borders</span><span class="hapax-pill">bosom</span><span class="hapax-pill">bound</span><span class="hapax-pill">bowing</span><span class="hapax-pill">boys</span><span class="hapax-pill">brass</span><span class="hapax-pill">breaketh</span><span class="hapax-pill">breaking</span><span class="hapax-pill">breathed</span><span class="hapax-pill">breed</span><span class="hapax-pill">brimstone</span><span class="hapax-pill">brook</span><span class="hapax-pill">bulls</span><span class="hapax-pill">burn</span><span class="hapax-pill">burning</span><span class="hapax-pill">butter</span><span class="hapax-pill">buz</span><span class="hapax-pill">cakes</span><span class="hapax-pill">calneh</span><span class="hapax-pill">caphtorim</span><span class="hapax-pill">captive</span><span class="hapax-pill">captives</span><span class="hapax-pill">carcases</span><span class="hapax-pill">casluhim</span><span class="hapax-pill">castles</span><span class="hapax-pill">caught</span><span class="hapax-pill">cause</span><span class="hapax-pill">cease</span><span class="hapax-pill">ceased</span><span class="hapax-pill">certain</span><span class="hapax-pill">cherubims</span><span class="hapax-pill">chesed</span><span class="hapax-pill">chestnut</span><span class="hapax-pill">childless</span><span class="hapax-pill">chode</span><span class="hapax-pill">choice</span><span class="hapax-pill">circumcise</span><span class="hapax-pill">clave</span><span class="hapax-pill">cleave</span><span class="hapax-pill">clothed</span><span class="hapax-pill">coast</span><span class="hapax-pill">coats</span><span class="hapax-pill">code</span><span class="hapax-pill">cold</span><span class="hapax-pill">colts</span><span class="hapax-pill">comforted</span><span class="hapax-pill">commandments</span><span class="hapax-pill">commended</span><span class="hapax-pill">communed</span><span class="hapax-pill">communing</span><span class="hapax-pill">compassed</span><span class="hapax-pill">conception</span><span class="hapax-pill">concubine</span><span class="hapax-pill">concubines</span><span class="hapax-pill">confederate</span><span class="hapax-pill">consecutive</span><span class="hapax-pill">control</span><span class="hapax-pill">cool</span><span class="hapax-pill">coordinates</span><span class="hapax-pill">corrupted</span><span class="hapax-pill">cried</span><span class="hapax-pill">crieth</span><span class="hapax-pill">cubit</span><span class="hapax-pill">cunning</span><span class="hapax-pill">current</span><span class="hapax-pill">custom</span><span class="hapax-pill">dale</span><span class="hapax-pill">damsels</span><span class="hapax-pill">dark</span><span class="hapax-pill">dealt</span><span class="hapax-pill">deceived</span><span class="hapax-pill">deceiver</span><span class="hapax-pill">decreased</span><span class="hapax-pill">deeds</span><span class="hapax-pill">delayed</span><span class="hapax-pill">deliver</span><span class="hapax-pill">denied</span><span class="hapax-pill">depart</span><span class="hapax-pill">departments</span><span class="hapax-pill">deprived</span><span class="hapax-pill">descending</span><span class="hapax-pill">designated</span><span class="hapax-pill">desired</span><span class="hapax-pill">destitute</span><span class="hapax-pill">devoured</span><span class="hapax-pill">diklah</span><span class="hapax-pill">dim</span><span class="hapax-pill">dinah</span><span class="hapax-pill">directly</span><span class="hapax-pill">director</span><span class="hapax-pill">discern</span><span class="hapax-pill">discerned</span><span class="hapax-pill">displease</span><span class="hapax-pill">dissolution</span><span class="hapax-pill">distinct</span><span class="hapax-pill">distressed</span><span class="hapax-pill">dodanim</span><span class="hapax-pill">doeth</span><span class="hapax-pill">doing</span><span class="hapax-pill">dowry</span><span class="hapax-pill">dread</span><span class="hapax-pill">dreadful</span><span class="hapax-pill">dreamed</span><span class="hapax-pill">dressed</span><span class="hapax-pill">driven</span><span class="hapax-pill">drop</span><span class="hapax-pill">drought</span><span class="hapax-pill">droves</span><span class="hapax-pill">drunken</span><span class="hapax-pill">dumah</span><span class="hapax-pill">during</span><span class="hapax-pill">each</span><span class="hapax-pill">ears</span><span class="hapax-pill">eatest</span><span class="hapax-pill">eighteen</span><span class="hapax-pill">eldaah</span><span class="hapax-pill">eleven</span><span class="hapax-pill">eliezer</span><span class="hapax-pill">elishah</span><span class="hapax-pill">elon</span><span class="hapax-pill">elparan</span><span class="hapax-pill">else</span><span class="hapax-pill">embraced</span><span class="hapax-pill">emins</span><span class="hapax-pill">employees</span><span class="hapax-pill">emptied</span><span class="hapax-pill">empty</span><span class="hapax-pill">ended</span><span class="hapax-pill">endued</span><span class="hapax-pill">enlarge</span><span class="hapax-pill">enmishpat</span><span class="hapax-pill">enmity</span><span class="hapax-pill">enough</span><span class="hapax-pill">enter</span><span class="hapax-pill">entitled</span><span class="hapax-pill">entreated</span><span class="hapax-pill">ephah</span><span class="hapax-pill">epher</span><span class="hapax-pill">erech</span><span class="hapax-pill">errand</span><span class="hapax-pill">escaped</span><span class="hapax-pill">esek</span><span class="hapax-pill">established</span><span class="hapax-pill">ethiopia</span><span class="hapax-pill">event</span><span class="hapax-pill">eventide</span><span class="hapax-pill">exactly</span><span class="hapax-pill">exhibited</span><span class="hapax-pill">expected</span><span class="hapax-pill">experience</span><span class="hapax-pill">explicitly</span><span class="hapax-pill">eyed</span><span class="hapax-pill">fall</span><span class="hapax-pill">fallen</span><span class="hapax-pill">falsely</span><span class="hapax-pill">fashion</span><span class="hapax-pill">fast</span><span class="hapax-pill">fat</span><span class="hapax-pill">favoured</span><span class="hapax-pill">fearest</span><span class="hapax-pill">fed</span><span class="hapax-pill">fee</span><span class="hapax-pill">feeble</span><span class="hapax-pill">feebler</span><span class="hapax-pill">fellow</span><span class="hapax-pill">felt</span><span class="hapax-pill">fetcht</span><span class="hapax-pill">fig</span><span class="hapax-pill">fill</span><span class="hapax-pill">final</span><span class="hapax-pill">findest</span><span class="hapax-pill">findeth</span><span class="hapax-pill">finding</span><span class="hapax-pill">fine</span><span class="hapax-pill">finish</span><span class="hapax-pill">finished</span><span class="hapax-pill">firstlings</span><span class="hapax-pill">fishes</span><span class="hapax-pill">flaming</span><span class="hapax-pill">fly</span><span class="hapax-pill">foals</span><span class="hapax-pill">foolishly</span><span class="hapax-pill">foot</span><span class="hapax-pill">ford</span><span class="hapax-pill">foremost</span><span class="hapax-pill">forget</span><span class="hapax-pill">forward</span><span class="hapax-pill">fourscore</span><span class="hapax-pill">fourteen</span><span class="hapax-pill">fourteenth</span><span class="hapax-pill">freely</span><span class="hapax-pill">friends</span><span class="hapax-pill">fro</span><span class="hapax-pill">frost</span><span class="hapax-pill">fulfil</span><span class="hapax-pill">furniture</span><span class="hapax-pill">fury</span><span class="hapax-pill">gad</span><span class="hapax-pill">gaham</span><span class="hapax-pill">gat</span><span class="hapax-pill">gathering</span><span class="hapax-pill">gavest</span><span class="hapax-pill">gaza</span><span class="hapax-pill">genesis</span><span class="hapax-pill">gentiles</span><span class="hapax-pill">gether</span><span class="hapax-pill">getting</span><span class="hapax-pill">giants</span><span class="hapax-pill">gifts</span><span class="hapax-pill">gihon</span><span class="hapax-pill">girgashites</span><span class="hapax-pill">girgasite</span><span class="hapax-pill">giving</span><span class="hapax-pill">glory</span><span class="hapax-pill">goat</span><span class="hapax-pill">golden</span><span class="hapax-pill">goodly</span><span class="hapax-pill">gopher</span><span class="hapax-pill">grain</span><span class="hapax-pill">grief</span><span class="hapax-pill">grieved</span><span class="hapax-pill">group</span><span class="hapax-pill">grove</span><span class="hapax-pill">grow</span><span class="hapax-pill">guiltiness</span><span class="hapax-pill">hadar</span><span class="hapax-pill">hadoram</span><span class="hapax-pill">half</span><span class="hapax-pill">hamathite</span><span class="hapax-pill">handle</span><span class="hapax-pill">hanoch</span><span class="hapax-pill">happy</span><span class="hapax-pill">hard</span><span class="hapax-pill">hardly</span><span class="hapax-pill">harm</span><span class="hapax-pill">having</span><span class="hapax-pill">hazarmaveth</span><span class="hapax-pill">hazel</span><span class="hapax-pill">hazezontamar</span><span class="hapax-pill">hazo</span><span class="hapax-pill">heads</span><span class="hapax-pill">healed</span><span class="hapax-pill">hearth</span><span class="hapax-pill">hearts</span><span class="hapax-pill">hebrew</span><span class="hapax-pill">heifer</span><span class="hapax-pill">height</span><span class="hapax-pill">held</span><span class="hapax-pill">helsinki</span><span class="hapax-pill">henceforth</span><span class="hapax-pill">herd</span><span class="hapax-pill">hiddekel</span><span class="hapax-pill">hide</span><span class="hapax-pill">hills</span><span class="hapax-pill">hinder</span><span class="hapax-pill">hired</span><span class="hapax-pill">hither</span><span class="hapax-pill">hittites</span><span class="hapax-pill">hivite</span><span class="hapax-pill">hobah</span><span class="hapax-pill">horites</span><span class="hapax-pill">horns</span><span class="hapax-pill">horror</span><span class="hapax-pill">hotly</span><span class="hapax-pill">hul</span><span class="hapax-pill">hundredfold</span><span class="hapax-pill">hunt</span><span class="hapax-pill">hunting</span><span class="hapax-pill">husbandman</span><span class="hapax-pill">huz</span><span class="hapax-pill">imagined</span><span class="hapax-pill">indicated</span><span class="hapax-pill">inhabitants</span><span class="hapax-pill">inheritance</span><span class="hapax-pill">innocency</span><span class="hapax-pill">instructer</span><span class="hapax-pill">intended</span><span class="hapax-pill">intreat</span><span class="hapax-pill">iron</span><span class="hapax-pill">iscah</span><span class="hapax-pill">ishbak</span><span class="hapax-pill">isles</span><span class="hapax-pill">issachar</span><span class="hapax-pill">its</span><span class="hapax-pill">jabal</span><span class="hapax-pill">jabbok</span><span class="hapax-pill">jebusite</span><span class="hapax-pill">jebusites</span><span class="hapax-pill">jegarsahadutha</span><span class="hapax-pill">jehovahjireh</span><span class="hapax-pill">jerah</span><span class="hapax-pill">jetur</span><span class="hapax-pill">jidlaph</span><span class="hapax-pill">jobab</span><span class="hapax-pill">joint</span><span class="hapax-pill">journeys</span><span class="hapax-pill">jubal</span><span class="hapax-pill">judah</span><span class="hapax-pill">judged</span><span class="hapax-pill">judgment</span><span class="hapax-pill">judith</span><span class="hapax-pill">just</span><span class="hapax-pill">justice</span><span class="hapax-pill">kadmonites</span><span class="hapax-pill">karnaim</span><span class="hapax-pill">kedar</span><span class="hapax-pill">kedemah</span><span class="hapax-pill">kelvin</span><span class="hapax-pill">kemuel</span><span class="hapax-pill">kenites</span><span class="hapax-pill">kenizzites</span><span class="hapax-pill">kindled</span><span class="hapax-pill">kindly</span><span class="hapax-pill">kinds</span><span class="hapax-pill">kine</span><span class="hapax-pill">kiriathaim</span><span class="hapax-pill">kirjatharba</span><span class="hapax-pill">kittim</span><span class="hapax-pill">knead</span><span class="hapax-pill">kneel</span><span class="hapax-pill">knees</span><span class="hapax-pill">knowing</span><span class="hapax-pill">labour</span><span class="hapax-pill">ladder</span><span class="hapax-pill">lamp</span><span class="hapax-pill">lasha</span><span class="hapax-pill">lasting</span><span class="hapax-pill">laws</span><span class="hapax-pill">leaf</span><span class="hapax-pill">leap</span><span class="hapax-pill">leaped</span><span class="hapax-pill">learned</span><span class="hapax-pill">leaves</span><span class="hapax-pill">lehabim</span><span class="hapax-pill">lentiles</span><span class="hapax-pill">lesser</span><span class="hapax-pill">lethargy</span><span class="hapax-pill">letushim</span><span class="hapax-pill">leummim</span><span class="hapax-pill">levi</span><span class="hapax-pill">lien</span><span class="hapax-pill">liest</span><span class="hapax-pill">lieth</span><span class="hapax-pill">lightly</span><span class="hapax-pill">lingered</span><span class="hapax-pill">lives</span><span class="hapax-pill">liveth</span><span class="hapax-pill">long</span><span class="hapax-pill">longedst</span><span class="hapax-pill">longer</span><span class="hapax-pill">lords</span><span class="hapax-pill">loss</span><span class="hapax-pill">lost</span><span class="hapax-pill">lovest</span><span class="hapax-pill">loveth</span><span class="hapax-pill">lower</span><span class="hapax-pill">lud</span><span class="hapax-pill">ludim</span><span class="hapax-pill">luz</span><span class="hapax-pill">lying</span><span class="hapax-pill">maachah</span><span class="hapax-pill">machinery</span><span class="hapax-pill">madai</span><span class="hapax-pill">magnified</span><span class="hapax-pill">magog</span><span class="hapax-pill">mahalath</span><span class="hapax-pill">mahanaim</span><span class="hapax-pill">maiden</span><span class="hapax-pill">majeure</span><span class="hapax-pill">majority</span><span class="hapax-pill">managing</span><span class="hapax-pill">mark</span><span class="hapax-pill">married</span><span class="hapax-pill">mash</span><span class="hapax-pill">massa</span><span class="hapax-pill">meal</span><span class="hapax-pill">mean</span><span class="hapax-pill">measures</span><span class="hapax-pill">medan</span><span class="hapax-pill">meditate</span><span class="hapax-pill">meeteth</span><span class="hapax-pill">melchizedek</span><span class="hapax-pill">mercies</span><span class="hapax-pill">merciful</span><span class="hapax-pill">mesha</span><span class="hapax-pill">meshech</span><span class="hapax-pill">mesopotamia</span><span class="hapax-pill">met</span><span class="hapax-pill">metallic</span><span class="hapax-pill">mibsam</span><span class="hapax-pill">mightier</span><span class="hapax-pill">milch</span><span class="hapax-pill">mild</span><span class="hapax-pill">milk</span><span class="hapax-pill">millions</span><span class="hapax-pill">minor</span><span class="hapax-pill">minutes</span><span class="hapax-pill">mirth</span><span class="hapax-pill">mishma</span><span class="hapax-pill">mist</span><span class="hapax-pill">mizpah</span><span class="hapax-pill">moab</span><span class="hapax-pill">moabites</span><span class="hapax-pill">mocked</span><span class="hapax-pill">mocking</span><span class="hapax-pill">moreh</span><span class="hapax-pill">moriah</span><span class="hapax-pill">morrow</span><span class="hapax-pill">morsel</span><span class="hapax-pill">morter</span><span class="hapax-pill">moses</span><span class="hapax-pill">mourn</span><span class="hapax-pill">mourning</span><span class="hapax-pill">multiplying</span><span class="hapax-pill">naamah</span><span class="hapax-pill">naphish</span><span class="hapax-pill">naphtali</span><span class="hapax-pill">naphtuhim</span><span class="hapax-pill">nativity</span><span class="hapax-pill">neon</span><span class="hapax-pill">next</span><span class="hapax-pill">nineteen</span><span class="hapax-pill">nod</span><span class="hapax-pill">north</span><span class="hapax-pill">northward</span><span class="hapax-pill">nought</span><span class="hapax-pill">nurse</span><span class="hapax-pill">obal</span><span class="hapax-pill">obtain</span><span class="hapax-pill">offended</span><span class="hapax-pill">offer</span><span class="hapax-pill">offerings</span><span class="hapax-pill">office</span><span class="hapax-pill">oil</span><span class="hapax-pill">olive</span><span class="hapax-pill">once</span><span class="hapax-pill">onyx</span><span class="hapax-pill">open</span><span class="hapax-pill">operating</span><span class="hapax-pill">ophir</span><span class="hapax-pill">orange</span><span class="hapax-pill">order</span><span class="hapax-pill">organ</span><span class="hapax-pill">ought</span><span class="hapax-pill">overspread</span><span class="hapax-pill">paran</span><span class="hapax-pill">parted</span><span class="hapax-pill">pathrusim</span><span class="hapax-pill">perform</span><span class="hapax-pill">perizzite</span><span class="hapax-pill">perizzites</span><span class="hapax-pill">perpetual</span><span class="hapax-pill">perseus</span><span class="hapax-pill">persons</span><span class="hapax-pill">philistim</span><span class="hapax-pill">phut</span><span class="hapax-pill">piece</span><span class="hapax-pill">pigeon</span><span class="hapax-pill">pildash</span><span class="hapax-pill">pison</span><span class="hapax-pill">placebo</span><span class="hapax-pill">placed</span><span class="hapax-pill">places</span><span class="hapax-pill">plagued</span><span class="hapax-pill">plagues</span><span class="hapax-pill">plains</span><span class="hapax-pill">plant</span><span class="hapax-pill">pleased</span><span class="hapax-pill">pleasure</span><span class="hapax-pill">plenty</span><span class="hapax-pill">pluckt</span><span class="hapax-pill">point</span><span class="hapax-pill">poplar</span><span class="hapax-pill">poured</span><span class="hapax-pill">praise</span><span class="hapax-pill">prayed</span><span class="hapax-pill">precious</span><span class="hapax-pill">prevail</span><span class="hapax-pill">priest</span><span class="hapax-pill">primary</span><span class="hapax-pill">prince</span><span class="hapax-pill">probe</span><span class="hapax-pill">proceedeth</span><span class="hapax-pill">process</span><span class="hapax-pill">profit</span><span class="hapax-pill">prophet</span><span class="hapax-pill">prospered</span><span class="hapax-pill">prosperous</span><span class="hapax-pill">provided</span><span class="hapax-pill">punishment</span><span class="hapax-pill">purchased</span><span class="hapax-pill">purposing</span><span class="hapax-pill">putting</span><span class="hapax-pill">quarter</span><span class="hapax-pill">quite</span><span class="hapax-pill">quiver</span><span class="hapax-pill">rained</span><span class="hapax-pill">rations</span><span class="hapax-pill">raven</span><span class="hapax-pill">reach</span><span class="hapax-pill">reached</span><span class="hapax-pill">ready</span><span class="hapax-pill">rebelled</span><span class="hapax-pill">rebuked</span><span class="hapax-pill">receive</span><span class="hapax-pill">received</span><span class="hapax-pill">remaineth</span><span class="hapax-pill">removing</span><span class="hapax-pill">renown</span><span class="hapax-pill">repented</span><span class="hapax-pill">repenteth</span><span class="hapax-pill">reported</span><span class="hapax-pill">reproach</span><span class="hapax-pill">request</span><span class="hapax-pill">resen</span><span class="hapax-pill">reserved</span><span class="hapax-pill">restored</span><span class="hapax-pill">reumah</span><span class="hapax-pill">reward</span><span class="hapax-pill">rib</span><span class="hapax-pill">ribs</span><span class="hapax-pill">riches</span><span class="hapax-pill">rightly</span><span class="hapax-pill">riphath</span><span class="hapax-pill">risen</span><span class="hapax-pill">rode</span><span class="hapax-pill">roll</span><span class="hapax-pill">roof</span><span class="hapax-pill">rooms</span><span class="hapax-pill">rudder</span><span class="hapax-pill">ruled</span><span class="hapax-pill">sabtah</span><span class="hapax-pill">sabtechah</span><span class="hapax-pill">sacrifice</span><span class="hapax-pill">saddled</span><span class="hapax-pill">sakes</span><span class="hapax-pill">salem</span><span class="hapax-pill">sanctified</span><span class="hapax-pill">saving</span><span class="hapax-pill">savour</span><span class="hapax-pill">sawest</span><span class="hapax-pill">scanning</span><span class="hapax-pill">scarce</span><span class="hapax-pill">scatter</span><span class="hapax-pill">seasons</span><span class="hapax-pill">seba</span><span class="hapax-pill">secretly</span><span class="hapax-pill">sector</span><span class="hapax-pill">seedtime</span><span class="hapax-pill">seem</span><span class="hapax-pill">seeth</span><span class="hapax-pill">sell</span><span class="hapax-pill">sephar</span><span class="hapax-pill">sepulchre</span><span class="hapax-pill">sepulchres</span><span class="hapax-pill">severely</span><span class="hapax-pill">sewed</span><span class="hapax-pill">shadow</span><span class="hapax-pill">shear</span><span class="hapax-pill">shebah</span><span class="hapax-pill">shed</span><span class="hapax-pill">sheddeth</span><span class="hapax-pill">shekel</span><span class="hapax-pill">sheleph</span><span class="hapax-pill">shemeber</span><span class="hapax-pill">shield</span><span class="hapax-pill">shinab</span><span class="hapax-pill">shipment</span><span class="hapax-pill">shoelatchet</span><span class="hapax-pill">shore</span><span class="hapax-pill">shot</span><span class="hapax-pill">shoulders</span><span class="hapax-pill">shrubs</span><span class="hapax-pill">shuah</span><span class="hapax-pill">sichem</span><span class="hapax-pill">side</span><span class="hapax-pill">signatures</span><span class="hapax-pill">signs</span><span class="hapax-pill">simeon</span><span class="hapax-pill">since</span><span class="hapax-pill">sinite</span><span class="hapax-pill">sinners</span><span class="hapax-pill">sinning</span><span class="hapax-pill">sit</span><span class="hapax-pill">sitnah</span><span class="hapax-pill">slain</span><span class="hapax-pill">slaughter</span><span class="hapax-pill">slayeth</span><span class="hapax-pill">slept</span><span class="hapax-pill">slime</span><span class="hapax-pill">slimepits</span><span class="hapax-pill">smoking</span><span class="hapax-pill">sod</span><span class="hapax-pill">sojourner</span><span class="hapax-pill">sole</span><span class="hapax-pill">songs</span><span class="hapax-pill">souls</span><span class="hapax-pill">southward</span><span class="hapax-pill">sowed</span><span class="hapax-pill">speed</span><span class="hapax-pill">spent</span><span class="hapax-pill">sporting</span><span class="hapax-pill">springing</span><span class="hapax-pill">squall</span><span class="hapax-pill">staff</span><span class="hapax-pill">standest</span><span class="hapax-pill">static</span><span class="hapax-pill">statutes</span><span class="hapax-pill">stay</span><span class="hapax-pill">steal</span><span class="hapax-pill">steward</span><span class="hapax-pill">still</span><span class="hapax-pill">stole</span><span class="hapax-pill">store</span><span class="hapax-pill">stories</span><span class="hapax-pill">strakes</span><span class="hapax-pill">strangers</span><span class="hapax-pill">street</span><span class="hapax-pill">strength</span><span class="hapax-pill">stretched</span><span class="hapax-pill">struggled</span><span class="hapax-pill">subcontractor</span><span class="hapax-pill">subdue</span><span class="hapax-pill">subject</span><span class="hapax-pill">subtil</span><span class="hapax-pill">subtilty</span><span class="hapax-pill">suck</span><span class="hapax-pill">summer</span><span class="hapax-pill">supplanted</span><span class="hapax-pill">sustained</span><span class="hapax-pill">sweat</span><span class="hapax-pill">sweet</span><span class="hapax-pill">sworn</span><span class="hapax-pill">tabret</span><span class="hapax-pill">talking</span><span class="hapax-pill">tarshish</span><span class="hapax-pill">taste</span><span class="hapax-pill">tebah</span><span class="hapax-pill">telemetry</span><span class="hapax-pill">tema</span><span class="hapax-pill">temperature</span><span class="hapax-pill">tempt</span><span class="hapax-pill">termination</span><span class="hapax-pill">thahash</span><span class="hapax-pill">theirs</span><span class="hapax-pill">thereby</span><span class="hapax-pill">thicket</span><span class="hapax-pill">thirteen</span><span class="hapax-pill">thirteenth</span><span class="hapax-pill">thistles</span><span class="hapax-pill">thorns</span><span class="hapax-pill">thoroughly</span><span class="hapax-pill">though</span><span class="hapax-pill">thought</span><span class="hapax-pill">thoughts</span><span class="hapax-pill">thousand</span><span class="hapax-pill">thousands</span><span class="hapax-pill">thread</span><span class="hapax-pill">tidings</span><span class="hapax-pill">tiller</span><span class="hapax-pill">tillest</span><span class="hapax-pill">tiras</span><span class="hapax-pill">tithes</span><span class="hapax-pill">togarmah</span><span class="hapax-pill">toil</span><span class="hapax-pill">tongue</span><span class="hapax-pill">too</span><span class="hapax-pill">tops</span><span class="hapax-pill">torn</span><span class="hapax-pill">toucheth</span><span class="hapax-pill">touching</span><span class="hapax-pill">towns</span><span class="hapax-pill">trained</span><span class="hapax-pill">transport</span><span class="hapax-pill">trembled</span><span class="hapax-pill">trespass</span><span class="hapax-pill">troop</span><span class="hapax-pill">trough</span><span class="hapax-pill">troughs</span><span class="hapax-pill">tubal</span><span class="hapax-pill">turtledove</span><span class="hapax-pill">twentieth</span><span class="hapax-pill">twins</span><span class="hapax-pill">uncircumcised</span><span class="hapax-pill">uncovered</span><span class="hapax-pill">understand</span><span class="hapax-pill">unexpectedly</span><span class="hapax-pill">ungirded</span><span class="hapax-pill">unleavened</span><span class="hapax-pill">upward</span><span class="hapax-pill">uzal</span><span class="hapax-pill">vail</span><span class="hapax-pill">vengeance</span><span class="hapax-pill">vessel</span><span class="hapax-pill">victuals</span><span class="hapax-pill">vineyard</span><span class="hapax-pill">violently</span><span class="hapax-pill">vision</span><span class="hapax-pill">visited</span><span class="hapax-pill">void</span><span class="hapax-pill">vowed</span><span class="hapax-pill">vowedst</span><span class="hapax-pill">walketh</span><span class="hapax-pill">walking</span><span class="hapax-pill">wander</span><span class="hapax-pill">wandered</span><span class="hapax-pill">war</span><span class="hapax-pill">warehouse</span><span class="hapax-pill">watch</span><span class="hapax-pill">watering</span><span class="hapax-pill">waxen</span><span class="hapax-pill">ways</span><span class="hapax-pill">weapons</span><span class="hapax-pill">wear</span><span class="hapax-pill">wearied</span><span class="hapax-pill">weary</span><span class="hapax-pill">weep</span><span class="hapax-pill">weighed</span><span class="hapax-pill">westward</span><span class="hapax-pill">whales</span><span class="hapax-pill">wheat</span><span class="hapax-pill">whensoever</span><span class="hapax-pill">whereas</span><span class="hapax-pill">whereby</span><span class="hapax-pill">whereof</span><span class="hapax-pill">whereon</span><span class="hapax-pill">wherewith</span><span class="hapax-pill">whomsoever</span><span class="hapax-pill">whoso</span><span class="hapax-pill">whosoever</span><span class="hapax-pill">wickedly</span><span class="hapax-pill">wickedness</span><span class="hapax-pill">wild</span><span class="hapax-pill">wind</span><span class="hapax-pill">windsor</span><span class="hapax-pill">winged</span><span class="hapax-pill">wise</span><span class="hapax-pill">wit</span><span class="hapax-pill">withhold</span><span class="hapax-pill">wombs</span><span class="hapax-pill">wondering</span><span class="hapax-pill">worse</span><span class="hapax-pill">worship</span><span class="hapax-pill">worthy</span><span class="hapax-pill">wot</span><span class="hapax-pill">wounding</span><span class="hapax-pill">wrestlings</span><span class="hapax-pill">wristband</span><span class="hapax-pill">wrong</span><span class="hapax-pill">xylanthia</span><span class="hapax-pill">yarmouth</span><span class="hapax-pill">yield</span><span class="hapax-pill">yoke</span><span class="hapax-pill">yonder</span><span class="hapax-pill">yourselves</span><span class="hapax-pill">youth</span><span class="hapax-pill">zeboim</span><span class="hapax-pill">zebulun</span><span class="hapax-pill">zemarite</span><span class="hapax-pill">zimran</span><span class="hapax-pill">zuzims</span>
+  </div>
+  <p class="hapax-none" id="hapaxNone">No matches found.</p>
+</div>
+
+<script>
+  function filterHapax(query) {
+    const q = query.toLowerCase();
+    let visible = 0;
+    document.querySelectorAll('.hapax-pill').forEach(pill => {
+      const match = pill.textContent.includes(q);
+      pill.classList.toggle('hidden', !match);
+      if (match) visible++;
+    });
+    document.getElementById('hapaxNone').style.display = visible === 0 ? 'block' : 'none';
+  }
+</script>
+
+<script>
+  function toggleTheme() {
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    document.documentElement.setAttribute('data-theme', isDark ? '' : 'dark');
+    document.getElementById('themeBtn').textContent = isDark ? '🌙 Dark mode' : '☀️ Light mode';
+
+    // Update chart colours to match the new theme
+    const tickColor  = isDark ? '#64748b' : '#94a3b8';
+    const gridColor  = isDark ? '#e2e8f0' : '#334155';
+    const labelColor = isDark ? '#0f172a' : '#f1f5f9';
+
+    [anomalyChartObj, wordFreqChartObj].forEach(chart => {
+      chart.options.scales.x.ticks.color = tickColor;
+      chart.options.scales.x.grid.color  = gridColor;
+      chart.options.scales.y.ticks.color = tickColor;
+      chart.options.scales.y.grid.color  = gridColor;
+      chart.options.plugins.legend.labels.color = labelColor;
+      chart.update();
+    });
+  }
+</script>
+</body>
+</html>

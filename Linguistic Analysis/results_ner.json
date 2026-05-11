@@ -1,0 +1,7585 @@
+{
+  "MISC": [
+    {
+      "text": "First Book of Moses",
+      "score": 0.9948,
+      "sentence_index": 0
+    },
+    {
+      "text": "Genesis",
+      "score": 0.818,
+      "sentence_index": 0
+    },
+    {
+      "text": "Day",
+      "score": 0.3512,
+      "sentence_index": 5
+    },
+    {
+      "text": "TS - 500",
+      "score": 0.8277,
+      "sentence_index": 18
+    },
+    {
+      "text": "LOR",
+      "score": 0.4697,
+      "sentence_index": 37
+    },
+    {
+      "text": "LOR",
+      "score": 0.4507,
+      "sentence_index": 37
+    },
+    {
+      "text": "LOR",
+      "score": 0.4724,
+      "sentence_index": 52
+    },
+    {
+      "text": "LOR",
+      "score": 0.6097,
+      "sentence_index": 56
+    },
+    {
+      "text": "LOR",
+      "score": 0.4776,
+      "sentence_index": 62
+    },
+    {
+      "text": "LOR",
+      "score": 0.5454,
+      "sentence_index": 63
+    },
+    {
+      "text": "LOR",
+      "score": 0.3717,
+      "sentence_index": 68
+    },
+    {
+      "text": "LOR",
+      "score": 0.5789,
+      "sentence_index": 74
+    },
+    {
+      "text": "LOR",
+      "score": 0.4608,
+      "sentence_index": 201
+    },
+    {
+      "text": "She",
+      "score": 0.4603,
+      "sentence_index": 202
+    },
+    {
+      "text": "Gentile",
+      "score": 0.9949,
+      "sentence_index": 209
+    },
+    {
+      "text": "Je",
+      "score": 0.9661,
+      "sentence_index": 217
+    },
+    {
+      "text": "Amorite",
+      "score": 0.9478,
+      "sentence_index": 217
+    },
+    {
+      "text": "Hi",
+      "score": 0.7332,
+      "sentence_index": 217
+    },
+    {
+      "text": "Arkite",
+      "score": 0.6312,
+      "sentence_index": 217
+    },
+    {
+      "text": "Sinite",
+      "score": 0.8349,
+      "sentence_index": 217
+    },
+    {
+      "text": "Zemarite",
+      "score": 0.5925,
+      "sentence_index": 217
+    },
+    {
+      "text": "Hamathite",
+      "score": 0.7843,
+      "sentence_index": 217
+    },
+    {
+      "text": "Canaanites",
+      "score": 0.9185,
+      "sentence_index": 217
+    },
+    {
+      "text": "Canaanites",
+      "score": 0.8869,
+      "sentence_index": 218
+    },
+    {
+      "text": "She",
+      "score": 0.7971,
+      "sentence_index": 239
+    },
+    {
+      "text": "Canaanite",
+      "score": 0.918,
+      "sentence_index": 258
+    },
+    {
+      "text": "Egyptians",
+      "score": 0.9996,
+      "sentence_index": 264
+    },
+    {
+      "text": "Egyptians",
+      "score": 0.9997,
+      "sentence_index": 266
+    },
+    {
+      "text": "Canaanite",
+      "score": 0.7981,
+      "sentence_index": 280
+    },
+    {
+      "text": "Perizzite",
+      "score": 0.7528,
+      "sentence_index": 280
+    },
+    {
+      "text": "Arioch",
+      "score": 0.5805,
+      "sentence_index": 292
+    },
+    {
+      "text": "Rephaims",
+      "score": 0.8117,
+      "sentence_index": 295
+    },
+    {
+      "text": "Ho",
+      "score": 0.567,
+      "sentence_index": 295
+    },
+    {
+      "text": "Amalekites",
+      "score": 0.791,
+      "sentence_index": 296
+    },
+    {
+      "text": "Amorites",
+      "score": 0.9822,
+      "sentence_index": 296
+    },
+    {
+      "text": "Hebrew",
+      "score": 0.9995,
+      "sentence_index": 301
+    },
+    {
+      "text": "Amorite",
+      "score": 0.9695,
+      "sentence_index": 301
+    },
+    {
+      "text": "Amorites",
+      "score": 0.9755,
+      "sentence_index": 325
+    },
+    {
+      "text": "Ka",
+      "score": 0.9151,
+      "sentence_index": 327
+    },
+    {
+      "text": "Hittite",
+      "score": 0.8759,
+      "sentence_index": 327
+    },
+    {
+      "text": "Rephaims",
+      "score": 0.9392,
+      "sentence_index": 327
+    },
+    {
+      "text": "Amorites",
+      "score": 0.9583,
+      "sentence_index": 327
+    },
+    {
+      "text": "Canaanites",
+      "score": 0.9228,
+      "sentence_index": 327
+    },
+    {
+      "text": "Jebusites",
+      "score": 0.7137,
+      "sentence_index": 327
+    },
+    {
+      "text": "Egyptian",
+      "score": 0.9997,
+      "sentence_index": 328
+    },
+    {
+      "text": "Egyptian",
+      "score": 0.9997,
+      "sentence_index": 331
+    },
+    {
+      "text": "Re",
+      "score": 0.6629,
+      "sentence_index": 441
+    },
+    {
+      "text": "Disso",
+      "score": 0.6534,
+      "sentence_index": 441
+    },
+    {
+      "text": "Mo",
+      "score": 0.9221,
+      "sentence_index": 446
+    },
+    {
+      "text": "Egyptian",
+      "score": 0.9996,
+      "sentence_index": 478
+    },
+    {
+      "text": "Philistines",
+      "score": 0.7633,
+      "sentence_index": 504
+    },
+    {
+      "text": "Hittite",
+      "score": 0.978,
+      "sentence_index": 531
+    },
+    {
+      "text": "Canaanites",
+      "score": 0.9369,
+      "sentence_index": 541
+    },
+    {
+      "text": "Canaanites",
+      "score": 0.9415,
+      "sentence_index": 575
+    },
+    {
+      "text": "LOR",
+      "score": 0.7602,
+      "sentence_index": 583
+    },
+    {
+      "text": "Hittite",
+      "score": 0.9752,
+      "sentence_index": 615
+    },
+    {
+      "text": "Ke",
+      "score": 0.5665,
+      "sentence_index": 617
+    },
+    {
+      "text": "Egyptian",
+      "score": 0.9989,
+      "sentence_index": 618
+    },
+    {
+      "text": "Syrian",
+      "score": 0.9992,
+      "sentence_index": 621
+    },
+    {
+      "text": "Syrian",
+      "score": 0.9995,
+      "sentence_index": 621
+    },
+    {
+      "text": "Philistines",
+      "score": 0.8873,
+      "sentence_index": 647
+    },
+    {
+      "text": "Philistines",
+      "score": 0.865,
+      "sentence_index": 648
+    },
+    {
+      "text": "Philistines",
+      "score": 0.9194,
+      "sentence_index": 651
+    },
+    {
+      "text": "Hittite",
+      "score": 0.9516,
+      "sentence_index": 666
+    },
+    {
+      "text": "Hittite",
+      "score": 0.9155,
+      "sentence_index": 666
+    },
+    {
+      "text": "Syrian",
+      "score": 0.9994,
+      "sentence_index": 714
+    },
+    {
+      "text": "Syrian",
+      "score": 0.9996,
+      "sentence_index": 835
+    },
+    {
+      "text": "Syrian",
+      "score": 0.9995,
+      "sentence_index": 839
+    },
+    {
+      "text": "Je",
+      "score": 0.5127,
+      "sentence_index": 871
+    },
+    {
+      "text": "Galeed",
+      "score": 0.6405,
+      "sentence_index": 871
+    },
+    {
+      "text": "Galeed",
+      "score": 0.3861,
+      "sentence_index": 873
+    }
+  ],
+  "PER": [
+    {
+      "text": "God",
+      "score": 0.988,
+      "sentence_index": 0
+    },
+    {
+      "text": "Spirit",
+      "score": 0.9297,
+      "sentence_index": 2
+    },
+    {
+      "text": "God",
+      "score": 0.5893,
+      "sentence_index": 2
+    },
+    {
+      "text": "God",
+      "score": 0.9965,
+      "sentence_index": 3
+    },
+    {
+      "text": "God",
+      "score": 0.996,
+      "sentence_index": 4
+    },
+    {
+      "text": "God",
+      "score": 0.9919,
+      "sentence_index": 4
+    },
+    {
+      "text": "God",
+      "score": 0.9952,
+      "sentence_index": 5
+    },
+    {
+      "text": "God",
+      "score": 0.9964,
+      "sentence_index": 7
+    },
+    {
+      "text": "God",
+      "score": 0.9909,
+      "sentence_index": 8
+    },
+    {
+      "text": "God",
+      "score": 0.9889,
+      "sentence_index": 9
+    },
+    {
+      "text": "God",
+      "score": 0.9952,
+      "sentence_index": 11
+    },
+    {
+      "text": "God",
+      "score": 0.993,
+      "sentence_index": 12
+    },
+    {
+      "text": "God",
+      "score": 0.9961,
+      "sentence_index": 12
+    },
+    {
+      "text": "God",
+      "score": 0.9956,
+      "sentence_index": 13
+    },
+    {
+      "text": "God",
+      "score": 0.9947,
+      "sentence_index": 14
+    },
+    {
+      "text": "God",
+      "score": 0.9957,
+      "sentence_index": 16
+    },
+    {
+      "text": "God",
+      "score": 0.9945,
+      "sentence_index": 17
+    },
+    {
+      "text": "God",
+      "score": 0.992,
+      "sentence_index": 19
+    },
+    {
+      "text": "God",
+      "score": 0.9957,
+      "sentence_index": 19
+    },
+    {
+      "text": "God",
+      "score": 0.9955,
+      "sentence_index": 21
+    },
+    {
+      "text": "God",
+      "score": 0.994,
+      "sentence_index": 22
+    },
+    {
+      "text": "God",
+      "score": 0.9959,
+      "sentence_index": 22
+    },
+    {
+      "text": "God",
+      "score": 0.9901,
+      "sentence_index": 23
+    },
+    {
+      "text": "God",
+      "score": 0.9961,
+      "sentence_index": 25
+    },
+    {
+      "text": "God",
+      "score": 0.9943,
+      "sentence_index": 26
+    },
+    {
+      "text": "God",
+      "score": 0.9961,
+      "sentence_index": 26
+    },
+    {
+      "text": "God",
+      "score": 0.9964,
+      "sentence_index": 27
+    },
+    {
+      "text": "God",
+      "score": 0.9931,
+      "sentence_index": 28
+    },
+    {
+      "text": "God",
+      "score": 0.9926,
+      "sentence_index": 28
+    },
+    {
+      "text": "God",
+      "score": 0.9923,
+      "sentence_index": 29
+    },
+    {
+      "text": "God",
+      "score": 0.9957,
+      "sentence_index": 29
+    },
+    {
+      "text": "God",
+      "score": 0.9964,
+      "sentence_index": 30
+    },
+    {
+      "text": "God",
+      "score": 0.9973,
+      "sentence_index": 32
+    },
+    {
+      "text": "God",
+      "score": 0.998,
+      "sentence_index": 35
+    },
+    {
+      "text": "God",
+      "score": 0.9925,
+      "sentence_index": 36
+    },
+    {
+      "text": "God",
+      "score": 0.9935,
+      "sentence_index": 36
+    },
+    {
+      "text": "God",
+      "score": 0.8989,
+      "sentence_index": 40
+    },
+    {
+      "text": "God",
+      "score": 0.7871,
+      "sentence_index": 41
+    },
+    {
+      "text": "Pi",
+      "score": 0.4892,
+      "sentence_index": 43
+    },
+    {
+      "text": "God",
+      "score": 0.8665,
+      "sentence_index": 47
+    },
+    {
+      "text": "God",
+      "score": 0.7307,
+      "sentence_index": 48
+    },
+    {
+      "text": "God",
+      "score": 0.91,
+      "sentence_index": 49
+    },
+    {
+      "text": "Adam",
+      "score": 0.9868,
+      "sentence_index": 50
+    },
+    {
+      "text": "Adam",
+      "score": 0.9862,
+      "sentence_index": 50
+    },
+    {
+      "text": "Adam",
+      "score": 0.9983,
+      "sentence_index": 51
+    },
+    {
+      "text": "Adam",
+      "score": 0.9983,
+      "sentence_index": 51
+    },
+    {
+      "text": "God",
+      "score": 0.6247,
+      "sentence_index": 52
+    },
+    {
+      "text": "Adam",
+      "score": 0.9931,
+      "sentence_index": 52
+    },
+    {
+      "text": "God",
+      "score": 0.626,
+      "sentence_index": 52
+    },
+    {
+      "text": "Adam",
+      "score": 0.9989,
+      "sentence_index": 53
+    },
+    {
+      "text": "Woman",
+      "score": 0.7294,
+      "sentence_index": 53
+    },
+    {
+      "text": "God",
+      "score": 0.9971,
+      "sentence_index": 57
+    },
+    {
+      "text": "God",
+      "score": 0.9944,
+      "sentence_index": 58
+    },
+    {
+      "text": "God",
+      "score": 0.9768,
+      "sentence_index": 59
+    },
+    {
+      "text": "God",
+      "score": 0.7999,
+      "sentence_index": 62
+    },
+    {
+      "text": "Adam",
+      "score": 0.9942,
+      "sentence_index": 62
+    },
+    {
+      "text": "Adam",
+      "score": 0.9957,
+      "sentence_index": 63
+    },
+    {
+      "text": "God",
+      "score": 0.8882,
+      "sentence_index": 68
+    },
+    {
+      "text": "God",
+      "score": 0.8572,
+      "sentence_index": 70
+    },
+    {
+      "text": "Adam",
+      "score": 0.9969,
+      "sentence_index": 72
+    },
+    {
+      "text": "Adam",
+      "score": 0.9992,
+      "sentence_index": 73
+    },
+    {
+      "text": "Eve",
+      "score": 0.9907,
+      "sentence_index": 73
+    },
+    {
+      "text": "Adam",
+      "score": 0.997,
+      "sentence_index": 74
+    },
+    {
+      "text": "God",
+      "score": 0.5078,
+      "sentence_index": 74
+    },
+    {
+      "text": "God",
+      "score": 0.6239,
+      "sentence_index": 75
+    },
+    {
+      "text": "Adam",
+      "score": 0.9989,
+      "sentence_index": 77
+    },
+    {
+      "text": "Eve",
+      "score": 0.9954,
+      "sentence_index": 77
+    },
+    {
+      "text": "Cain",
+      "score": 0.9972,
+      "sentence_index": 77
+    },
+    {
+      "text": "Abel",
+      "score": 0.9926,
+      "sentence_index": 78
+    },
+    {
+      "text": "Abel",
+      "score": 0.9987,
+      "sentence_index": 79
+    },
+    {
+      "text": "Cain",
+      "score": 0.9988,
+      "sentence_index": 79
+    },
+    {
+      "text": "Cain",
+      "score": 0.9956,
+      "sentence_index": 80
+    },
+    {
+      "text": "Abel",
+      "score": 0.9977,
+      "sentence_index": 81
+    },
+    {
+      "text": "Abel",
+      "score": 0.9943,
+      "sentence_index": 82
+    },
+    {
+      "text": "Cain",
+      "score": 0.9973,
+      "sentence_index": 82
+    },
+    {
+      "text": "Cain",
+      "score": 0.9973,
+      "sentence_index": 83
+    },
+    {
+      "text": "Cain",
+      "score": 0.9956,
+      "sentence_index": 84
+    },
+    {
+      "text": "Cain",
+      "score": 0.9981,
+      "sentence_index": 89
+    },
+    {
+      "text": "Abel",
+      "score": 0.9965,
+      "sentence_index": 89
+    },
+    {
+      "text": "Cain",
+      "score": 0.9979,
+      "sentence_index": 89
+    },
+    {
+      "text": "Abel",
+      "score": 0.9964,
+      "sentence_index": 89
+    },
+    {
+      "text": "Cain",
+      "score": 0.9965,
+      "sentence_index": 90
+    },
+    {
+      "text": "Abel",
+      "score": 0.9824,
+      "sentence_index": 90
+    },
+    {
+      "text": "Cain",
+      "score": 0.997,
+      "sentence_index": 95
+    },
+    {
+      "text": "Cain",
+      "score": 0.9964,
+      "sentence_index": 97
+    },
+    {
+      "text": "Cain",
+      "score": 0.9953,
+      "sentence_index": 98
+    },
+    {
+      "text": "Cain",
+      "score": 0.9943,
+      "sentence_index": 99
+    },
+    {
+      "text": "Cain",
+      "score": 0.999,
+      "sentence_index": 100
+    },
+    {
+      "text": "En",
+      "score": 0.9759,
+      "sentence_index": 100
+    },
+    {
+      "text": "En",
+      "score": 0.9798,
+      "sentence_index": 100
+    },
+    {
+      "text": "En",
+      "score": 0.9818,
+      "sentence_index": 101
+    },
+    {
+      "text": "Ira",
+      "score": 0.876,
+      "sentence_index": 101
+    },
+    {
+      "text": "Ira",
+      "score": 0.9482,
+      "sentence_index": 101
+    },
+    {
+      "text": "Mehuja",
+      "score": 0.8106,
+      "sentence_index": 101
+    },
+    {
+      "text": "Mehuja",
+      "score": 0.8686,
+      "sentence_index": 101
+    },
+    {
+      "text": "Met",
+      "score": 0.9926,
+      "sentence_index": 101
+    },
+    {
+      "text": "Met",
+      "score": 0.9957,
+      "sentence_index": 101
+    },
+    {
+      "text": "Lamech",
+      "score": 0.9378,
+      "sentence_index": 101
+    },
+    {
+      "text": "Lamech",
+      "score": 0.8808,
+      "sentence_index": 102
+    },
+    {
+      "text": "Ada",
+      "score": 0.8147,
+      "sentence_index": 102
+    },
+    {
+      "text": "Ada",
+      "score": 0.9831,
+      "sentence_index": 103
+    },
+    {
+      "text": "Ju",
+      "score": 0.9988,
+      "sentence_index": 104
+    },
+    {
+      "text": "Tubalca",
+      "score": 0.7914,
+      "sentence_index": 105
+    },
+    {
+      "text": "Tubalca",
+      "score": 0.7151,
+      "sentence_index": 105
+    },
+    {
+      "text": "Na",
+      "score": 0.9838,
+      "sentence_index": 105
+    },
+    {
+      "text": "Lamech",
+      "score": 0.8074,
+      "sentence_index": 106
+    },
+    {
+      "text": "Ada",
+      "score": 0.9961,
+      "sentence_index": 106
+    },
+    {
+      "text": "Lamech",
+      "score": 0.7322,
+      "sentence_index": 106
+    },
+    {
+      "text": "Cain",
+      "score": 0.995,
+      "sentence_index": 107
+    },
+    {
+      "text": "Lam",
+      "score": 0.9878,
+      "sentence_index": 107
+    },
+    {
+      "text": "Adam",
+      "score": 0.9985,
+      "sentence_index": 108
+    },
+    {
+      "text": "Seth",
+      "score": 0.9974,
+      "sentence_index": 108
+    },
+    {
+      "text": "God",
+      "score": 0.9915,
+      "sentence_index": 108
+    },
+    {
+      "text": "Abel",
+      "score": 0.9892,
+      "sentence_index": 108
+    },
+    {
+      "text": "Cain",
+      "score": 0.9937,
+      "sentence_index": 108
+    },
+    {
+      "text": "Seth",
+      "score": 0.9991,
+      "sentence_index": 109
+    },
+    {
+      "text": "En",
+      "score": 0.9661,
+      "sentence_index": 109
+    },
+    {
+      "text": "Adam",
+      "score": 0.9858,
+      "sentence_index": 110
+    },
+    {
+      "text": "God",
+      "score": 0.9955,
+      "sentence_index": 111
+    },
+    {
+      "text": "God",
+      "score": 0.996,
+      "sentence_index": 111
+    },
+    {
+      "text": "Adam",
+      "score": 0.9778,
+      "sentence_index": 111
+    },
+    {
+      "text": "Adam",
+      "score": 0.9977,
+      "sentence_index": 112
+    },
+    {
+      "text": "Seth",
+      "score": 0.9966,
+      "sentence_index": 112
+    },
+    {
+      "text": "Adam",
+      "score": 0.9937,
+      "sentence_index": 112
+    },
+    {
+      "text": "Seth",
+      "score": 0.9959,
+      "sentence_index": 112
+    },
+    {
+      "text": "Adam",
+      "score": 0.9953,
+      "sentence_index": 112
+    },
+    {
+      "text": "Seth",
+      "score": 0.9989,
+      "sentence_index": 113
+    },
+    {
+      "text": "En",
+      "score": 0.875,
+      "sentence_index": 113
+    },
+    {
+      "text": "Seth",
+      "score": 0.9987,
+      "sentence_index": 113
+    },
+    {
+      "text": "En",
+      "score": 0.9294,
+      "sentence_index": 113
+    },
+    {
+      "text": "Seth",
+      "score": 0.9952,
+      "sentence_index": 113
+    },
+    {
+      "text": "En",
+      "score": 0.9757,
+      "sentence_index": 114
+    },
+    {
+      "text": "Cain",
+      "score": 0.9944,
+      "sentence_index": 114
+    },
+    {
+      "text": "En",
+      "score": 0.9699,
+      "sentence_index": 114
+    },
+    {
+      "text": "Cain",
+      "score": 0.9958,
+      "sentence_index": 114
+    },
+    {
+      "text": "En",
+      "score": 0.9602,
+      "sentence_index": 114
+    },
+    {
+      "text": "Cain",
+      "score": 0.9941,
+      "sentence_index": 115
+    },
+    {
+      "text": "Mahalalee",
+      "score": 0.9488,
+      "sentence_index": 115
+    },
+    {
+      "text": "Cain",
+      "score": 0.993,
+      "sentence_index": 115
+    },
+    {
+      "text": "Mahalalee",
+      "score": 0.9558,
+      "sentence_index": 115
+    },
+    {
+      "text": "Cain",
+      "score": 0.9879,
+      "sentence_index": 115
+    },
+    {
+      "text": "Mahalalee",
+      "score": 0.9785,
+      "sentence_index": 116
+    },
+    {
+      "text": "Jared",
+      "score": 0.9937,
+      "sentence_index": 116
+    },
+    {
+      "text": "Mahalalee",
+      "score": 0.9643,
+      "sentence_index": 116
+    },
+    {
+      "text": "Jared",
+      "score": 0.9966,
+      "sentence_index": 116
+    },
+    {
+      "text": "Mahalalee",
+      "score": 0.9222,
+      "sentence_index": 116
+    },
+    {
+      "text": "Jared",
+      "score": 0.9981,
+      "sentence_index": 117
+    },
+    {
+      "text": "En",
+      "score": 0.9175,
+      "sentence_index": 117
+    },
+    {
+      "text": "Jared",
+      "score": 0.9979,
+      "sentence_index": 117
+    },
+    {
+      "text": "En",
+      "score": 0.9451,
+      "sentence_index": 117
+    },
+    {
+      "text": "Jared",
+      "score": 0.9939,
+      "sentence_index": 117
+    },
+    {
+      "text": "En",
+      "score": 0.99,
+      "sentence_index": 118
+    },
+    {
+      "text": "Met",
+      "score": 0.8402,
+      "sentence_index": 118
+    },
+    {
+      "text": "En",
+      "score": 0.9881,
+      "sentence_index": 118
+    },
+    {
+      "text": "God",
+      "score": 0.9918,
+      "sentence_index": 118
+    },
+    {
+      "text": "Met",
+      "score": 0.8425,
+      "sentence_index": 118
+    },
+    {
+      "text": "En",
+      "score": 0.8401,
+      "sentence_index": 118
+    },
+    {
+      "text": "En",
+      "score": 0.9864,
+      "sentence_index": 118
+    },
+    {
+      "text": "God",
+      "score": 0.9924,
+      "sentence_index": 118
+    },
+    {
+      "text": "God",
+      "score": 0.9646,
+      "sentence_index": 118
+    },
+    {
+      "text": "Met",
+      "score": 0.9824,
+      "sentence_index": 119
+    },
+    {
+      "text": "Lamech",
+      "score": 0.8584,
+      "sentence_index": 119
+    },
+    {
+      "text": "Met",
+      "score": 0.9709,
+      "sentence_index": 120
+    },
+    {
+      "text": "Lamech",
+      "score": 0.9202,
+      "sentence_index": 120
+    },
+    {
+      "text": "Met",
+      "score": 0.909,
+      "sentence_index": 120
+    },
+    {
+      "text": "Lamech",
+      "score": 0.8902,
+      "sentence_index": 121
+    },
+    {
+      "text": "Noah",
+      "score": 0.998,
+      "sentence_index": 121
+    },
+    {
+      "text": "Lamech",
+      "score": 0.8211,
+      "sentence_index": 122
+    },
+    {
+      "text": "Noah",
+      "score": 0.9963,
+      "sentence_index": 122
+    },
+    {
+      "text": "Lamech",
+      "score": 0.7252,
+      "sentence_index": 122
+    },
+    {
+      "text": "Noah",
+      "score": 0.998,
+      "sentence_index": 123
+    },
+    {
+      "text": "Noah",
+      "score": 0.9978,
+      "sentence_index": 123
+    },
+    {
+      "text": "Shem",
+      "score": 0.6889,
+      "sentence_index": 123
+    },
+    {
+      "text": "Ham",
+      "score": 0.9962,
+      "sentence_index": 123
+    },
+    {
+      "text": "God",
+      "score": 0.9928,
+      "sentence_index": 124
+    },
+    {
+      "text": "God",
+      "score": 0.9926,
+      "sentence_index": 126
+    },
+    {
+      "text": "God",
+      "score": 0.9964,
+      "sentence_index": 127
+    },
+    {
+      "text": "Noah",
+      "score": 0.9987,
+      "sentence_index": 130
+    },
+    {
+      "text": "Noah",
+      "score": 0.9879,
+      "sentence_index": 131
+    },
+    {
+      "text": "Noah",
+      "score": 0.9951,
+      "sentence_index": 131
+    },
+    {
+      "text": "Noah",
+      "score": 0.9969,
+      "sentence_index": 131
+    },
+    {
+      "text": "God",
+      "score": 0.9802,
+      "sentence_index": 131
+    },
+    {
+      "text": "Noah",
+      "score": 0.9991,
+      "sentence_index": 132
+    },
+    {
+      "text": "She",
+      "score": 0.9973,
+      "sentence_index": 132
+    },
+    {
+      "text": "Ham",
+      "score": 0.9989,
+      "sentence_index": 132
+    },
+    {
+      "text": "God",
+      "score": 0.9956,
+      "sentence_index": 133
+    },
+    {
+      "text": "God",
+      "score": 0.9961,
+      "sentence_index": 134
+    },
+    {
+      "text": "God",
+      "score": 0.9981,
+      "sentence_index": 135
+    },
+    {
+      "text": "Noah",
+      "score": 0.9979,
+      "sentence_index": 135
+    },
+    {
+      "text": "Noah",
+      "score": 0.998,
+      "sentence_index": 144
+    },
+    {
+      "text": "God",
+      "score": 0.995,
+      "sentence_index": 144
+    },
+    {
+      "text": "Noah",
+      "score": 0.9921,
+      "sentence_index": 145
+    },
+    {
+      "text": "Noah",
+      "score": 0.9988,
+      "sentence_index": 149
+    },
+    {
+      "text": "Noah",
+      "score": 0.998,
+      "sentence_index": 150
+    },
+    {
+      "text": "Noah",
+      "score": 0.9988,
+      "sentence_index": 151
+    },
+    {
+      "text": "Noah",
+      "score": 0.9813,
+      "sentence_index": 152
+    },
+    {
+      "text": "God",
+      "score": 0.9947,
+      "sentence_index": 152
+    },
+    {
+      "text": "Noah",
+      "score": 0.8997,
+      "sentence_index": 152
+    },
+    {
+      "text": "Noah",
+      "score": 0.998,
+      "sentence_index": 154
+    },
+    {
+      "text": "Noah",
+      "score": 0.9982,
+      "sentence_index": 156
+    },
+    {
+      "text": "She",
+      "score": 0.9903,
+      "sentence_index": 156
+    },
+    {
+      "text": "Ham",
+      "score": 0.9972,
+      "sentence_index": 156
+    },
+    {
+      "text": "Japh",
+      "score": 0.6944,
+      "sentence_index": 156
+    },
+    {
+      "text": "Noah",
+      "score": 0.9976,
+      "sentence_index": 156
+    },
+    {
+      "text": "Noah",
+      "score": 0.998,
+      "sentence_index": 156
+    },
+    {
+      "text": "Noah",
+      "score": 0.9376,
+      "sentence_index": 157
+    },
+    {
+      "text": "God",
+      "score": 0.9951,
+      "sentence_index": 158
+    },
+    {
+      "text": "Noah",
+      "score": 0.9976,
+      "sentence_index": 164
+    },
+    {
+      "text": "God",
+      "score": 0.997,
+      "sentence_index": 166
+    },
+    {
+      "text": "Noah",
+      "score": 0.9956,
+      "sentence_index": 166
+    },
+    {
+      "text": "God",
+      "score": 0.992,
+      "sentence_index": 166
+    },
+    {
+      "text": "Noah",
+      "score": 0.998,
+      "sentence_index": 169
+    },
+    {
+      "text": "Noah",
+      "score": 0.9981,
+      "sentence_index": 171
+    },
+    {
+      "text": "Noah",
+      "score": 0.9972,
+      "sentence_index": 173
+    },
+    {
+      "text": "God",
+      "score": 0.9939,
+      "sentence_index": 175
+    },
+    {
+      "text": "Noah",
+      "score": 0.9952,
+      "sentence_index": 175
+    },
+    {
+      "text": "Noah",
+      "score": 0.9989,
+      "sentence_index": 177
+    },
+    {
+      "text": "Noah",
+      "score": 0.9981,
+      "sentence_index": 178
+    },
+    {
+      "text": "God",
+      "score": 0.9935,
+      "sentence_index": 181
+    },
+    {
+      "text": "Noah",
+      "score": 0.9983,
+      "sentence_index": 181
+    },
+    {
+      "text": "God",
+      "score": 0.9917,
+      "sentence_index": 186
+    },
+    {
+      "text": "God",
+      "score": 0.9964,
+      "sentence_index": 188
+    },
+    {
+      "text": "Noah",
+      "score": 0.9982,
+      "sentence_index": 188
+    },
+    {
+      "text": "God",
+      "score": 0.997,
+      "sentence_index": 190
+    },
+    {
+      "text": "God",
+      "score": 0.9925,
+      "sentence_index": 192
+    },
+    {
+      "text": "God",
+      "score": 0.9977,
+      "sentence_index": 193
+    },
+    {
+      "text": "Noah",
+      "score": 0.9979,
+      "sentence_index": 193
+    },
+    {
+      "text": "Noah",
+      "score": 0.9958,
+      "sentence_index": 194
+    },
+    {
+      "text": "Shem",
+      "score": 0.7318,
+      "sentence_index": 194
+    },
+    {
+      "text": "Ham",
+      "score": 0.9938,
+      "sentence_index": 194
+    },
+    {
+      "text": "Ham",
+      "score": 0.9949,
+      "sentence_index": 194
+    },
+    {
+      "text": "Noah",
+      "score": 0.9935,
+      "sentence_index": 195
+    },
+    {
+      "text": "Noah",
+      "score": 0.9988,
+      "sentence_index": 196
+    },
+    {
+      "text": "Ham",
+      "score": 0.9966,
+      "sentence_index": 197
+    },
+    {
+      "text": "She",
+      "score": 0.9891,
+      "sentence_index": 198
+    },
+    {
+      "text": "Japh",
+      "score": 0.733,
+      "sentence_index": 198
+    },
+    {
+      "text": "Noah",
+      "score": 0.9987,
+      "sentence_index": 199
+    },
+    {
+      "text": "Can",
+      "score": 0.4991,
+      "sentence_index": 200
+    },
+    {
+      "text": "She",
+      "score": 0.3362,
+      "sentence_index": 201
+    },
+    {
+      "text": "God",
+      "score": 0.9939,
+      "sentence_index": 202
+    },
+    {
+      "text": "Noah",
+      "score": 0.9986,
+      "sentence_index": 203
+    },
+    {
+      "text": "Noah",
+      "score": 0.9831,
+      "sentence_index": 204
+    },
+    {
+      "text": "Noah",
+      "score": 0.9963,
+      "sentence_index": 205
+    },
+    {
+      "text": "Shem",
+      "score": 0.6589,
+      "sentence_index": 205
+    },
+    {
+      "text": "Ham",
+      "score": 0.9578,
+      "sentence_index": 205
+    },
+    {
+      "text": "Japh",
+      "score": 0.7452,
+      "sentence_index": 206
+    },
+    {
+      "text": "Go",
+      "score": 0.9969,
+      "sentence_index": 206
+    },
+    {
+      "text": "Ma",
+      "score": 0.8615,
+      "sentence_index": 206
+    },
+    {
+      "text": "Mad",
+      "score": 0.8598,
+      "sentence_index": 206
+    },
+    {
+      "text": "Java",
+      "score": 0.9285,
+      "sentence_index": 206
+    },
+    {
+      "text": "Tubal",
+      "score": 0.6699,
+      "sentence_index": 206
+    },
+    {
+      "text": "Me",
+      "score": 0.5632,
+      "sentence_index": 206
+    },
+    {
+      "text": "Go",
+      "score": 0.9972,
+      "sentence_index": 207
+    },
+    {
+      "text": "Ashken",
+      "score": 0.8669,
+      "sentence_index": 207
+    },
+    {
+      "text": "To",
+      "score": 0.9443,
+      "sentence_index": 207
+    },
+    {
+      "text": "Java",
+      "score": 0.9212,
+      "sentence_index": 208
+    },
+    {
+      "text": "Eli",
+      "score": 0.9875,
+      "sentence_index": 208
+    },
+    {
+      "text": "Ta",
+      "score": 0.9472,
+      "sentence_index": 208
+    },
+    {
+      "text": "Ham",
+      "score": 0.9879,
+      "sentence_index": 210
+    },
+    {
+      "text": "Mi",
+      "score": 0.6703,
+      "sentence_index": 210
+    },
+    {
+      "text": "Ph",
+      "score": 0.9734,
+      "sentence_index": 210
+    },
+    {
+      "text": "Se",
+      "score": 0.9639,
+      "sentence_index": 211
+    },
+    {
+      "text": "Havila",
+      "score": 0.7201,
+      "sentence_index": 211
+    },
+    {
+      "text": "Sabtah",
+      "score": 0.7638,
+      "sentence_index": 211
+    },
+    {
+      "text": "Raama",
+      "score": 0.6904,
+      "sentence_index": 211
+    },
+    {
+      "text": "Sabtech",
+      "score": 0.6657,
+      "sentence_index": 211
+    },
+    {
+      "text": "Raama",
+      "score": 0.6708,
+      "sentence_index": 211
+    },
+    {
+      "text": "She",
+      "score": 0.8737,
+      "sentence_index": 211
+    },
+    {
+      "text": "Ni",
+      "score": 0.9909,
+      "sentence_index": 212
+    },
+    {
+      "text": "Nim",
+      "score": 0.7565,
+      "sentence_index": 213
+    },
+    {
+      "text": "As",
+      "score": 0.9327,
+      "sentence_index": 215
+    },
+    {
+      "text": "Lu",
+      "score": 0.9758,
+      "sentence_index": 216
+    },
+    {
+      "text": "Ana",
+      "score": 0.9583,
+      "sentence_index": 216
+    },
+    {
+      "text": "Le",
+      "score": 0.7203,
+      "sentence_index": 216
+    },
+    {
+      "text": "Path",
+      "score": 0.8167,
+      "sentence_index": 216
+    },
+    {
+      "text": "Sidon",
+      "score": 0.8681,
+      "sentence_index": 217
+    },
+    {
+      "text": "He",
+      "score": 0.922,
+      "sentence_index": 217
+    },
+    {
+      "text": "Ham",
+      "score": 0.9195,
+      "sentence_index": 219
+    },
+    {
+      "text": "Un",
+      "score": 0.9915,
+      "sentence_index": 220
+    },
+    {
+      "text": "She",
+      "score": 0.9867,
+      "sentence_index": 221
+    },
+    {
+      "text": "El",
+      "score": 0.9941,
+      "sentence_index": 221
+    },
+    {
+      "text": "As",
+      "score": 0.9967,
+      "sentence_index": 221
+    },
+    {
+      "text": "Lu",
+      "score": 0.9935,
+      "sentence_index": 221
+    },
+    {
+      "text": "Ara",
+      "score": 0.9948,
+      "sentence_index": 221
+    },
+    {
+      "text": "Ara",
+      "score": 0.9918,
+      "sentence_index": 222
+    },
+    {
+      "text": "Hu",
+      "score": 0.9972,
+      "sentence_index": 222
+    },
+    {
+      "text": "Get",
+      "score": 0.996,
+      "sentence_index": 222
+    },
+    {
+      "text": "Ma",
+      "score": 0.9957,
+      "sentence_index": 222
+    },
+    {
+      "text": "Sal",
+      "score": 0.9803,
+      "sentence_index": 223
+    },
+    {
+      "text": "Salah",
+      "score": 0.7314,
+      "sentence_index": 223
+    },
+    {
+      "text": "Eber",
+      "score": 0.6773,
+      "sentence_index": 223
+    },
+    {
+      "text": "Joktan",
+      "score": 0.8429,
+      "sentence_index": 224
+    },
+    {
+      "text": "Jokt",
+      "score": 0.9054,
+      "sentence_index": 225
+    },
+    {
+      "text": "Almodad",
+      "score": 0.9408,
+      "sentence_index": 225
+    },
+    {
+      "text": "She",
+      "score": 0.9983,
+      "sentence_index": 225
+    },
+    {
+      "text": "Ha",
+      "score": 0.9979,
+      "sentence_index": 225
+    },
+    {
+      "text": "Je",
+      "score": 0.9972,
+      "sentence_index": 225
+    },
+    {
+      "text": "Hadora",
+      "score": 0.6945,
+      "sentence_index": 225
+    },
+    {
+      "text": "Dikla",
+      "score": 0.655,
+      "sentence_index": 225
+    },
+    {
+      "text": "She",
+      "score": 0.9854,
+      "sentence_index": 225
+    },
+    {
+      "text": "Op",
+      "score": 0.9958,
+      "sentence_index": 225
+    },
+    {
+      "text": "Havila",
+      "score": 0.7106,
+      "sentence_index": 225
+    },
+    {
+      "text": "Jobab",
+      "score": 0.7227,
+      "sentence_index": 225
+    },
+    {
+      "text": "Joktan",
+      "score": 0.7292,
+      "sentence_index": 225
+    },
+    {
+      "text": "Me",
+      "score": 0.8154,
+      "sentence_index": 226
+    },
+    {
+      "text": "She",
+      "score": 0.6858,
+      "sentence_index": 227
+    },
+    {
+      "text": "Noah",
+      "score": 0.9927,
+      "sentence_index": 228
+    },
+    {
+      "text": "She",
+      "score": 0.9832,
+      "sentence_index": 239
+    },
+    {
+      "text": "Arp",
+      "score": 0.717,
+      "sentence_index": 239
+    },
+    {
+      "text": "She",
+      "score": 0.9747,
+      "sentence_index": 239
+    },
+    {
+      "text": "Arpha",
+      "score": 0.6302,
+      "sentence_index": 239
+    },
+    {
+      "text": "Sal",
+      "score": 0.9563,
+      "sentence_index": 240
+    },
+    {
+      "text": "Salah",
+      "score": 0.7732,
+      "sentence_index": 240
+    },
+    {
+      "text": "Sal",
+      "score": 0.9966,
+      "sentence_index": 241
+    },
+    {
+      "text": "Salah",
+      "score": 0.7669,
+      "sentence_index": 241
+    },
+    {
+      "text": "Eber",
+      "score": 0.7072,
+      "sentence_index": 241
+    },
+    {
+      "text": "Re",
+      "score": 0.8715,
+      "sentence_index": 243
+    },
+    {
+      "text": "Re",
+      "score": 0.9147,
+      "sentence_index": 243
+    },
+    {
+      "text": "Re",
+      "score": 0.9255,
+      "sentence_index": 244
+    },
+    {
+      "text": "Ser",
+      "score": 0.7639,
+      "sentence_index": 244
+    },
+    {
+      "text": "Re",
+      "score": 0.9363,
+      "sentence_index": 244
+    },
+    {
+      "text": "Ser",
+      "score": 0.891,
+      "sentence_index": 244
+    },
+    {
+      "text": "Ser",
+      "score": 0.9396,
+      "sentence_index": 245
+    },
+    {
+      "text": "Nah",
+      "score": 0.9904,
+      "sentence_index": 245
+    },
+    {
+      "text": "Ser",
+      "score": 0.9474,
+      "sentence_index": 245
+    },
+    {
+      "text": "Nah",
+      "score": 0.9912,
+      "sentence_index": 245
+    },
+    {
+      "text": "Nah",
+      "score": 0.9947,
+      "sentence_index": 246
+    },
+    {
+      "text": "Te",
+      "score": 0.9634,
+      "sentence_index": 246
+    },
+    {
+      "text": "Nah",
+      "score": 0.995,
+      "sentence_index": 246
+    },
+    {
+      "text": "Te",
+      "score": 0.9786,
+      "sentence_index": 246
+    },
+    {
+      "text": "Te",
+      "score": 0.9959,
+      "sentence_index": 247
+    },
+    {
+      "text": "Nahor",
+      "score": 0.6774,
+      "sentence_index": 247
+    },
+    {
+      "text": "Hara",
+      "score": 0.8354,
+      "sentence_index": 247
+    },
+    {
+      "text": "Te",
+      "score": 0.7477,
+      "sentence_index": 248
+    },
+    {
+      "text": "Te",
+      "score": 0.964,
+      "sentence_index": 248
+    },
+    {
+      "text": "Nah",
+      "score": 0.9866,
+      "sentence_index": 248
+    },
+    {
+      "text": "Hara",
+      "score": 0.7636,
+      "sentence_index": 248
+    },
+    {
+      "text": "Hara",
+      "score": 0.7719,
+      "sentence_index": 248
+    },
+    {
+      "text": "Lot",
+      "score": 0.8504,
+      "sentence_index": 248
+    },
+    {
+      "text": "Hara",
+      "score": 0.9747,
+      "sentence_index": 249
+    },
+    {
+      "text": "Te",
+      "score": 0.9948,
+      "sentence_index": 249
+    },
+    {
+      "text": "Nahor",
+      "score": 0.8525,
+      "sentence_index": 250
+    },
+    {
+      "text": "Sara",
+      "score": 0.9737,
+      "sentence_index": 250
+    },
+    {
+      "text": "Nahor",
+      "score": 0.8547,
+      "sentence_index": 250
+    },
+    {
+      "text": "Mi",
+      "score": 0.9862,
+      "sentence_index": 250
+    },
+    {
+      "text": "Hara",
+      "score": 0.9332,
+      "sentence_index": 250
+    },
+    {
+      "text": "Mi",
+      "score": 0.9754,
+      "sentence_index": 250
+    },
+    {
+      "text": "Isca",
+      "score": 0.6736,
+      "sentence_index": 250
+    },
+    {
+      "text": "Sara",
+      "score": 0.9931,
+      "sentence_index": 251
+    },
+    {
+      "text": "Te",
+      "score": 0.9941,
+      "sentence_index": 252
+    },
+    {
+      "text": "Lot",
+      "score": 0.9984,
+      "sentence_index": 252
+    },
+    {
+      "text": "Hara",
+      "score": 0.9537,
+      "sentence_index": 252
+    },
+    {
+      "text": "Sara",
+      "score": 0.9953,
+      "sentence_index": 252
+    },
+    {
+      "text": "Te",
+      "score": 0.8635,
+      "sentence_index": 253
+    },
+    {
+      "text": "Terah",
+      "score": 0.6355,
+      "sentence_index": 253
+    },
+    {
+      "text": "Lot",
+      "score": 0.9979,
+      "sentence_index": 255
+    },
+    {
+      "text": "Sara",
+      "score": 0.9891,
+      "sentence_index": 256
+    },
+    {
+      "text": "Lot",
+      "score": 0.9984,
+      "sentence_index": 256
+    },
+    {
+      "text": "Bethel",
+      "score": 0.5701,
+      "sentence_index": 261
+    },
+    {
+      "text": "Hai",
+      "score": 0.9036,
+      "sentence_index": 261
+    },
+    {
+      "text": "Sara",
+      "score": 0.9719,
+      "sentence_index": 264
+    },
+    {
+      "text": "Ph",
+      "score": 0.9678,
+      "sentence_index": 267
+    },
+    {
+      "text": "Ph",
+      "score": 0.9833,
+      "sentence_index": 267
+    },
+    {
+      "text": "Ph",
+      "score": 0.9794,
+      "sentence_index": 267
+    },
+    {
+      "text": "Ph",
+      "score": 0.9773,
+      "sentence_index": 269
+    },
+    {
+      "text": "Sara",
+      "score": 0.9941,
+      "sentence_index": 269
+    },
+    {
+      "text": "Abram",
+      "score": 0.7857,
+      "sentence_index": 269
+    },
+    {
+      "text": "Ph",
+      "score": 0.9959,
+      "sentence_index": 270
+    },
+    {
+      "text": "Ph",
+      "score": 0.9928,
+      "sentence_index": 274
+    },
+    {
+      "text": "Lot",
+      "score": 0.997,
+      "sentence_index": 275
+    },
+    {
+      "text": "Lot",
+      "score": 0.9761,
+      "sentence_index": 281
+    },
+    {
+      "text": "Lot",
+      "score": 0.9948,
+      "sentence_index": 284
+    },
+    {
+      "text": "Lot",
+      "score": 0.9955,
+      "sentence_index": 285
+    },
+    {
+      "text": "Lot",
+      "score": 0.9931,
+      "sentence_index": 285
+    },
+    {
+      "text": "Lot",
+      "score": 0.988,
+      "sentence_index": 286
+    },
+    {
+      "text": "Lot",
+      "score": 0.9794,
+      "sentence_index": 288
+    },
+    {
+      "text": "Ch",
+      "score": 0.6175,
+      "sentence_index": 292
+    },
+    {
+      "text": "Shinab",
+      "score": 0.4363,
+      "sentence_index": 292
+    },
+    {
+      "text": "Sheme",
+      "score": 0.8122,
+      "sentence_index": 292
+    },
+    {
+      "text": "Ch",
+      "score": 0.4839,
+      "sentence_index": 294
+    },
+    {
+      "text": "Ched",
+      "score": 0.764,
+      "sentence_index": 295
+    },
+    {
+      "text": "Elpar",
+      "score": 0.5008,
+      "sentence_index": 295
+    },
+    {
+      "text": "Ched",
+      "score": 0.7036,
+      "sentence_index": 297
+    },
+    {
+      "text": "Amrap",
+      "score": 0.5944,
+      "sentence_index": 297
+    },
+    {
+      "text": "Ari",
+      "score": 0.6423,
+      "sentence_index": 297
+    },
+    {
+      "text": "Lot",
+      "score": 0.997,
+      "sentence_index": 300
+    },
+    {
+      "text": "An",
+      "score": 0.9856,
+      "sentence_index": 301
+    },
+    {
+      "text": "Dan",
+      "score": 0.8693,
+      "sentence_index": 302
+    },
+    {
+      "text": "Lot",
+      "score": 0.9959,
+      "sentence_index": 304
+    },
+    {
+      "text": "Ched",
+      "score": 0.5275,
+      "sentence_index": 305
+    },
+    {
+      "text": "Melchizedek",
+      "score": 0.8716,
+      "sentence_index": 306
+    },
+    {
+      "text": "God",
+      "score": 0.919,
+      "sentence_index": 306
+    },
+    {
+      "text": "God",
+      "score": 0.6483,
+      "sentence_index": 307
+    },
+    {
+      "text": "God",
+      "score": 0.724,
+      "sentence_index": 307
+    },
+    {
+      "text": "God",
+      "score": 0.9313,
+      "sentence_index": 310
+    },
+    {
+      "text": "An",
+      "score": 0.982,
+      "sentence_index": 310
+    },
+    {
+      "text": "Ma",
+      "score": 0.9608,
+      "sentence_index": 310
+    },
+    {
+      "text": "God",
+      "score": 0.9255,
+      "sentence_index": 312
+    },
+    {
+      "text": "Eliezer",
+      "score": 0.7985,
+      "sentence_index": 312
+    },
+    {
+      "text": "God",
+      "score": 0.8602,
+      "sentence_index": 318
+    },
+    {
+      "text": "Sarai Abram",
+      "score": 0.9188,
+      "sentence_index": 328
+    },
+    {
+      "text": "Hagar",
+      "score": 0.9675,
+      "sentence_index": 328
+    },
+    {
+      "text": "Sara",
+      "score": 0.9723,
+      "sentence_index": 329
+    },
+    {
+      "text": "Sara",
+      "score": 0.9924,
+      "sentence_index": 330
+    },
+    {
+      "text": "Sarai Abram",
+      "score": 0.9636,
+      "sentence_index": 331
+    },
+    {
+      "text": "Hagar",
+      "score": 0.8014,
+      "sentence_index": 331
+    },
+    {
+      "text": "Ha",
+      "score": 0.998,
+      "sentence_index": 332
+    },
+    {
+      "text": "Sara",
+      "score": 0.9643,
+      "sentence_index": 333
+    },
+    {
+      "text": "Sara",
+      "score": 0.9931,
+      "sentence_index": 334
+    },
+    {
+      "text": "Sara",
+      "score": 0.9465,
+      "sentence_index": 335
+    },
+    {
+      "text": "Ha",
+      "score": 0.9991,
+      "sentence_index": 337
+    },
+    {
+      "text": "Sara",
+      "score": 0.9908,
+      "sentence_index": 337
+    },
+    {
+      "text": "Sara",
+      "score": 0.9917,
+      "sentence_index": 339
+    },
+    {
+      "text": "Is",
+      "score": 0.9944,
+      "sentence_index": 342
+    },
+    {
+      "text": "God",
+      "score": 0.9567,
+      "sentence_index": 344
+    },
+    {
+      "text": "Ha",
+      "score": 0.9995,
+      "sentence_index": 346
+    },
+    {
+      "text": "Hagar",
+      "score": 0.7448,
+      "sentence_index": 346
+    },
+    {
+      "text": "Is",
+      "score": 0.9995,
+      "sentence_index": 346
+    },
+    {
+      "text": "Ha",
+      "score": 0.9993,
+      "sentence_index": 347
+    },
+    {
+      "text": "Is",
+      "score": 0.999,
+      "sentence_index": 347
+    },
+    {
+      "text": "God",
+      "score": 0.5165,
+      "sentence_index": 348
+    },
+    {
+      "text": "God",
+      "score": 0.9969,
+      "sentence_index": 350
+    },
+    {
+      "text": "Abraham",
+      "score": 0.997,
+      "sentence_index": 351
+    },
+    {
+      "text": "God",
+      "score": 0.5166,
+      "sentence_index": 354
+    },
+    {
+      "text": "God",
+      "score": 0.9979,
+      "sentence_index": 355
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9974,
+      "sentence_index": 355
+    },
+    {
+      "text": "God",
+      "score": 0.9985,
+      "sentence_index": 361
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9983,
+      "sentence_index": 361
+    },
+    {
+      "text": "Sara",
+      "score": 0.9837,
+      "sentence_index": 361
+    },
+    {
+      "text": "Sara",
+      "score": 0.9857,
+      "sentence_index": 361
+    },
+    {
+      "text": "Sarah",
+      "score": 0.9986,
+      "sentence_index": 361
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9983,
+      "sentence_index": 363
+    },
+    {
+      "text": "Sarah",
+      "score": 0.9988,
+      "sentence_index": 364
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9985,
+      "sentence_index": 365
+    },
+    {
+      "text": "God",
+      "score": 0.998,
+      "sentence_index": 365
+    },
+    {
+      "text": "Is",
+      "score": 0.9937,
+      "sentence_index": 365
+    },
+    {
+      "text": "God",
+      "score": 0.9987,
+      "sentence_index": 366
+    },
+    {
+      "text": "Sarah",
+      "score": 0.9957,
+      "sentence_index": 366
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9985,
+      "sentence_index": 366
+    },
+    {
+      "text": "Is",
+      "score": 0.9991,
+      "sentence_index": 367
+    },
+    {
+      "text": "Isaac",
+      "score": 0.999,
+      "sentence_index": 368
+    },
+    {
+      "text": "Sarah",
+      "score": 0.9982,
+      "sentence_index": 368
+    },
+    {
+      "text": "God",
+      "score": 0.9963,
+      "sentence_index": 369
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9792,
+      "sentence_index": 369
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9984,
+      "sentence_index": 370
+    },
+    {
+      "text": "Is",
+      "score": 0.9987,
+      "sentence_index": 370
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9947,
+      "sentence_index": 370
+    },
+    {
+      "text": "God",
+      "score": 0.9973,
+      "sentence_index": 370
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9989,
+      "sentence_index": 371
+    },
+    {
+      "text": "Is",
+      "score": 0.9994,
+      "sentence_index": 372
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9987,
+      "sentence_index": 373
+    },
+    {
+      "text": "Is",
+      "score": 0.9995,
+      "sentence_index": 373
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9989,
+      "sentence_index": 377
+    },
+    {
+      "text": "Sarah",
+      "score": 0.998,
+      "sentence_index": 377
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9986,
+      "sentence_index": 378
+    },
+    {
+      "text": "Sarah",
+      "score": 0.9976,
+      "sentence_index": 380
+    },
+    {
+      "text": "Sarah",
+      "score": 0.9981,
+      "sentence_index": 382
+    },
+    {
+      "text": "Sarah",
+      "score": 0.9978,
+      "sentence_index": 383
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9993,
+      "sentence_index": 384
+    },
+    {
+      "text": "Sarah",
+      "score": 0.9991,
+      "sentence_index": 384
+    },
+    {
+      "text": "Sarah",
+      "score": 0.9993,
+      "sentence_index": 384
+    },
+    {
+      "text": "Sarah",
+      "score": 0.9985,
+      "sentence_index": 385
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9967,
+      "sentence_index": 386
+    },
+    {
+      "text": "Sarah",
+      "score": 0.9983,
+      "sentence_index": 386
+    },
+    {
+      "text": "Sarah",
+      "score": 0.999,
+      "sentence_index": 388
+    },
+    {
+      "text": "Sarah",
+      "score": 0.9991,
+      "sentence_index": 389
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9983,
+      "sentence_index": 391
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9868,
+      "sentence_index": 392
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9908,
+      "sentence_index": 392
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9871,
+      "sentence_index": 393
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9958,
+      "sentence_index": 395
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9979,
+      "sentence_index": 396
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9981,
+      "sentence_index": 400
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9935,
+      "sentence_index": 410
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9951,
+      "sentence_index": 410
+    },
+    {
+      "text": "Lot",
+      "score": 0.9916,
+      "sentence_index": 411
+    },
+    {
+      "text": "Lot",
+      "score": 0.9928,
+      "sentence_index": 411
+    },
+    {
+      "text": "Lot",
+      "score": 0.9491,
+      "sentence_index": 414
+    },
+    {
+      "text": "Lot",
+      "score": 0.9967,
+      "sentence_index": 416
+    },
+    {
+      "text": "Lot",
+      "score": 0.9954,
+      "sentence_index": 420
+    },
+    {
+      "text": "Lot",
+      "score": 0.994,
+      "sentence_index": 421
+    },
+    {
+      "text": "Lot",
+      "score": 0.9474,
+      "sentence_index": 423
+    },
+    {
+      "text": "Lot",
+      "score": 0.9975,
+      "sentence_index": 425
+    },
+    {
+      "text": "Ari",
+      "score": 0.4899,
+      "sentence_index": 427
+    },
+    {
+      "text": "Lot",
+      "score": 0.9892,
+      "sentence_index": 430
+    },
+    {
+      "text": "Lot",
+      "score": 0.9111,
+      "sentence_index": 434
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9961,
+      "sentence_index": 437
+    },
+    {
+      "text": "God",
+      "score": 0.995,
+      "sentence_index": 438
+    },
+    {
+      "text": "God",
+      "score": 0.9971,
+      "sentence_index": 438
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9923,
+      "sentence_index": 438
+    },
+    {
+      "text": "Lot",
+      "score": 0.7917,
+      "sentence_index": 438
+    },
+    {
+      "text": "Lot",
+      "score": 0.7202,
+      "sentence_index": 438
+    },
+    {
+      "text": "Lot",
+      "score": 0.9969,
+      "sentence_index": 439
+    },
+    {
+      "text": "Lot",
+      "score": 0.938,
+      "sentence_index": 445
+    },
+    {
+      "text": "Mo",
+      "score": 0.9967,
+      "sentence_index": 446
+    },
+    {
+      "text": "Benam",
+      "score": 0.7344,
+      "sentence_index": 447
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9987,
+      "sentence_index": 448
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9991,
+      "sentence_index": 449
+    },
+    {
+      "text": "Sarah",
+      "score": 0.9973,
+      "sentence_index": 449
+    },
+    {
+      "text": "Sarah",
+      "score": 0.9951,
+      "sentence_index": 449
+    },
+    {
+      "text": "God",
+      "score": 0.9979,
+      "sentence_index": 450
+    },
+    {
+      "text": "God",
+      "score": 0.9973,
+      "sentence_index": 454
+    },
+    {
+      "text": "Abraham",
+      "score": 0.999,
+      "sentence_index": 457
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9983,
+      "sentence_index": 460
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9986,
+      "sentence_index": 461
+    },
+    {
+      "text": "God",
+      "score": 0.9965,
+      "sentence_index": 461
+    },
+    {
+      "text": "God",
+      "score": 0.9944,
+      "sentence_index": 463
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9964,
+      "sentence_index": 464
+    },
+    {
+      "text": "Sarah",
+      "score": 0.9944,
+      "sentence_index": 464
+    },
+    {
+      "text": "Sarah",
+      "score": 0.9981,
+      "sentence_index": 466
+    },
+    {
+      "text": "Abraham",
+      "score": 0.999,
+      "sentence_index": 467
+    },
+    {
+      "text": "God",
+      "score": 0.998,
+      "sentence_index": 467
+    },
+    {
+      "text": "God",
+      "score": 0.9959,
+      "sentence_index": 467
+    },
+    {
+      "text": "Sarah Abraham",
+      "score": 0.9996,
+      "sentence_index": 468
+    },
+    {
+      "text": "Sarah",
+      "score": 0.9983,
+      "sentence_index": 469
+    },
+    {
+      "text": "Sarah",
+      "score": 0.9983,
+      "sentence_index": 469
+    },
+    {
+      "text": "Sarah",
+      "score": 0.9991,
+      "sentence_index": 470
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9986,
+      "sentence_index": 470
+    },
+    {
+      "text": "God",
+      "score": 0.9974,
+      "sentence_index": 470
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9989,
+      "sentence_index": 471
+    },
+    {
+      "text": "Sarah",
+      "score": 0.9982,
+      "sentence_index": 471
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9982,
+      "sentence_index": 471
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9986,
+      "sentence_index": 472
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9984,
+      "sentence_index": 472
+    },
+    {
+      "text": "God",
+      "score": 0.9961,
+      "sentence_index": 472
+    },
+    {
+      "text": "Abraham",
+      "score": 0.999,
+      "sentence_index": 473
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9987,
+      "sentence_index": 473
+    },
+    {
+      "text": "Sarah",
+      "score": 0.9992,
+      "sentence_index": 474
+    },
+    {
+      "text": "God",
+      "score": 0.9969,
+      "sentence_index": 474
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9968,
+      "sentence_index": 475
+    },
+    {
+      "text": "Sarah",
+      "score": 0.999,
+      "sentence_index": 475
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9977,
+      "sentence_index": 477
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9984,
+      "sentence_index": 477
+    },
+    {
+      "text": "Sarah",
+      "score": 0.9991,
+      "sentence_index": 478
+    },
+    {
+      "text": "Ha",
+      "score": 0.9987,
+      "sentence_index": 478
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9954,
+      "sentence_index": 478
+    },
+    {
+      "text": "Abraham",
+      "score": 0.998,
+      "sentence_index": 479
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9982,
+      "sentence_index": 479
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9983,
+      "sentence_index": 480
+    },
+    {
+      "text": "God",
+      "score": 0.9982,
+      "sentence_index": 481
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9982,
+      "sentence_index": 481
+    },
+    {
+      "text": "Sarah",
+      "score": 0.9976,
+      "sentence_index": 481
+    },
+    {
+      "text": "Isaac",
+      "score": 0.8795,
+      "sentence_index": 481
+    },
+    {
+      "text": "Abraham",
+      "score": 0.999,
+      "sentence_index": 483
+    },
+    {
+      "text": "Ha",
+      "score": 0.9991,
+      "sentence_index": 483
+    },
+    {
+      "text": "God",
+      "score": 0.9964,
+      "sentence_index": 487
+    },
+    {
+      "text": "God",
+      "score": 0.9279,
+      "sentence_index": 487
+    },
+    {
+      "text": "Ha",
+      "score": 0.9983,
+      "sentence_index": 487
+    },
+    {
+      "text": "Ha",
+      "score": 0.9979,
+      "sentence_index": 487
+    },
+    {
+      "text": "God",
+      "score": 0.9914,
+      "sentence_index": 488
+    },
+    {
+      "text": "God",
+      "score": 0.9941,
+      "sentence_index": 490
+    },
+    {
+      "text": "God",
+      "score": 0.9962,
+      "sentence_index": 491
+    },
+    {
+      "text": "Phicho",
+      "score": 0.8166,
+      "sentence_index": 493
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9969,
+      "sentence_index": 493
+    },
+    {
+      "text": "God",
+      "score": 0.993,
+      "sentence_index": 493
+    },
+    {
+      "text": "God",
+      "score": 0.9895,
+      "sentence_index": 493
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9984,
+      "sentence_index": 494
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9993,
+      "sentence_index": 495
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9989,
+      "sentence_index": 497
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9984,
+      "sentence_index": 498
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9984,
+      "sentence_index": 499
+    },
+    {
+      "text": "Phicho",
+      "score": 0.9852,
+      "sentence_index": 502
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9979,
+      "sentence_index": 503
+    },
+    {
+      "text": "God",
+      "score": 0.905,
+      "sentence_index": 503
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9988,
+      "sentence_index": 504
+    },
+    {
+      "text": "God",
+      "score": 0.9971,
+      "sentence_index": 505
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9973,
+      "sentence_index": 505
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9971,
+      "sentence_index": 505
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9985,
+      "sentence_index": 506
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9988,
+      "sentence_index": 507
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9983,
+      "sentence_index": 507
+    },
+    {
+      "text": "God",
+      "score": 0.9977,
+      "sentence_index": 507
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9974,
+      "sentence_index": 508
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9983,
+      "sentence_index": 509
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9988,
+      "sentence_index": 510
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9986,
+      "sentence_index": 510
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9985,
+      "sentence_index": 511
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9974,
+      "sentence_index": 511
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9989,
+      "sentence_index": 513
+    },
+    {
+      "text": "God",
+      "score": 0.9984,
+      "sentence_index": 513
+    },
+    {
+      "text": "God",
+      "score": 0.9981,
+      "sentence_index": 514
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9984,
+      "sentence_index": 514
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9985,
+      "sentence_index": 514
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9984,
+      "sentence_index": 515
+    },
+    {
+      "text": "Abraham",
+      "score": 0.99,
+      "sentence_index": 516
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9771,
+      "sentence_index": 516
+    },
+    {
+      "text": "God",
+      "score": 0.9761,
+      "sentence_index": 517
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9975,
+      "sentence_index": 518
+    },
+    {
+      "text": "Abraham",
+      "score": 0.998,
+      "sentence_index": 518
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9985,
+      "sentence_index": 519
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9948,
+      "sentence_index": 520
+    },
+    {
+      "text": "Abraham",
+      "score": 0.998,
+      "sentence_index": 521
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9972,
+      "sentence_index": 521
+    },
+    {
+      "text": "Abraham",
+      "score": 0.997,
+      "sentence_index": 522
+    },
+    {
+      "text": "Mi",
+      "score": 0.965,
+      "sentence_index": 522
+    },
+    {
+      "text": "Nah",
+      "score": 0.9706,
+      "sentence_index": 522
+    },
+    {
+      "text": "Ke",
+      "score": 0.9979,
+      "sentence_index": 522
+    },
+    {
+      "text": "Ara",
+      "score": 0.9711,
+      "sentence_index": 522
+    },
+    {
+      "text": "Ch",
+      "score": 0.8208,
+      "sentence_index": 522
+    },
+    {
+      "text": "Ha",
+      "score": 0.9961,
+      "sentence_index": 522
+    },
+    {
+      "text": "Pilda",
+      "score": 0.6974,
+      "sentence_index": 522
+    },
+    {
+      "text": "Ji",
+      "score": 0.9438,
+      "sentence_index": 522
+    },
+    {
+      "text": "Beth",
+      "score": 0.9827,
+      "sentence_index": 522
+    },
+    {
+      "text": "Bethuel",
+      "score": 0.8074,
+      "sentence_index": 523
+    },
+    {
+      "text": "Re",
+      "score": 0.9956,
+      "sentence_index": 523
+    },
+    {
+      "text": "Nah",
+      "score": 0.9985,
+      "sentence_index": 523
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9985,
+      "sentence_index": 523
+    },
+    {
+      "text": "Re",
+      "score": 0.9733,
+      "sentence_index": 524
+    },
+    {
+      "text": "Te",
+      "score": 0.9773,
+      "sentence_index": 524
+    },
+    {
+      "text": "Ma",
+      "score": 0.9621,
+      "sentence_index": 524
+    },
+    {
+      "text": "Sarah",
+      "score": 0.9985,
+      "sentence_index": 525
+    },
+    {
+      "text": "Sarah",
+      "score": 0.9977,
+      "sentence_index": 525
+    },
+    {
+      "text": "Sarah",
+      "score": 0.999,
+      "sentence_index": 526
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9985,
+      "sentence_index": 526
+    },
+    {
+      "text": "Sarah",
+      "score": 0.9985,
+      "sentence_index": 526
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9982,
+      "sentence_index": 527
+    },
+    {
+      "text": "He",
+      "score": 0.9242,
+      "sentence_index": 527
+    },
+    {
+      "text": "He",
+      "score": 0.9584,
+      "sentence_index": 528
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9906,
+      "sentence_index": 528
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9979,
+      "sentence_index": 529
+    },
+    {
+      "text": "He",
+      "score": 0.8191,
+      "sentence_index": 529
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9974,
+      "sentence_index": 531
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9985,
+      "sentence_index": 532
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9978,
+      "sentence_index": 534
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9975,
+      "sentence_index": 536
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9978,
+      "sentence_index": 536
+    },
+    {
+      "text": "He",
+      "score": 0.7181,
+      "sentence_index": 536
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9942,
+      "sentence_index": 537
+    },
+    {
+      "text": "He",
+      "score": 0.9447,
+      "sentence_index": 537
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9989,
+      "sentence_index": 538
+    },
+    {
+      "text": "Sarah",
+      "score": 0.9983,
+      "sentence_index": 538
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9938,
+      "sentence_index": 539
+    },
+    {
+      "text": "He",
+      "score": 0.8949,
+      "sentence_index": 539
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9977,
+      "sentence_index": 540
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9969,
+      "sentence_index": 540
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9984,
+      "sentence_index": 541
+    },
+    {
+      "text": "God",
+      "score": 0.5121,
+      "sentence_index": 541
+    },
+    {
+      "text": "God",
+      "score": 0.8316,
+      "sentence_index": 541
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9968,
+      "sentence_index": 541
+    },
+    {
+      "text": "Abraham",
+      "score": 0.998,
+      "sentence_index": 543
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9968,
+      "sentence_index": 546
+    },
+    {
+      "text": "God",
+      "score": 0.6754,
+      "sentence_index": 549
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9962,
+      "sentence_index": 549
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9974,
+      "sentence_index": 549
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9984,
+      "sentence_index": 550
+    },
+    {
+      "text": "Re",
+      "score": 0.9966,
+      "sentence_index": 551
+    },
+    {
+      "text": "Bethuel",
+      "score": 0.7856,
+      "sentence_index": 551
+    },
+    {
+      "text": "Mi",
+      "score": 0.994,
+      "sentence_index": 551
+    },
+    {
+      "text": "Nah",
+      "score": 0.9976,
+      "sentence_index": 551
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9977,
+      "sentence_index": 551
+    },
+    {
+      "text": "Bethuel",
+      "score": 0.6943,
+      "sentence_index": 560
+    },
+    {
+      "text": "Mi",
+      "score": 0.5561,
+      "sentence_index": 560
+    },
+    {
+      "text": "Nah",
+      "score": 0.968,
+      "sentence_index": 560
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9961,
+      "sentence_index": 563
+    },
+    {
+      "text": "Re",
+      "score": 0.9992,
+      "sentence_index": 565
+    },
+    {
+      "text": "Laban",
+      "score": 0.9036,
+      "sentence_index": 565
+    },
+    {
+      "text": "Laban",
+      "score": 0.8186,
+      "sentence_index": 565
+    },
+    {
+      "text": "Re",
+      "score": 0.9929,
+      "sentence_index": 566
+    },
+    {
+      "text": "Abraham",
+      "score": 0.998,
+      "sentence_index": 572
+    },
+    {
+      "text": "Sarah",
+      "score": 0.9986,
+      "sentence_index": 574
+    },
+    {
+      "text": "Per",
+      "score": 0.7572,
+      "sentence_index": 576
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9946,
+      "sentence_index": 578
+    },
+    {
+      "text": "Re",
+      "score": 0.9972,
+      "sentence_index": 579
+    },
+    {
+      "text": "Bethuel",
+      "score": 0.7925,
+      "sentence_index": 582
+    },
+    {
+      "text": "Nah",
+      "score": 0.9936,
+      "sentence_index": 582
+    },
+    {
+      "text": "Mi",
+      "score": 0.9569,
+      "sentence_index": 582
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9938,
+      "sentence_index": 583
+    },
+    {
+      "text": "Lab",
+      "score": 0.9973,
+      "sentence_index": 585
+    },
+    {
+      "text": "Bethuel",
+      "score": 0.8306,
+      "sentence_index": 585
+    },
+    {
+      "text": "Re",
+      "score": 0.9935,
+      "sentence_index": 586
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9978,
+      "sentence_index": 587
+    },
+    {
+      "text": "Re",
+      "score": 0.998,
+      "sentence_index": 588
+    },
+    {
+      "text": "Re",
+      "score": 0.9954,
+      "sentence_index": 593
+    },
+    {
+      "text": "Re",
+      "score": 0.997,
+      "sentence_index": 595
+    },
+    {
+      "text": "Abraham",
+      "score": 0.999,
+      "sentence_index": 595
+    },
+    {
+      "text": "Re",
+      "score": 0.9965,
+      "sentence_index": 596
+    },
+    {
+      "text": "Re",
+      "score": 0.9966,
+      "sentence_index": 597
+    },
+    {
+      "text": "Re",
+      "score": 0.9966,
+      "sentence_index": 597
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9992,
+      "sentence_index": 598
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9994,
+      "sentence_index": 599
+    },
+    {
+      "text": "Re",
+      "score": 0.9979,
+      "sentence_index": 600
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9988,
+      "sentence_index": 600
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9989,
+      "sentence_index": 603
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9994,
+      "sentence_index": 604
+    },
+    {
+      "text": "Sarah",
+      "score": 0.999,
+      "sentence_index": 604
+    },
+    {
+      "text": "Re",
+      "score": 0.9982,
+      "sentence_index": 604
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9993,
+      "sentence_index": 604
+    },
+    {
+      "text": "Abraham",
+      "score": 0.999,
+      "sentence_index": 605
+    },
+    {
+      "text": "Ke",
+      "score": 0.9951,
+      "sentence_index": 605
+    },
+    {
+      "text": "Jokshan",
+      "score": 0.6249,
+      "sentence_index": 606
+    },
+    {
+      "text": "Me",
+      "score": 0.5901,
+      "sentence_index": 606
+    },
+    {
+      "text": "Mid",
+      "score": 0.9402,
+      "sentence_index": 606
+    },
+    {
+      "text": "Ish",
+      "score": 0.5883,
+      "sentence_index": 606
+    },
+    {
+      "text": "Shu",
+      "score": 0.9903,
+      "sentence_index": 606
+    },
+    {
+      "text": "Joks",
+      "score": 0.7529,
+      "sentence_index": 607
+    },
+    {
+      "text": "She",
+      "score": 0.996,
+      "sentence_index": 607
+    },
+    {
+      "text": "De",
+      "score": 0.9837,
+      "sentence_index": 607
+    },
+    {
+      "text": "De",
+      "score": 0.8072,
+      "sentence_index": 608
+    },
+    {
+      "text": "As",
+      "score": 0.9947,
+      "sentence_index": 608
+    },
+    {
+      "text": "Let",
+      "score": 0.9631,
+      "sentence_index": 608
+    },
+    {
+      "text": "Leum",
+      "score": 0.717,
+      "sentence_index": 608
+    },
+    {
+      "text": "Mid",
+      "score": 0.9112,
+      "sentence_index": 609
+    },
+    {
+      "text": "Han",
+      "score": 0.9757,
+      "sentence_index": 609
+    },
+    {
+      "text": "Eldaah",
+      "score": 0.5757,
+      "sentence_index": 609
+    },
+    {
+      "text": "Ke",
+      "score": 0.9913,
+      "sentence_index": 610
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9986,
+      "sentence_index": 611
+    },
+    {
+      "text": "Isaac",
+      "score": 0.997,
+      "sentence_index": 611
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9976,
+      "sentence_index": 612
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9983,
+      "sentence_index": 612
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9969,
+      "sentence_index": 612
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9983,
+      "sentence_index": 613
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9991,
+      "sentence_index": 614
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9989,
+      "sentence_index": 615
+    },
+    {
+      "text": "Ishm",
+      "score": 0.8467,
+      "sentence_index": 615
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9975,
+      "sentence_index": 615
+    },
+    {
+      "text": "He",
+      "score": 0.9777,
+      "sentence_index": 615
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9966,
+      "sentence_index": 615
+    },
+    {
+      "text": "Sarah",
+      "score": 0.9983,
+      "sentence_index": 615
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9961,
+      "sentence_index": 616
+    },
+    {
+      "text": "God",
+      "score": 0.9962,
+      "sentence_index": 616
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9982,
+      "sentence_index": 616
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9981,
+      "sentence_index": 616
+    },
+    {
+      "text": "Is",
+      "score": 0.9986,
+      "sentence_index": 618
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9988,
+      "sentence_index": 618
+    },
+    {
+      "text": "Hagar",
+      "score": 0.9087,
+      "sentence_index": 618
+    },
+    {
+      "text": "Sarah",
+      "score": 0.9984,
+      "sentence_index": 618
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9966,
+      "sentence_index": 618
+    },
+    {
+      "text": "Ishm",
+      "score": 0.776,
+      "sentence_index": 618
+    },
+    {
+      "text": "Ishm",
+      "score": 0.8114,
+      "sentence_index": 618
+    },
+    {
+      "text": "Ke",
+      "score": 0.9871,
+      "sentence_index": 618
+    },
+    {
+      "text": "Adbee",
+      "score": 0.8354,
+      "sentence_index": 618
+    },
+    {
+      "text": "Mi",
+      "score": 0.9461,
+      "sentence_index": 618
+    },
+    {
+      "text": "Mi",
+      "score": 0.9868,
+      "sentence_index": 618
+    },
+    {
+      "text": "Du",
+      "score": 0.9861,
+      "sentence_index": 618
+    },
+    {
+      "text": "Mass",
+      "score": 0.7941,
+      "sentence_index": 618
+    },
+    {
+      "text": "Had",
+      "score": 0.9909,
+      "sentence_index": 618
+    },
+    {
+      "text": "Te",
+      "score": 0.9848,
+      "sentence_index": 618
+    },
+    {
+      "text": "Jet",
+      "score": 0.9279,
+      "sentence_index": 618
+    },
+    {
+      "text": "Na",
+      "score": 0.6036,
+      "sentence_index": 618
+    },
+    {
+      "text": "Ke",
+      "score": 0.7532,
+      "sentence_index": 618
+    },
+    {
+      "text": "Ishm",
+      "score": 0.7107,
+      "sentence_index": 618
+    },
+    {
+      "text": "Is",
+      "score": 0.999,
+      "sentence_index": 619
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9987,
+      "sentence_index": 621
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9983,
+      "sentence_index": 621
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9967,
+      "sentence_index": 621
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9979,
+      "sentence_index": 621
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9987,
+      "sentence_index": 621
+    },
+    {
+      "text": "Re",
+      "score": 0.9949,
+      "sentence_index": 621
+    },
+    {
+      "text": "Bethuel",
+      "score": 0.8183,
+      "sentence_index": 621
+    },
+    {
+      "text": "Laban",
+      "score": 0.8986,
+      "sentence_index": 621
+    },
+    {
+      "text": "Isaac",
+      "score": 0.999,
+      "sentence_index": 622
+    },
+    {
+      "text": "Re",
+      "score": 0.9973,
+      "sentence_index": 622
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9953,
+      "sentence_index": 628
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9989,
+      "sentence_index": 628
+    },
+    {
+      "text": "Jacob",
+      "score": 0.999,
+      "sentence_index": 629
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9993,
+      "sentence_index": 630
+    },
+    {
+      "text": "Re",
+      "score": 0.9986,
+      "sentence_index": 630
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9982,
+      "sentence_index": 630
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9985,
+      "sentence_index": 631
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9979,
+      "sentence_index": 631
+    },
+    {
+      "text": "Jacob",
+      "score": 0.998,
+      "sentence_index": 632
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9984,
+      "sentence_index": 634
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9962,
+      "sentence_index": 634
+    },
+    {
+      "text": "Jacob",
+      "score": 0.999,
+      "sentence_index": 635
+    },
+    {
+      "text": "Abraham",
+      "score": 0.955,
+      "sentence_index": 636
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9989,
+      "sentence_index": 637
+    },
+    {
+      "text": "Abimelech",
+      "score": 0.6801,
+      "sentence_index": 637
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9956,
+      "sentence_index": 638
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9991,
+      "sentence_index": 639
+    },
+    {
+      "text": "Re",
+      "score": 0.9897,
+      "sentence_index": 639
+    },
+    {
+      "text": "Abimel",
+      "score": 0.8015,
+      "sentence_index": 640
+    },
+    {
+      "text": "Isaac",
+      "score": 0.999,
+      "sentence_index": 640
+    },
+    {
+      "text": "Re",
+      "score": 0.9947,
+      "sentence_index": 640
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9992,
+      "sentence_index": 641
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9975,
+      "sentence_index": 642
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9989,
+      "sentence_index": 646
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9838,
+      "sentence_index": 648
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9991,
+      "sentence_index": 649
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9991,
+      "sentence_index": 650
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9985,
+      "sentence_index": 651
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9866,
+      "sentence_index": 651
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9916,
+      "sentence_index": 651
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9992,
+      "sentence_index": 652
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9986,
+      "sentence_index": 653
+    },
+    {
+      "text": "God",
+      "score": 0.8286,
+      "sentence_index": 657
+    },
+    {
+      "text": "Abraham",
+      "score": 0.7895,
+      "sentence_index": 657
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9959,
+      "sentence_index": 657
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9989,
+      "sentence_index": 658
+    },
+    {
+      "text": "Ahuz",
+      "score": 0.6867,
+      "sentence_index": 659
+    },
+    {
+      "text": "Phicho",
+      "score": 0.9752,
+      "sentence_index": 659
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9988,
+      "sentence_index": 660
+    },
+    {
+      "text": "Isaac",
+      "score": 0.999,
+      "sentence_index": 663
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9992,
+      "sentence_index": 664
+    },
+    {
+      "text": "Judith",
+      "score": 0.9972,
+      "sentence_index": 666
+    },
+    {
+      "text": "Beeri",
+      "score": 0.7158,
+      "sentence_index": 666
+    },
+    {
+      "text": "Bashemat",
+      "score": 0.7324,
+      "sentence_index": 666
+    },
+    {
+      "text": "El",
+      "score": 0.8149,
+      "sentence_index": 666
+    },
+    {
+      "text": "Isaac",
+      "score": 0.998,
+      "sentence_index": 666
+    },
+    {
+      "text": "Re",
+      "score": 0.9918,
+      "sentence_index": 666
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9992,
+      "sentence_index": 667
+    },
+    {
+      "text": "Re",
+      "score": 0.9982,
+      "sentence_index": 669
+    },
+    {
+      "text": "Isaac",
+      "score": 0.999,
+      "sentence_index": 669
+    },
+    {
+      "text": "Re",
+      "score": 0.9978,
+      "sentence_index": 671
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9969,
+      "sentence_index": 671
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9988,
+      "sentence_index": 674
+    },
+    {
+      "text": "Re",
+      "score": 0.9941,
+      "sentence_index": 674
+    },
+    {
+      "text": "Re",
+      "score": 0.9983,
+      "sentence_index": 677
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9973,
+      "sentence_index": 677
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9978,
+      "sentence_index": 677
+    },
+    {
+      "text": "Jacob",
+      "score": 0.999,
+      "sentence_index": 679
+    },
+    {
+      "text": "Isaac",
+      "score": 0.999,
+      "sentence_index": 680
+    },
+    {
+      "text": "God",
+      "score": 0.5485,
+      "sentence_index": 681
+    },
+    {
+      "text": "Isaac",
+      "score": 0.999,
+      "sentence_index": 682
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9989,
+      "sentence_index": 682
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9986,
+      "sentence_index": 683
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9981,
+      "sentence_index": 683
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9971,
+      "sentence_index": 683
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9986,
+      "sentence_index": 688
+    },
+    {
+      "text": "God",
+      "score": 0.9668,
+      "sentence_index": 689
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9982,
+      "sentence_index": 690
+    },
+    {
+      "text": "Jacob",
+      "score": 0.998,
+      "sentence_index": 690
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9984,
+      "sentence_index": 690
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9978,
+      "sentence_index": 690
+    },
+    {
+      "text": "Isaac",
+      "score": 0.999,
+      "sentence_index": 692
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9992,
+      "sentence_index": 694
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9982,
+      "sentence_index": 699
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9991,
+      "sentence_index": 702
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9989,
+      "sentence_index": 706
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9987,
+      "sentence_index": 707
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9979,
+      "sentence_index": 707
+    },
+    {
+      "text": "Re",
+      "score": 0.9957,
+      "sentence_index": 708
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9987,
+      "sentence_index": 708
+    },
+    {
+      "text": "Re",
+      "score": 0.9989,
+      "sentence_index": 710
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9991,
+      "sentence_index": 710
+    },
+    {
+      "text": "He",
+      "score": 0.8079,
+      "sentence_index": 710
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9975,
+      "sentence_index": 710
+    },
+    {
+      "text": "He",
+      "score": 0.7027,
+      "sentence_index": 710
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9992,
+      "sentence_index": 711
+    },
+    {
+      "text": "Jacob",
+      "score": 0.999,
+      "sentence_index": 711
+    },
+    {
+      "text": "Ari",
+      "score": 0.5481,
+      "sentence_index": 712
+    },
+    {
+      "text": "Bethuel",
+      "score": 0.7169,
+      "sentence_index": 712
+    },
+    {
+      "text": "Lab",
+      "score": 0.9962,
+      "sentence_index": 712
+    },
+    {
+      "text": "God",
+      "score": 0.9956,
+      "sentence_index": 713
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9902,
+      "sentence_index": 713
+    },
+    {
+      "text": "God",
+      "score": 0.9955,
+      "sentence_index": 713
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9873,
+      "sentence_index": 713
+    },
+    {
+      "text": "Isaac",
+      "score": 0.999,
+      "sentence_index": 714
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9988,
+      "sentence_index": 714
+    },
+    {
+      "text": "Laban",
+      "score": 0.9317,
+      "sentence_index": 714
+    },
+    {
+      "text": "Bethuel",
+      "score": 0.9227,
+      "sentence_index": 714
+    },
+    {
+      "text": "Re",
+      "score": 0.9968,
+      "sentence_index": 714
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9982,
+      "sentence_index": 714
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9989,
+      "sentence_index": 715
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9988,
+      "sentence_index": 715
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9976,
+      "sentence_index": 715
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9981,
+      "sentence_index": 715
+    },
+    {
+      "text": "Is",
+      "score": 0.998,
+      "sentence_index": 715
+    },
+    {
+      "text": "Ma",
+      "score": 0.9906,
+      "sentence_index": 715
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9988,
+      "sentence_index": 716
+    },
+    {
+      "text": "God",
+      "score": 0.8716,
+      "sentence_index": 718
+    },
+    {
+      "text": "Abraham",
+      "score": 0.79,
+      "sentence_index": 719
+    },
+    {
+      "text": "God",
+      "score": 0.8715,
+      "sentence_index": 719
+    },
+    {
+      "text": "Isaac",
+      "score": 0.7401,
+      "sentence_index": 719
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9959,
+      "sentence_index": 721
+    },
+    {
+      "text": "God",
+      "score": 0.9864,
+      "sentence_index": 723
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9988,
+      "sentence_index": 724
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9991,
+      "sentence_index": 726
+    },
+    {
+      "text": "God",
+      "score": 0.9976,
+      "sentence_index": 726
+    },
+    {
+      "text": "God",
+      "score": 0.4889,
+      "sentence_index": 726
+    },
+    {
+      "text": "God",
+      "score": 0.9981,
+      "sentence_index": 726
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9988,
+      "sentence_index": 727
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9977,
+      "sentence_index": 730
+    },
+    {
+      "text": "Hara",
+      "score": 0.3459,
+      "sentence_index": 731
+    },
+    {
+      "text": "Laban",
+      "score": 0.7355,
+      "sentence_index": 732
+    },
+    {
+      "text": "Nah",
+      "score": 0.9831,
+      "sentence_index": 732
+    },
+    {
+      "text": "Rachel",
+      "score": 0.9981,
+      "sentence_index": 735
+    },
+    {
+      "text": "Rachel",
+      "score": 0.9986,
+      "sentence_index": 738
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9991,
+      "sentence_index": 739
+    },
+    {
+      "text": "Rachel",
+      "score": 0.9979,
+      "sentence_index": 739
+    },
+    {
+      "text": "Lab",
+      "score": 0.9949,
+      "sentence_index": 739
+    },
+    {
+      "text": "Laban",
+      "score": 0.6867,
+      "sentence_index": 739
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9989,
+      "sentence_index": 739
+    },
+    {
+      "text": "Laban",
+      "score": 0.693,
+      "sentence_index": 739
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9977,
+      "sentence_index": 740
+    },
+    {
+      "text": "Rachel",
+      "score": 0.9971,
+      "sentence_index": 740
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9992,
+      "sentence_index": 741
+    },
+    {
+      "text": "Rachel",
+      "score": 0.9989,
+      "sentence_index": 741
+    },
+    {
+      "text": "Re",
+      "score": 0.9971,
+      "sentence_index": 741
+    },
+    {
+      "text": "Laban",
+      "score": 0.7227,
+      "sentence_index": 742
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9989,
+      "sentence_index": 742
+    },
+    {
+      "text": "Lab",
+      "score": 0.9978,
+      "sentence_index": 743
+    },
+    {
+      "text": "Lab",
+      "score": 0.9954,
+      "sentence_index": 744
+    },
+    {
+      "text": "Lab",
+      "score": 0.9978,
+      "sentence_index": 746
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9988,
+      "sentence_index": 746
+    },
+    {
+      "text": "Lab",
+      "score": 0.9983,
+      "sentence_index": 748
+    },
+    {
+      "text": "Leah",
+      "score": 0.9973,
+      "sentence_index": 748
+    },
+    {
+      "text": "Rachel",
+      "score": 0.9984,
+      "sentence_index": 748
+    },
+    {
+      "text": "Leah",
+      "score": 0.9984,
+      "sentence_index": 749
+    },
+    {
+      "text": "Rachel",
+      "score": 0.9991,
+      "sentence_index": 749
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9988,
+      "sentence_index": 750
+    },
+    {
+      "text": "Rachel",
+      "score": 0.9978,
+      "sentence_index": 750
+    },
+    {
+      "text": "Rachel",
+      "score": 0.9969,
+      "sentence_index": 750
+    },
+    {
+      "text": "Lab",
+      "score": 0.998,
+      "sentence_index": 751
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9986,
+      "sentence_index": 752
+    },
+    {
+      "text": "Rachel",
+      "score": 0.9965,
+      "sentence_index": 752
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9991,
+      "sentence_index": 753
+    },
+    {
+      "text": "Lab",
+      "score": 0.9985,
+      "sentence_index": 753
+    },
+    {
+      "text": "Lab",
+      "score": 0.9953,
+      "sentence_index": 754
+    },
+    {
+      "text": "Leah",
+      "score": 0.9873,
+      "sentence_index": 755
+    },
+    {
+      "text": "Laban",
+      "score": 0.7406,
+      "sentence_index": 756
+    },
+    {
+      "text": "Leah Zilpa",
+      "score": 0.9786,
+      "sentence_index": 756
+    },
+    {
+      "text": "Leah",
+      "score": 0.9917,
+      "sentence_index": 757
+    },
+    {
+      "text": "Lab",
+      "score": 0.9972,
+      "sentence_index": 757
+    },
+    {
+      "text": "Rachel",
+      "score": 0.976,
+      "sentence_index": 758
+    },
+    {
+      "text": "Lab",
+      "score": 0.9986,
+      "sentence_index": 760
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9989,
+      "sentence_index": 762
+    },
+    {
+      "text": "Rachel",
+      "score": 0.9971,
+      "sentence_index": 762
+    },
+    {
+      "text": "Laban",
+      "score": 0.6897,
+      "sentence_index": 763
+    },
+    {
+      "text": "Rachel",
+      "score": 0.9988,
+      "sentence_index": 763
+    },
+    {
+      "text": "Rachel",
+      "score": 0.9977,
+      "sentence_index": 764
+    },
+    {
+      "text": "Rachel",
+      "score": 0.9975,
+      "sentence_index": 764
+    },
+    {
+      "text": "Leah",
+      "score": 0.9958,
+      "sentence_index": 764
+    },
+    {
+      "text": "Leah",
+      "score": 0.9953,
+      "sentence_index": 765
+    },
+    {
+      "text": "Rachel",
+      "score": 0.997,
+      "sentence_index": 765
+    },
+    {
+      "text": "Leah",
+      "score": 0.9972,
+      "sentence_index": 766
+    },
+    {
+      "text": "Reuben",
+      "score": 0.998,
+      "sentence_index": 766
+    },
+    {
+      "text": "Si",
+      "score": 0.9947,
+      "sentence_index": 767
+    },
+    {
+      "text": "Levi",
+      "score": 0.9941,
+      "sentence_index": 768
+    },
+    {
+      "text": "Judah",
+      "score": 0.8591,
+      "sentence_index": 769
+    },
+    {
+      "text": "Rachel",
+      "score": 0.9983,
+      "sentence_index": 770
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9972,
+      "sentence_index": 770
+    },
+    {
+      "text": "Rachel",
+      "score": 0.9983,
+      "sentence_index": 770
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9975,
+      "sentence_index": 770
+    },
+    {
+      "text": "Jacob",
+      "score": 0.999,
+      "sentence_index": 771
+    },
+    {
+      "text": "Rachel",
+      "score": 0.9982,
+      "sentence_index": 771
+    },
+    {
+      "text": "God",
+      "score": 0.9949,
+      "sentence_index": 771
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9983,
+      "sentence_index": 773
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9983,
+      "sentence_index": 774
+    },
+    {
+      "text": "Rachel",
+      "score": 0.9991,
+      "sentence_index": 775
+    },
+    {
+      "text": "God",
+      "score": 0.9968,
+      "sentence_index": 775
+    },
+    {
+      "text": "Dan",
+      "score": 0.9964,
+      "sentence_index": 775
+    },
+    {
+      "text": "Rachel",
+      "score": 0.9925,
+      "sentence_index": 776
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9984,
+      "sentence_index": 776
+    },
+    {
+      "text": "Rachel",
+      "score": 0.9994,
+      "sentence_index": 777
+    },
+    {
+      "text": "Na",
+      "score": 0.9894,
+      "sentence_index": 777
+    },
+    {
+      "text": "Leah",
+      "score": 0.9983,
+      "sentence_index": 778
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9974,
+      "sentence_index": 778
+    },
+    {
+      "text": "Zilpa",
+      "score": 0.6431,
+      "sentence_index": 779
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9984,
+      "sentence_index": 779
+    },
+    {
+      "text": "Leah",
+      "score": 0.9989,
+      "sentence_index": 780
+    },
+    {
+      "text": "Zilpa",
+      "score": 0.6456,
+      "sentence_index": 781
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9986,
+      "sentence_index": 781
+    },
+    {
+      "text": "Leah",
+      "score": 0.9983,
+      "sentence_index": 782
+    },
+    {
+      "text": "Asher",
+      "score": 0.9952,
+      "sentence_index": 782
+    },
+    {
+      "text": "Reuben",
+      "score": 0.9992,
+      "sentence_index": 783
+    },
+    {
+      "text": "Leah",
+      "score": 0.992,
+      "sentence_index": 783
+    },
+    {
+      "text": "Rachel",
+      "score": 0.9977,
+      "sentence_index": 784
+    },
+    {
+      "text": "Leah",
+      "score": 0.9961,
+      "sentence_index": 784
+    },
+    {
+      "text": "Rachel",
+      "score": 0.9988,
+      "sentence_index": 787
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9991,
+      "sentence_index": 788
+    },
+    {
+      "text": "Leah",
+      "score": 0.9983,
+      "sentence_index": 788
+    },
+    {
+      "text": "God",
+      "score": 0.9969,
+      "sentence_index": 790
+    },
+    {
+      "text": "Leah",
+      "score": 0.9937,
+      "sentence_index": 790
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9988,
+      "sentence_index": 790
+    },
+    {
+      "text": "Leah",
+      "score": 0.9976,
+      "sentence_index": 791
+    },
+    {
+      "text": "God",
+      "score": 0.9971,
+      "sentence_index": 791
+    },
+    {
+      "text": "Is",
+      "score": 0.9674,
+      "sentence_index": 791
+    },
+    {
+      "text": "Leah",
+      "score": 0.9987,
+      "sentence_index": 792
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9989,
+      "sentence_index": 792
+    },
+    {
+      "text": "Leah",
+      "score": 0.9976,
+      "sentence_index": 793
+    },
+    {
+      "text": "God",
+      "score": 0.997,
+      "sentence_index": 793
+    },
+    {
+      "text": "Din",
+      "score": 0.9791,
+      "sentence_index": 794
+    },
+    {
+      "text": "God",
+      "score": 0.9978,
+      "sentence_index": 795
+    },
+    {
+      "text": "Rachel",
+      "score": 0.9966,
+      "sentence_index": 795
+    },
+    {
+      "text": "God",
+      "score": 0.9973,
+      "sentence_index": 795
+    },
+    {
+      "text": "God",
+      "score": 0.9913,
+      "sentence_index": 796
+    },
+    {
+      "text": "Joseph",
+      "score": 0.9984,
+      "sentence_index": 796
+    },
+    {
+      "text": "Rachel",
+      "score": 0.9989,
+      "sentence_index": 797
+    },
+    {
+      "text": "Joseph",
+      "score": 0.999,
+      "sentence_index": 797
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9989,
+      "sentence_index": 797
+    },
+    {
+      "text": "Lab",
+      "score": 0.9964,
+      "sentence_index": 797
+    },
+    {
+      "text": "Lab",
+      "score": 0.993,
+      "sentence_index": 799
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9987,
+      "sentence_index": 804
+    },
+    {
+      "text": "Lab",
+      "score": 0.9977,
+      "sentence_index": 807
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9975,
+      "sentence_index": 809
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9984,
+      "sentence_index": 809
+    },
+    {
+      "text": "Lab",
+      "score": 0.9906,
+      "sentence_index": 809
+    },
+    {
+      "text": "Jacob",
+      "score": 0.998,
+      "sentence_index": 810
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9988,
+      "sentence_index": 813
+    },
+    {
+      "text": "Lab",
+      "score": 0.9797,
+      "sentence_index": 813
+    },
+    {
+      "text": "Lab",
+      "score": 0.9857,
+      "sentence_index": 813
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9989,
+      "sentence_index": 814
+    },
+    {
+      "text": "Laban",
+      "score": 0.7402,
+      "sentence_index": 815
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9971,
+      "sentence_index": 815
+    },
+    {
+      "text": "Laban",
+      "score": 0.8459,
+      "sentence_index": 817
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9986,
+      "sentence_index": 817
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9988,
+      "sentence_index": 818
+    },
+    {
+      "text": "Lab",
+      "score": 0.9966,
+      "sentence_index": 818
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9954,
+      "sentence_index": 819
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9987,
+      "sentence_index": 820
+    },
+    {
+      "text": "Rachel",
+      "score": 0.9984,
+      "sentence_index": 820
+    },
+    {
+      "text": "Leah",
+      "score": 0.9941,
+      "sentence_index": 820
+    },
+    {
+      "text": "God",
+      "score": 0.5735,
+      "sentence_index": 820
+    },
+    {
+      "text": "God",
+      "score": 0.9952,
+      "sentence_index": 822
+    },
+    {
+      "text": "God",
+      "score": 0.9919,
+      "sentence_index": 824
+    },
+    {
+      "text": "God",
+      "score": 0.9793,
+      "sentence_index": 826
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9963,
+      "sentence_index": 826
+    },
+    {
+      "text": "Laban",
+      "score": 0.7605,
+      "sentence_index": 827
+    },
+    {
+      "text": "God",
+      "score": 0.8858,
+      "sentence_index": 828
+    },
+    {
+      "text": "Rachel",
+      "score": 0.9986,
+      "sentence_index": 829
+    },
+    {
+      "text": "Leah",
+      "score": 0.9944,
+      "sentence_index": 829
+    },
+    {
+      "text": "God",
+      "score": 0.9943,
+      "sentence_index": 832
+    },
+    {
+      "text": "God",
+      "score": 0.9921,
+      "sentence_index": 832
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9991,
+      "sentence_index": 833
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9954,
+      "sentence_index": 833
+    },
+    {
+      "text": "Lab",
+      "score": 0.9982,
+      "sentence_index": 834
+    },
+    {
+      "text": "Rachel",
+      "score": 0.9991,
+      "sentence_index": 834
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9995,
+      "sentence_index": 835
+    },
+    {
+      "text": "Laban",
+      "score": 0.8698,
+      "sentence_index": 835
+    },
+    {
+      "text": "Lab",
+      "score": 0.9963,
+      "sentence_index": 837
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9991,
+      "sentence_index": 837
+    },
+    {
+      "text": "God",
+      "score": 0.9983,
+      "sentence_index": 839
+    },
+    {
+      "text": "Laban",
+      "score": 0.7649,
+      "sentence_index": 839
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9983,
+      "sentence_index": 839
+    },
+    {
+      "text": "Laban",
+      "score": 0.8535,
+      "sentence_index": 840
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9986,
+      "sentence_index": 840
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9984,
+      "sentence_index": 841
+    },
+    {
+      "text": "Laban",
+      "score": 0.8122,
+      "sentence_index": 841
+    },
+    {
+      "text": "Laban",
+      "score": 0.7246,
+      "sentence_index": 842
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9988,
+      "sentence_index": 842
+    },
+    {
+      "text": "God",
+      "score": 0.8882,
+      "sentence_index": 846
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9969,
+      "sentence_index": 846
+    },
+    {
+      "text": "Jacob",
+      "score": 0.999,
+      "sentence_index": 848
+    },
+    {
+      "text": "Lab",
+      "score": 0.9984,
+      "sentence_index": 848
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9948,
+      "sentence_index": 850
+    },
+    {
+      "text": "Rachel",
+      "score": 0.9941,
+      "sentence_index": 850
+    },
+    {
+      "text": "Lab",
+      "score": 0.9984,
+      "sentence_index": 851
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9985,
+      "sentence_index": 851
+    },
+    {
+      "text": "Leah",
+      "score": 0.998,
+      "sentence_index": 851
+    },
+    {
+      "text": "Leah",
+      "score": 0.993,
+      "sentence_index": 852
+    },
+    {
+      "text": "Rachel",
+      "score": 0.9936,
+      "sentence_index": 852
+    },
+    {
+      "text": "Rachel",
+      "score": 0.9936,
+      "sentence_index": 853
+    },
+    {
+      "text": "Lab",
+      "score": 0.9969,
+      "sentence_index": 854
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9986,
+      "sentence_index": 857
+    },
+    {
+      "text": "Lab",
+      "score": 0.9975,
+      "sentence_index": 857
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9986,
+      "sentence_index": 857
+    },
+    {
+      "text": "Laban",
+      "score": 0.7546,
+      "sentence_index": 857
+    },
+    {
+      "text": "God",
+      "score": 0.7419,
+      "sentence_index": 865
+    },
+    {
+      "text": "God",
+      "score": 0.9157,
+      "sentence_index": 865
+    },
+    {
+      "text": "Abraham",
+      "score": 0.6587,
+      "sentence_index": 865
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9974,
+      "sentence_index": 865
+    },
+    {
+      "text": "God",
+      "score": 0.9909,
+      "sentence_index": 866
+    },
+    {
+      "text": "Laban",
+      "score": 0.7105,
+      "sentence_index": 867
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9983,
+      "sentence_index": 867
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9987,
+      "sentence_index": 869
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9983,
+      "sentence_index": 870
+    },
+    {
+      "text": "Lab",
+      "score": 0.9937,
+      "sentence_index": 871
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9989,
+      "sentence_index": 871
+    },
+    {
+      "text": "Lab",
+      "score": 0.9982,
+      "sentence_index": 872
+    },
+    {
+      "text": "Mi",
+      "score": 0.6856,
+      "sentence_index": 873
+    },
+    {
+      "text": "God",
+      "score": 0.9889,
+      "sentence_index": 874
+    },
+    {
+      "text": "Laban",
+      "score": 0.7928,
+      "sentence_index": 875
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9985,
+      "sentence_index": 875
+    },
+    {
+      "text": "God",
+      "score": 0.923,
+      "sentence_index": 876
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9457,
+      "sentence_index": 876
+    },
+    {
+      "text": "God",
+      "score": 0.901,
+      "sentence_index": 876
+    },
+    {
+      "text": "Nah",
+      "score": 0.8084,
+      "sentence_index": 876
+    },
+    {
+      "text": "God",
+      "score": 0.5215,
+      "sentence_index": 876
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9992,
+      "sentence_index": 877
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9987,
+      "sentence_index": 877
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9992,
+      "sentence_index": 878
+    },
+    {
+      "text": "Laban",
+      "score": 0.8298,
+      "sentence_index": 879
+    },
+    {
+      "text": "Laban",
+      "score": 0.7906,
+      "sentence_index": 879
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9984,
+      "sentence_index": 880
+    },
+    {
+      "text": "God",
+      "score": 0.9485,
+      "sentence_index": 880
+    },
+    {
+      "text": "Jacob",
+      "score": 0.999,
+      "sentence_index": 881
+    },
+    {
+      "text": "God",
+      "score": 0.9974,
+      "sentence_index": 881
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9984,
+      "sentence_index": 882
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9975,
+      "sentence_index": 883
+    },
+    {
+      "text": "Lab",
+      "score": 0.9865,
+      "sentence_index": 883
+    },
+    {
+      "text": "Jacob",
+      "score": 0.995,
+      "sentence_index": 884
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9989,
+      "sentence_index": 885
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9987,
+      "sentence_index": 886
+    },
+    {
+      "text": "God",
+      "score": 0.9077,
+      "sentence_index": 886
+    },
+    {
+      "text": "Abraham",
+      "score": 0.9972,
+      "sentence_index": 886
+    },
+    {
+      "text": "God",
+      "score": 0.9186,
+      "sentence_index": 886
+    },
+    {
+      "text": "Isaac",
+      "score": 0.9971,
+      "sentence_index": 886
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9975,
+      "sentence_index": 894
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9981,
+      "sentence_index": 896
+    },
+    {
+      "text": "Jacob",
+      "score": 0.999,
+      "sentence_index": 901
+    },
+    {
+      "text": "Jacob",
+      "score": 0.9984,
+      "sentence_index": 903
+    }
+  ],
+  "LOC": [
+    {
+      "text": "Heaven",
+      "score": 0.7811,
+      "sentence_index": 9
+    },
+    {
+      "text": "Earth",
+      "score": 0.9226,
+      "sentence_index": 12
+    },
+    {
+      "text": "Eden",
+      "score": 0.9971,
+      "sentence_index": 40
+    },
+    {
+      "text": "Eden",
+      "score": 0.9951,
+      "sentence_index": 42
+    },
+    {
+      "text": "Havilah",
+      "score": 0.8932,
+      "sentence_index": 43
+    },
+    {
+      "text": "Gihon",
+      "score": 0.9072,
+      "sentence_index": 44
+    },
+    {
+      "text": "Ethiopia",
+      "score": 0.9998,
+      "sentence_index": 44
+    },
+    {
+      "text": "Hi",
+      "score": 0.829,
+      "sentence_index": 45
+    },
+    {
+      "text": "Assyria",
+      "score": 0.9705,
+      "sentence_index": 45
+    },
+    {
+      "text": "Eden",
+      "score": 0.9976,
+      "sentence_index": 47
+    },
+    {
+      "text": "Man",
+      "score": 0.4752,
+      "sentence_index": 53
+    },
+    {
+      "text": "Eden",
+      "score": 0.9862,
+      "sentence_index": 75
+    },
+    {
+      "text": "Eden Cherubims",
+      "score": 0.7796,
+      "sentence_index": 76
+    },
+    {
+      "text": "Nod",
+      "score": 0.8443,
+      "sentence_index": 99
+    },
+    {
+      "text": "Eden",
+      "score": 0.9852,
+      "sentence_index": 99
+    },
+    {
+      "text": "Zillah",
+      "score": 0.4859,
+      "sentence_index": 102
+    },
+    {
+      "text": "Ararat",
+      "score": 0.999,
+      "sentence_index": 167
+    },
+    {
+      "text": "Canaan",
+      "score": 0.9587,
+      "sentence_index": 194
+    },
+    {
+      "text": "Canaan",
+      "score": 0.9253,
+      "sentence_index": 197
+    },
+    {
+      "text": "Canaan",
+      "score": 0.9584,
+      "sentence_index": 201
+    },
+    {
+      "text": "Canaan",
+      "score": 0.9663,
+      "sentence_index": 202
+    },
+    {
+      "text": "Kit",
+      "score": 0.465,
+      "sentence_index": 208
+    },
+    {
+      "text": "Do",
+      "score": 0.544,
+      "sentence_index": 208
+    },
+    {
+      "text": "Canaan",
+      "score": 0.996,
+      "sentence_index": 210
+    },
+    {
+      "text": "Dedan",
+      "score": 0.5271,
+      "sentence_index": 211
+    },
+    {
+      "text": "Babel",
+      "score": 0.8835,
+      "sentence_index": 214
+    },
+    {
+      "text": "Erech",
+      "score": 0.7936,
+      "sentence_index": 214
+    },
+    {
+      "text": "Accad",
+      "score": 0.8484,
+      "sentence_index": 214
+    },
+    {
+      "text": "Calneh",
+      "score": 0.9783,
+      "sentence_index": 214
+    },
+    {
+      "text": "Shinar",
+      "score": 0.7451,
+      "sentence_index": 214
+    },
+    {
+      "text": "Nineveh",
+      "score": 0.9908,
+      "sentence_index": 215
+    },
+    {
+      "text": "Rehoboth",
+      "score": 0.9335,
+      "sentence_index": 215
+    },
+    {
+      "text": "Calah",
+      "score": 0.9982,
+      "sentence_index": 215
+    },
+    {
+      "text": "Resen",
+      "score": 0.9723,
+      "sentence_index": 215
+    },
+    {
+      "text": "Nineveh",
+      "score": 0.9951,
+      "sentence_index": 215
+    },
+    {
+      "text": "Calah",
+      "score": 0.9984,
+      "sentence_index": 215
+    },
+    {
+      "text": "Mizraim",
+      "score": 0.522,
+      "sentence_index": 216
+    },
+    {
+      "text": "Na",
+      "score": 0.4968,
+      "sentence_index": 216
+    },
+    {
+      "text": "Caphtorim",
+      "score": 0.7521,
+      "sentence_index": 216
+    },
+    {
+      "text": "Canaan",
+      "score": 0.9723,
+      "sentence_index": 217
+    },
+    {
+      "text": "Sidon",
+      "score": 0.9983,
+      "sentence_index": 218
+    },
+    {
+      "text": "Gerar",
+      "score": 0.9968,
+      "sentence_index": 218
+    },
+    {
+      "text": "Gaza",
+      "score": 0.9988,
+      "sentence_index": 218
+    },
+    {
+      "text": "Sodom",
+      "score": 0.9939,
+      "sentence_index": 218
+    },
+    {
+      "text": "Gomorrah",
+      "score": 0.9938,
+      "sentence_index": 218
+    },
+    {
+      "text": "Admah",
+      "score": 0.9912,
+      "sentence_index": 218
+    },
+    {
+      "text": "Zeboim",
+      "score": 0.9808,
+      "sentence_index": 218
+    },
+    {
+      "text": "Lasha",
+      "score": 0.984,
+      "sentence_index": 218
+    },
+    {
+      "text": "Sephar",
+      "score": 0.9431,
+      "sentence_index": 226
+    },
+    {
+      "text": "Shinar",
+      "score": 0.8894,
+      "sentence_index": 230
+    },
+    {
+      "text": "Babel",
+      "score": 0.5937,
+      "sentence_index": 238
+    },
+    {
+      "text": "Ur",
+      "score": 0.9291,
+      "sentence_index": 249
+    },
+    {
+      "text": "Chaldees",
+      "score": 0.9559,
+      "sentence_index": 249
+    },
+    {
+      "text": "Ur",
+      "score": 0.9429,
+      "sentence_index": 252
+    },
+    {
+      "text": "Chaldees",
+      "score": 0.9854,
+      "sentence_index": 252
+    },
+    {
+      "text": "Canaan",
+      "score": 0.9985,
+      "sentence_index": 252
+    },
+    {
+      "text": "Haran",
+      "score": 0.6704,
+      "sentence_index": 252
+    },
+    {
+      "text": "Haran",
+      "score": 0.988,
+      "sentence_index": 253
+    },
+    {
+      "text": "Haran",
+      "score": 0.9934,
+      "sentence_index": 255
+    },
+    {
+      "text": "Haran",
+      "score": 0.7929,
+      "sentence_index": 256
+    },
+    {
+      "text": "Canaan",
+      "score": 0.9982,
+      "sentence_index": 256
+    },
+    {
+      "text": "Canaan",
+      "score": 0.9986,
+      "sentence_index": 256
+    },
+    {
+      "text": "Sichem",
+      "score": 0.7441,
+      "sentence_index": 257
+    },
+    {
+      "text": "Moreh",
+      "score": 0.9489,
+      "sentence_index": 257
+    },
+    {
+      "text": "Bethel",
+      "score": 0.9939,
+      "sentence_index": 261
+    },
+    {
+      "text": "Egypt",
+      "score": 0.9998,
+      "sentence_index": 263
+    },
+    {
+      "text": "Egypt",
+      "score": 0.9998,
+      "sentence_index": 264
+    },
+    {
+      "text": "Egypt",
+      "score": 0.9998,
+      "sentence_index": 266
+    },
+    {
+      "text": "Egypt",
+      "score": 0.9998,
+      "sentence_index": 275
+    },
+    {
+      "text": "Bethel",
+      "score": 0.9974,
+      "sentence_index": 277
+    },
+    {
+      "text": "Bethel",
+      "score": 0.9932,
+      "sentence_index": 277
+    },
+    {
+      "text": "Hai",
+      "score": 0.9782,
+      "sentence_index": 277
+    },
+    {
+      "text": "Jordan",
+      "score": 0.9998,
+      "sentence_index": 284
+    },
+    {
+      "text": "Sodom",
+      "score": 0.9897,
+      "sentence_index": 284
+    },
+    {
+      "text": "Gomorrah",
+      "score": 0.9921,
+      "sentence_index": 284
+    },
+    {
+      "text": "Egypt",
+      "score": 0.9998,
+      "sentence_index": 284
+    },
+    {
+      "text": "Zoar",
+      "score": 0.9874,
+      "sentence_index": 284
+    },
+    {
+      "text": "Jordan",
+      "score": 0.9997,
+      "sentence_index": 285
+    },
+    {
+      "text": "Canaan",
+      "score": 0.9987,
+      "sentence_index": 286
+    },
+    {
+      "text": "Sodom",
+      "score": 0.9736,
+      "sentence_index": 286
+    },
+    {
+      "text": "So",
+      "score": 0.981,
+      "sentence_index": 287
+    },
+    {
+      "text": "Mamre",
+      "score": 0.9307,
+      "sentence_index": 291
+    },
+    {
+      "text": "He",
+      "score": 0.9995,
+      "sentence_index": 291
+    },
+    {
+      "text": "Amrap",
+      "score": 0.4577,
+      "sentence_index": 292
+    },
+    {
+      "text": "Shinar",
+      "score": 0.433,
+      "sentence_index": 292
+    },
+    {
+      "text": "Ellasar",
+      "score": 0.9745,
+      "sentence_index": 292
+    },
+    {
+      "text": "Elam",
+      "score": 0.9919,
+      "sentence_index": 292
+    },
+    {
+      "text": "Be",
+      "score": 0.7216,
+      "sentence_index": 292
+    },
+    {
+      "text": "Sodom",
+      "score": 0.9902,
+      "sentence_index": 292
+    },
+    {
+      "text": "Gomorrah",
+      "score": 0.9808,
+      "sentence_index": 292
+    },
+    {
+      "text": "Admah",
+      "score": 0.9883,
+      "sentence_index": 292
+    },
+    {
+      "text": "Zeboiim",
+      "score": 0.8609,
+      "sentence_index": 292
+    },
+    {
+      "text": "Bela",
+      "score": 0.9777,
+      "sentence_index": 292
+    },
+    {
+      "text": "Zoar",
+      "score": 0.9329,
+      "sentence_index": 292
+    },
+    {
+      "text": "Siddim",
+      "score": 0.9883,
+      "sentence_index": 293
+    },
+    {
+      "text": "Ashteroth Karnaim",
+      "score": 0.9856,
+      "sentence_index": 295
+    },
+    {
+      "text": "Zuz",
+      "score": 0.498,
+      "sentence_index": 295
+    },
+    {
+      "text": "Ham",
+      "score": 0.9961,
+      "sentence_index": 295
+    },
+    {
+      "text": "Emins",
+      "score": 0.9687,
+      "sentence_index": 295
+    },
+    {
+      "text": "Seir",
+      "score": 0.905,
+      "sentence_index": 295
+    },
+    {
+      "text": "Enmishpat",
+      "score": 0.9911,
+      "sentence_index": 296
+    },
+    {
+      "text": "Kadesh",
+      "score": 0.9072,
+      "sentence_index": 296
+    },
+    {
+      "text": "Hazezontamar",
+      "score": 0.9906,
+      "sentence_index": 296
+    },
+    {
+      "text": "Sodom",
+      "score": 0.9838,
+      "sentence_index": 297
+    },
+    {
+      "text": "Gomorrah",
+      "score": 0.9297,
+      "sentence_index": 297
+    },
+    {
+      "text": "Admah",
+      "score": 0.9605,
+      "sentence_index": 297
+    },
+    {
+      "text": "Zeboiim",
+      "score": 0.7376,
+      "sentence_index": 297
+    },
+    {
+      "text": "Bela",
+      "score": 0.9499,
+      "sentence_index": 297
+    },
+    {
+      "text": "Zoar",
+      "score": 0.7133,
+      "sentence_index": 297
+    },
+    {
+      "text": "Siddim",
+      "score": 0.9759,
+      "sentence_index": 297
+    },
+    {
+      "text": "Elam",
+      "score": 0.9889,
+      "sentence_index": 297
+    },
+    {
+      "text": "Shinar",
+      "score": 0.8437,
+      "sentence_index": 297
+    },
+    {
+      "text": "Ellasar",
+      "score": 0.9498,
+      "sentence_index": 297
+    },
+    {
+      "text": "Siddim",
+      "score": 0.9491,
+      "sentence_index": 298
+    },
+    {
+      "text": "Sodom",
+      "score": 0.9515,
+      "sentence_index": 298
+    },
+    {
+      "text": "Gomorrah",
+      "score": 0.9627,
+      "sentence_index": 298
+    },
+    {
+      "text": "Sodom",
+      "score": 0.7636,
+      "sentence_index": 299
+    },
+    {
+      "text": "Gomorrah",
+      "score": 0.8767,
+      "sentence_index": 299
+    },
+    {
+      "text": "So",
+      "score": 0.9988,
+      "sentence_index": 300
+    },
+    {
+      "text": "Mamre",
+      "score": 0.5522,
+      "sentence_index": 301
+    },
+    {
+      "text": "Hobah",
+      "score": 0.9684,
+      "sentence_index": 303
+    },
+    {
+      "text": "Damascus",
+      "score": 0.9996,
+      "sentence_index": 303
+    },
+    {
+      "text": "Sodom",
+      "score": 0.7894,
+      "sentence_index": 305
+    },
+    {
+      "text": "Shaveh",
+      "score": 0.9432,
+      "sentence_index": 305
+    },
+    {
+      "text": "Salem",
+      "score": 0.9978,
+      "sentence_index": 306
+    },
+    {
+      "text": "So",
+      "score": 0.9956,
+      "sentence_index": 309
+    },
+    {
+      "text": "Sodom",
+      "score": 0.8834,
+      "sentence_index": 310
+    },
+    {
+      "text": "Damascus",
+      "score": 0.999,
+      "sentence_index": 312
+    },
+    {
+      "text": "Ur",
+      "score": 0.7395,
+      "sentence_index": 317
+    },
+    {
+      "text": "Chaldees",
+      "score": 0.9581,
+      "sentence_index": 317
+    },
+    {
+      "text": "Egypt",
+      "score": 0.9998,
+      "sentence_index": 327
+    },
+    {
+      "text": "Euphrates",
+      "score": 0.6096,
+      "sentence_index": 327
+    },
+    {
+      "text": "Ken",
+      "score": 0.5722,
+      "sentence_index": 327
+    },
+    {
+      "text": "Kenizzi",
+      "score": 0.6968,
+      "sentence_index": 327
+    },
+    {
+      "text": "Per",
+      "score": 0.7434,
+      "sentence_index": 327
+    },
+    {
+      "text": "Canaan",
+      "score": 0.999,
+      "sentence_index": 331
+    },
+    {
+      "text": "Shur",
+      "score": 0.7976,
+      "sentence_index": 336
+    },
+    {
+      "text": "Beerlahairoi",
+      "score": 0.8431,
+      "sentence_index": 345
+    },
+    {
+      "text": "Kadesh",
+      "score": 0.9585,
+      "sentence_index": 345
+    },
+    {
+      "text": "Be",
+      "score": 0.9987,
+      "sentence_index": 345
+    },
+    {
+      "text": "Canaan",
+      "score": 0.9987,
+      "sentence_index": 354
+    },
+    {
+      "text": "Mamre",
+      "score": 0.7757,
+      "sentence_index": 375
+    },
+    {
+      "text": "Sodom",
+      "score": 0.909,
+      "sentence_index": 391
+    },
+    {
+      "text": "Sodom",
+      "score": 0.7013,
+      "sentence_index": 394
+    },
+    {
+      "text": "Gomorrah",
+      "score": 0.8548,
+      "sentence_index": 394
+    },
+    {
+      "text": "Sodom",
+      "score": 0.8008,
+      "sentence_index": 395
+    },
+    {
+      "text": "Sodom",
+      "score": 0.9838,
+      "sentence_index": 399
+    },
+    {
+      "text": "So",
+      "score": 0.998,
+      "sentence_index": 411
+    },
+    {
+      "text": "Sodom",
+      "score": 0.8431,
+      "sentence_index": 411
+    },
+    {
+      "text": "Sodom",
+      "score": 0.9728,
+      "sentence_index": 414
+    },
+    {
+      "text": "Lot",
+      "score": 0.8534,
+      "sentence_index": 427
+    },
+    {
+      "text": "Zoar",
+      "score": 0.9862,
+      "sentence_index": 433
+    },
+    {
+      "text": "Zoar",
+      "score": 0.9716,
+      "sentence_index": 434
+    },
+    {
+      "text": "Sodom",
+      "score": 0.9968,
+      "sentence_index": 435
+    },
+    {
+      "text": "Gomorrah",
+      "score": 0.9877,
+      "sentence_index": 435
+    },
+    {
+      "text": "Sodom",
+      "score": 0.8768,
+      "sentence_index": 437
+    },
+    {
+      "text": "Gomorrah",
+      "score": 0.9797,
+      "sentence_index": 437
+    },
+    {
+      "text": "Zoar",
+      "score": 0.9095,
+      "sentence_index": 439
+    },
+    {
+      "text": "Zoar",
+      "score": 0.9291,
+      "sentence_index": 439
+    },
+    {
+      "text": "Helsinki",
+      "score": 0.9992,
+      "sentence_index": 441
+    },
+    {
+      "text": "Ammon",
+      "score": 0.7943,
+      "sentence_index": 447
+    },
+    {
+      "text": "Kadesh",
+      "score": 0.8416,
+      "sentence_index": 448
+    },
+    {
+      "text": "Shur",
+      "score": 0.9363,
+      "sentence_index": 448
+    },
+    {
+      "text": "Gerar",
+      "score": 0.9964,
+      "sentence_index": 448
+    },
+    {
+      "text": "Gerar",
+      "score": 0.9944,
+      "sentence_index": 449
+    },
+    {
+      "text": "Beershe",
+      "score": 0.9987,
+      "sentence_index": 483
+    },
+    {
+      "text": "Paran",
+      "score": 0.9773,
+      "sentence_index": 492
+    },
+    {
+      "text": "Egypt",
+      "score": 0.9998,
+      "sentence_index": 492
+    },
+    {
+      "text": "Beersheba",
+      "score": 0.9891,
+      "sentence_index": 501
+    },
+    {
+      "text": "Beersheba",
+      "score": 0.99,
+      "sentence_index": 502
+    },
+    {
+      "text": "Philistines",
+      "score": 0.7663,
+      "sentence_index": 502
+    },
+    {
+      "text": "Beersheba",
+      "score": 0.9733,
+      "sentence_index": 503
+    },
+    {
+      "text": "Mo",
+      "score": 0.6786,
+      "sentence_index": 506
+    },
+    {
+      "text": "Je",
+      "score": 0.6692,
+      "sentence_index": 519
+    },
+    {
+      "text": "Beersheba",
+      "score": 0.9778,
+      "sentence_index": 521
+    },
+    {
+      "text": "Beersheba",
+      "score": 0.9878,
+      "sentence_index": 521
+    },
+    {
+      "text": "Kirjatharba",
+      "score": 0.9889,
+      "sentence_index": 526
+    },
+    {
+      "text": "Hebron",
+      "score": 0.9445,
+      "sentence_index": 526
+    },
+    {
+      "text": "Canaan",
+      "score": 0.9988,
+      "sentence_index": 526
+    },
+    {
+      "text": "Zohar",
+      "score": 0.8063,
+      "sentence_index": 530
+    },
+    {
+      "text": "Machpelah",
+      "score": 0.9193,
+      "sentence_index": 530
+    },
+    {
+      "text": "Heth",
+      "score": 0.7126,
+      "sentence_index": 531
+    },
+    {
+      "text": "Heth",
+      "score": 0.7593,
+      "sentence_index": 531
+    },
+    {
+      "text": "Machpelah",
+      "score": 0.938,
+      "sentence_index": 537
+    },
+    {
+      "text": "Mam",
+      "score": 0.5223,
+      "sentence_index": 537
+    },
+    {
+      "text": "Machpelah",
+      "score": 0.9724,
+      "sentence_index": 538
+    },
+    {
+      "text": "Mamre",
+      "score": 0.6735,
+      "sentence_index": 538
+    },
+    {
+      "text": "Hebron",
+      "score": 0.8481,
+      "sentence_index": 538
+    },
+    {
+      "text": "Canaan",
+      "score": 0.9988,
+      "sentence_index": 538
+    },
+    {
+      "text": "Mesopotamia",
+      "score": 0.8408,
+      "sentence_index": 547
+    },
+    {
+      "text": "Nahor",
+      "score": 0.9951,
+      "sentence_index": 547
+    },
+    {
+      "text": "La",
+      "score": 0.525,
+      "sentence_index": 598
+    },
+    {
+      "text": "Machpelah",
+      "score": 0.9379,
+      "sentence_index": 615
+    },
+    {
+      "text": "Zohar",
+      "score": 0.5325,
+      "sentence_index": 615
+    },
+    {
+      "text": "Mamre",
+      "score": 0.7383,
+      "sentence_index": 615
+    },
+    {
+      "text": "La",
+      "score": 0.4948,
+      "sentence_index": 616
+    },
+    {
+      "text": "Xyla",
+      "score": 0.6467,
+      "sentence_index": 617
+    },
+    {
+      "text": "Havilah",
+      "score": 0.9845,
+      "sentence_index": 620
+    },
+    {
+      "text": "Shur",
+      "score": 0.9566,
+      "sentence_index": 620
+    },
+    {
+      "text": "Egypt",
+      "score": 0.9998,
+      "sentence_index": 620
+    },
+    {
+      "text": "Assyria",
+      "score": 0.9893,
+      "sentence_index": 620
+    },
+    {
+      "text": "Padanaram",
+      "score": 0.9871,
+      "sentence_index": 621
+    },
+    {
+      "text": "Edom",
+      "score": 0.8958,
+      "sentence_index": 631
+    },
+    {
+      "text": "Philist",
+      "score": 0.6879,
+      "sentence_index": 637
+    },
+    {
+      "text": "Gerar",
+      "score": 0.9518,
+      "sentence_index": 637
+    },
+    {
+      "text": "Egypt",
+      "score": 0.9998,
+      "sentence_index": 638
+    },
+    {
+      "text": "Gerar",
+      "score": 0.9938,
+      "sentence_index": 639
+    },
+    {
+      "text": "Philist",
+      "score": 0.6516,
+      "sentence_index": 640
+    },
+    {
+      "text": "Gerar",
+      "score": 0.979,
+      "sentence_index": 650
+    },
+    {
+      "text": "Gerar",
+      "score": 0.8629,
+      "sentence_index": 653
+    },
+    {
+      "text": "Sitnah",
+      "score": 0.8543,
+      "sentence_index": 654
+    },
+    {
+      "text": "Reho",
+      "score": 0.3267,
+      "sentence_index": 655
+    },
+    {
+      "text": "Beershe",
+      "score": 0.9987,
+      "sentence_index": 656
+    },
+    {
+      "text": "Gerar",
+      "score": 0.9926,
+      "sentence_index": 659
+    },
+    {
+      "text": "She",
+      "score": 0.9472,
+      "sentence_index": 665
+    },
+    {
+      "text": "Beersheba",
+      "score": 0.9725,
+      "sentence_index": 665
+    },
+    {
+      "text": "Laban",
+      "score": 0.7244,
+      "sentence_index": 709
+    },
+    {
+      "text": "Haran",
+      "score": 0.9531,
+      "sentence_index": 709
+    },
+    {
+      "text": "Canaan",
+      "score": 0.9966,
+      "sentence_index": 711
+    },
+    {
+      "text": "Padanaram",
+      "score": 0.9776,
+      "sentence_index": 712
+    },
+    {
+      "text": "Padanaram",
+      "score": 0.9828,
+      "sentence_index": 714
+    },
+    {
+      "text": "Padanaram",
+      "score": 0.9879,
+      "sentence_index": 715
+    },
+    {
+      "text": "Canaan",
+      "score": 0.9964,
+      "sentence_index": 715
+    },
+    {
+      "text": "Padanaram",
+      "score": 0.9893,
+      "sentence_index": 715
+    },
+    {
+      "text": "Canaan",
+      "score": 0.9983,
+      "sentence_index": 715
+    },
+    {
+      "text": "Beersheba",
+      "score": 0.9776,
+      "sentence_index": 716
+    },
+    {
+      "text": "Haran",
+      "score": 0.9796,
+      "sentence_index": 716
+    },
+    {
+      "text": "Bethel",
+      "score": 0.9913,
+      "sentence_index": 725
+    },
+    {
+      "text": "Luz",
+      "score": 0.9849,
+      "sentence_index": 725
+    },
+    {
+      "text": "Bethel",
+      "score": 0.9945,
+      "sentence_index": 828
+    },
+    {
+      "text": "Padanaram",
+      "score": 0.9838,
+      "sentence_index": 833
+    },
+    {
+      "text": "Canaan",
+      "score": 0.9981,
+      "sentence_index": 833
+    },
+    {
+      "text": "Gilead",
+      "score": 0.9643,
+      "sentence_index": 836
+    },
+    {
+      "text": "Gilead",
+      "score": 0.9613,
+      "sentence_index": 838
+    },
+    {
+      "text": "Gilead",
+      "score": 0.9752,
+      "sentence_index": 841
+    },
+    {
+      "text": "Ma",
+      "score": 0.7814,
+      "sentence_index": 881
+    },
+    {
+      "text": "Esau",
+      "score": 0.7175,
+      "sentence_index": 882
+    },
+    {
+      "text": "Seir",
+      "score": 0.8764,
+      "sentence_index": 882
+    },
+    {
+      "text": "Edom",
+      "score": 0.9978,
+      "sentence_index": 882
+    },
+    {
+      "text": "Jordan",
+      "score": 0.9978,
+      "sentence_index": 886
+    },
+    {
+      "text": "Jabbok",
+      "score": 0.7878,
+      "sentence_index": 899
+    },
+    {
+      "text": "Yarmouth",
+      "score": 0.989,
+      "sentence_index": 902
+    }
+  ],
+  "ORG": [
+    {
+      "text": "LORD",
+      "score": 0.6622,
+      "sentence_index": 77
+    },
+    {
+      "text": "LOR",
+      "score": 0.6605,
+      "sentence_index": 80
+    },
+    {
+      "text": "LORD",
+      "score": 0.8635,
+      "sentence_index": 82
+    },
+    {
+      "text": "LORD",
+      "score": 0.8075,
+      "sentence_index": 84
+    },
+    {
+      "text": "LORD",
+      "score": 0.8079,
+      "sentence_index": 90
+    },
+    {
+      "text": "LORD",
+      "score": 0.8366,
+      "sentence_index": 97
+    },
+    {
+      "text": "LORD",
+      "score": 0.7722,
+      "sentence_index": 98
+    },
+    {
+      "text": "LOR",
+      "score": 0.7556,
+      "sentence_index": 99
+    },
+    {
+      "text": "LORD",
+      "score": 0.5906,
+      "sentence_index": 109
+    },
+    {
+      "text": "LORD",
+      "score": 0.682,
+      "sentence_index": 121
+    },
+    {
+      "text": "LORD",
+      "score": 0.7213,
+      "sentence_index": 125
+    },
+    {
+      "text": "LOR",
+      "score": 0.5148,
+      "sentence_index": 128
+    },
+    {
+      "text": "LORD",
+      "score": 0.7522,
+      "sentence_index": 129
+    },
+    {
+      "text": "LOR",
+      "score": 0.6778,
+      "sentence_index": 130
+    },
+    {
+      "text": "LORD",
+      "score": 0.7535,
+      "sentence_index": 145
+    },
+    {
+      "text": "LORD",
+      "score": 0.7028,
+      "sentence_index": 149
+    },
+    {
+      "text": "LORD",
+      "score": 0.7621,
+      "sentence_index": 158
+    },
+    {
+      "text": "LORD",
+      "score": 0.7079,
+      "sentence_index": 179
+    },
+    {
+      "text": "LORD",
+      "score": 0.7297,
+      "sentence_index": 179
+    },
+    {
+      "text": "LORD",
+      "score": 0.5374,
+      "sentence_index": 213
+    },
+    {
+      "text": "LORD",
+      "score": 0.62,
+      "sentence_index": 213
+    },
+    {
+      "text": "Phil",
+      "score": 0.8686,
+      "sentence_index": 216
+    },
+    {
+      "text": "LORD",
+      "score": 0.7999,
+      "sentence_index": 234
+    },
+    {
+      "text": "LORD",
+      "score": 0.8204,
+      "sentence_index": 235
+    },
+    {
+      "text": "LORD",
+      "score": 0.8909,
+      "sentence_index": 237
+    },
+    {
+      "text": "LORD",
+      "score": 0.6932,
+      "sentence_index": 238
+    },
+    {
+      "text": "LORD",
+      "score": 0.7444,
+      "sentence_index": 238
+    },
+    {
+      "text": "LORD",
+      "score": 0.8331,
+      "sentence_index": 254
+    },
+    {
+      "text": "LORD",
+      "score": 0.8202,
+      "sentence_index": 255
+    },
+    {
+      "text": "LOR",
+      "score": 0.7863,
+      "sentence_index": 260
+    },
+    {
+      "text": "LOR",
+      "score": 0.6986,
+      "sentence_index": 260
+    },
+    {
+      "text": "LOR",
+      "score": 0.6086,
+      "sentence_index": 261
+    },
+    {
+      "text": "LOR",
+      "score": 0.598,
+      "sentence_index": 261
+    },
+    {
+      "text": "LORD",
+      "score": 0.8258,
+      "sentence_index": 269
+    },
+    {
+      "text": "LOR",
+      "score": 0.6606,
+      "sentence_index": 277
+    },
+    {
+      "text": "Lot",
+      "score": 0.4196,
+      "sentence_index": 280
+    },
+    {
+      "text": "LORD",
+      "score": 0.6744,
+      "sentence_index": 284
+    },
+    {
+      "text": "LOR",
+      "score": 0.5764,
+      "sentence_index": 284
+    },
+    {
+      "text": "LORD",
+      "score": 0.6143,
+      "sentence_index": 287
+    },
+    {
+      "text": "LORD",
+      "score": 0.8236,
+      "sentence_index": 288
+    },
+    {
+      "text": "LOR",
+      "score": 0.6017,
+      "sentence_index": 291
+    },
+    {
+      "text": "LOR",
+      "score": 0.5086,
+      "sentence_index": 310
+    },
+    {
+      "text": "LOR",
+      "score": 0.7383,
+      "sentence_index": 311
+    },
+    {
+      "text": "LOR",
+      "score": 0.7512,
+      "sentence_index": 314
+    },
+    {
+      "text": "LORD",
+      "score": 0.8974,
+      "sentence_index": 327
+    },
+    {
+      "text": "LORD",
+      "score": 0.784,
+      "sentence_index": 329
+    },
+    {
+      "text": "LORD",
+      "score": 0.7726,
+      "sentence_index": 333
+    },
+    {
+      "text": "LOR",
+      "score": 0.565,
+      "sentence_index": 336
+    },
+    {
+      "text": "LORD",
+      "score": 0.6016,
+      "sentence_index": 342
+    },
+    {
+      "text": "LORD",
+      "score": 0.7006,
+      "sentence_index": 342
+    },
+    {
+      "text": "LORD",
+      "score": 0.8273,
+      "sentence_index": 348
+    },
+    {
+      "text": "LOR",
+      "score": 0.7174,
+      "sentence_index": 375
+    },
+    {
+      "text": "LORD",
+      "score": 0.8336,
+      "sentence_index": 386
+    },
+    {
+      "text": "LOR",
+      "score": 0.6417,
+      "sentence_index": 387
+    },
+    {
+      "text": "LORD",
+      "score": 0.8162,
+      "sentence_index": 392
+    },
+    {
+      "text": "LORD",
+      "score": 0.6731,
+      "sentence_index": 393
+    },
+    {
+      "text": "LORD",
+      "score": 0.777,
+      "sentence_index": 393
+    },
+    {
+      "text": "LORD",
+      "score": 0.8229,
+      "sentence_index": 394
+    },
+    {
+      "text": "LOR",
+      "score": 0.6984,
+      "sentence_index": 395
+    },
+    {
+      "text": "LORD",
+      "score": 0.8526,
+      "sentence_index": 399
+    },
+    {
+      "text": "LORD",
+      "score": 0.7278,
+      "sentence_index": 404
+    },
+    {
+      "text": "LOR",
+      "score": 0.7444,
+      "sentence_index": 408
+    },
+    {
+      "text": "LORD",
+      "score": 0.7762,
+      "sentence_index": 410
+    },
+    {
+      "text": "LOR",
+      "score": 0.5735,
+      "sentence_index": 424
+    },
+    {
+      "text": "LORD",
+      "score": 0.6198,
+      "sentence_index": 424
+    },
+    {
+      "text": "LORD",
+      "score": 0.7816,
+      "sentence_index": 425
+    },
+    {
+      "text": "LORD",
+      "score": 0.6929,
+      "sentence_index": 428
+    },
+    {
+      "text": "LOR",
+      "score": 0.8206,
+      "sentence_index": 435
+    },
+    {
+      "text": "LORD",
+      "score": 0.8969,
+      "sentence_index": 468
+    },
+    {
+      "text": "LORD",
+      "score": 0.7698,
+      "sentence_index": 469
+    },
+    {
+      "text": "LORD",
+      "score": 0.7318,
+      "sentence_index": 469
+    },
+    {
+      "text": "LOR",
+      "score": 0.5421,
+      "sentence_index": 503
+    },
+    {
+      "text": "LOR",
+      "score": 0.6015,
+      "sentence_index": 516
+    },
+    {
+      "text": "LOR",
+      "score": 0.6866,
+      "sentence_index": 520
+    },
+    {
+      "text": "Mi",
+      "score": 0.5809,
+      "sentence_index": 523
+    },
+    {
+      "text": "LORD",
+      "score": 0.7752,
+      "sentence_index": 540
+    },
+    {
+      "text": "LOR",
+      "score": 0.6784,
+      "sentence_index": 541
+    },
+    {
+      "text": "LORD",
+      "score": 0.7056,
+      "sentence_index": 557
+    },
+    {
+      "text": "LORD",
+      "score": 0.8466,
+      "sentence_index": 563
+    },
+    {
+      "text": "LORD",
+      "score": 0.763,
+      "sentence_index": 573
+    },
+    {
+      "text": "LOR",
+      "score": 0.6807,
+      "sentence_index": 577
+    },
+    {
+      "text": "LORD",
+      "score": 0.7792,
+      "sentence_index": 586
+    },
+    {
+      "text": "LOR",
+      "score": 0.6329,
+      "sentence_index": 587
+    },
+    {
+      "text": "LORD",
+      "score": 0.6737,
+      "sentence_index": 591
+    },
+    {
+      "text": "Per",
+      "score": 0.5307,
+      "sentence_index": 617
+    },
+    {
+      "text": "LOR",
+      "score": 0.7811,
+      "sentence_index": 622
+    },
+    {
+      "text": "LORD",
+      "score": 0.7336,
+      "sentence_index": 622
+    },
+    {
+      "text": "LORD",
+      "score": 0.7246,
+      "sentence_index": 624
+    },
+    {
+      "text": "LORD",
+      "score": 0.8353,
+      "sentence_index": 625
+    },
+    {
+      "text": "LORD",
+      "score": 0.778,
+      "sentence_index": 638
+    },
+    {
+      "text": "LORD",
+      "score": 0.757,
+      "sentence_index": 646
+    },
+    {
+      "text": "LORD",
+      "score": 0.7487,
+      "sentence_index": 655
+    },
+    {
+      "text": "LORD",
+      "score": 0.8182,
+      "sentence_index": 657
+    },
+    {
+      "text": "LOR",
+      "score": 0.6977,
+      "sentence_index": 658
+    },
+    {
+      "text": "LORD",
+      "score": 0.7135,
+      "sentence_index": 661
+    },
+    {
+      "text": "LOR",
+      "score": 0.5754,
+      "sentence_index": 661
+    },
+    {
+      "text": "LOR",
+      "score": 0.6634,
+      "sentence_index": 671
+    },
+    {
+      "text": "LOR",
+      "score": 0.7649,
+      "sentence_index": 689
+    },
+    {
+      "text": "LOR",
+      "score": 0.7354,
+      "sentence_index": 719
+    },
+    {
+      "text": "LOR",
+      "score": 0.6718,
+      "sentence_index": 721
+    },
+    {
+      "text": "LOR",
+      "score": 0.7152,
+      "sentence_index": 726
+    },
+    {
+      "text": "LORD",
+      "score": 0.7483,
+      "sentence_index": 765
+    },
+    {
+      "text": "LORD",
+      "score": 0.7066,
+      "sentence_index": 766
+    },
+    {
+      "text": "LORD",
+      "score": 0.7777,
+      "sentence_index": 767
+    },
+    {
+      "text": "LORD",
+      "score": 0.8424,
+      "sentence_index": 796
+    },
+    {
+      "text": "LORD",
+      "score": 0.8613,
+      "sentence_index": 799
+    },
+    {
+      "text": "LORD",
+      "score": 0.7618,
+      "sentence_index": 802
+    },
+    {
+      "text": "LORD",
+      "score": 0.7695,
+      "sentence_index": 819
+    },
+    {
+      "text": "LOR",
+      "score": 0.7891,
+      "sentence_index": 873
+    },
+    {
+      "text": "LOR",
+      "score": 0.6309,
+      "sentence_index": 886
+    },
+    {
+      "text": "Windsor Merchant",
+      "score": 0.9224,
+      "sentence_index": 902
+    }
+  ]
+}

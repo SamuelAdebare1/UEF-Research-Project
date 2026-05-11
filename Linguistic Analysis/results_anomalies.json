@@ -1,0 +1,235 @@
+{
+  "threshold": 0.3,
+  "anomalies": [
+    {
+      "index": 18,
+      "similarity_score": -0.0871,
+      "sentence": "While  the  standard  dress  code  applies  to  all  warehouse  departments,  employees  operating  the  TS-500  machinery  in  Sector  4  must  explicitly wear the neon-orange anti-static wristband on their left arm at all times."
+    },
+    {
+      "index": 441,
+      "similarity_score": -0.0531,
+      "sentence": "In the  event  of  a  force  majeure  lasting  longer  than  thirty  consecutive  days,  the  subcontractor  is  entitled to a standard termination fee, provided they submit the Request for Dissolution form  directly to the managing director's office in Helsinki."
+    },
+    {
+      "index": 259,
+      "similarity_score": 0.0515,
+      "sentence": "Although the majority of the control group  exhibited  expected  mild  lethargy,  subject  402-B  reported  a  distinct  metallic  taste  in  their  mouth exactly forty-five minutes after the administration of the placebo."
+    },
+    {
+      "index": 617,
+      "similarity_score": 0.0615,
+      "sentence": "While  scanning  the  Perseus  arm  for  standard  anomalous  signatures, the secondary probe telemetry unexpectedly indicated a sudden temperature drop  of 14 Kelvin near the coordinates of the minor asteroid designated Xylanthia-9."
+    },
+    {
+      "index": 902,
+      "similarity_score": 0.0813,
+      "sentence": "The  final  shipment  of  grain  intended  for  the  winter rations of 1842 was severely  delayed because the primary transport vessel, the Windsor Merchant, lost its secondary rudder  during a sudden squall off the coast of Yarmouth."
+    },
+    {
+      "index": 232,
+      "similarity_score": 0.1173,
+      "sentence": "And they had brick for stone, and slime had they for morter."
+    },
+    {
+      "index": 747,
+      "similarity_score": 0.1433,
+      "sentence": "tell me, what shall thy wages be?"
+    },
+    {
+      "index": 745,
+      "similarity_score": 0.1494,
+      "sentence": "And he abode with   him the space of a month."
+    },
+    {
+      "index": 433,
+      "similarity_score": 0.1814,
+      "sentence": "Therefore the name of the city was called Zoar."
+    },
+    {
+      "index": 831,
+      "similarity_score": 0.1938,
+      "sentence": "for he  hath sold us, and hath quite devoured also our money."
+    },
+    {
+      "index": 856,
+      "similarity_score": 0.1942,
+      "sentence": "And he searched but found not the images."
+    },
+    {
+      "index": 860,
+      "similarity_score": 0.2038,
+      "sentence": "set  it here before my brethren and thy brethren, that they may judge betwixt us both."
+    },
+    {
+      "index": 897,
+      "similarity_score": 0.2243,
+      "sentence": "For  he  said,  I  will  appease  him  with  the  present  that  goeth  before  me,  and  afterward  I  will  see  his  face;  peradventure he will accept of me."
+    },
+    {
+      "index": 91,
+      "similarity_score": 0.225,
+      "sentence": "And he said, I know not:  Am  I  my  brother\u2019s  keeper?"
+    },
+    {
+      "index": 571,
+      "similarity_score": 0.2271,
+      "sentence": "And he said, Speak on."
+    },
+    {
+      "index": 594,
+      "similarity_score": 0.2349,
+      "sentence": "And she   said, I will go."
+    },
+    {
+      "index": 453,
+      "similarity_score": 0.2401,
+      "sentence": "and she, even she herself said,  He is my brother: in the integrity of my heart and innocency of my hands have I done this."
+    },
+    {
+      "index": 855,
+      "similarity_score": 0.2421,
+      "sentence": "31:35 And she said to her father, Let it not displease my lord that I cannot rise up before   thee; for the custom of women is upon me."
+    },
+    {
+      "index": 488,
+      "similarity_score": 0.2434,
+      "sentence": "fear not; for God hath heard the voice of  the lad where he is."
+    },
+    {
+      "index": 46,
+      "similarity_score": 0.2441,
+      "sentence": "And the fourth river is Euphrates."
+    },
+    {
+      "index": 338,
+      "similarity_score": 0.2499,
+      "sentence": "and  whither  wilt  thou go?"
+    },
+    {
+      "index": 33,
+      "similarity_score": 0.2517,
+      "sentence": "And the   evening and the morning were the sixth day."
+    },
+    {
+      "index": 568,
+      "similarity_score": 0.2554,
+      "sentence": "for I have prepared the house, and room for the camels."
+    },
+    {
+      "index": 476,
+      "similarity_score": 0.258,
+      "sentence": "for I have born him a son in his old age."
+    },
+    {
+      "index": 905,
+      "similarity_score": 0.2644,
+      "sentence": "And  he said, I will not let thee go,   except thou bless me."
+    },
+    {
+      "index": 759,
+      "similarity_score": 0.2657,
+      "sentence": "wherefore then hast thou beguiled me?"
+    },
+    {
+      "index": 283,
+      "similarity_score": 0.2666,
+      "sentence": "separate thyself, I pray thee, from me: if thou wilt  take the left hand, then I will go to the right; or if thou depart to the right hand, then I will go  to the left."
+    },
+    {
+      "index": 273,
+      "similarity_score": 0.2675,
+      "sentence": "so I  might have taken her to me to wife: now therefore behold thy wife, take her, and go thy way."
+    },
+    {
+      "index": 426,
+      "similarity_score": 0.2743,
+      "sentence": "But he seemed as one  that mocked unto his sons in law."
+    },
+    {
+      "index": 723,
+      "similarity_score": 0.2745,
+      "sentence": "this is none other but the   house of God, and this is the gate of heaven."
+    },
+    {
+      "index": 670,
+      "similarity_score": 0.2772,
+      "sentence": "And Esau went to the field to   hunt for venison, and to bring it."
+    },
+    {
+      "index": 610,
+      "similarity_score": 0.2785,
+      "sentence": "All these were the children of Keturah."
+    },
+    {
+      "index": 892,
+      "similarity_score": 0.279,
+      "sentence": "and  whither  goest  thou?"
+    },
+    {
+      "index": 409,
+      "similarity_score": 0.2794,
+      "sentence": "And he said, I will not destroy it for ten\u2019s sake."
+    },
+    {
+      "index": 55,
+      "similarity_score": 0.2806,
+      "sentence": "2:25 And they were both naked, the man and his wife, and were not ashamed."
+    },
+    {
+      "index": 850,
+      "similarity_score": 0.2823,
+      "sentence": "For Jacob knew not that Rachel had  stolen them."
+    },
+    {
+      "index": 602,
+      "similarity_score": 0.2828,
+      "sentence": "And the servant had said, It is my master: therefore she took a vail, and covered herself."
+    },
+    {
+      "index": 412,
+      "similarity_score": 0.2834,
+      "sentence": "And they said, Nay; but we will abide in the street all night."
+    },
+    {
+      "index": 376,
+      "similarity_score": 0.2835,
+      "sentence": "And they said, So do, as thou hast said."
+    },
+    {
+      "index": 866,
+      "similarity_score": 0.2866,
+      "sentence": "God hath seen mine affliction and the  labour of my hands, and rebuked thee yesternight."
+    },
+    {
+      "index": 731,
+      "similarity_score": 0.2875,
+      "sentence": "And they said, Of Haran are   we."
+    },
+    {
+      "index": 877,
+      "similarity_score": 0.289,
+      "sentence": "And Jacob sware by the fear of his father Isaac."
+    },
+    {
+      "index": 858,
+      "similarity_score": 0.2892,
+      "sentence": "what is my sin, that thou hast so hotly pursued after me?"
+    },
+    {
+      "index": 484,
+      "similarity_score": 0.2946,
+      "sentence": "21:15  And  the  water  was  spent  in  the  bottle,  and  she  cast  the  child  under  one  of  the   shrubs."
+    },
+    {
+      "index": 420,
+      "similarity_score": 0.2983,
+      "sentence": "And they  pressed sore upon the man, even Lot, and came near to break the door."
+    },
+    {
+      "index": 330,
+      "similarity_score": 0.2987,
+      "sentence": "And  Abram hearkened to the voice of Sarai."
+    }
+  ]
+}
