@@ -1,0 +1,10 @@
+# PowerPoint files
+*.pptx
+
+# Todo files
+todo
+todo.md
+todo.txt
+TODO
+TODO.md
+TODO.txt

@@ -1,8 +1,8 @@
 """
 chunker.py — splits a PDF into overlapping text chunks for RAG pipelines.
 
-Chunk size : 500 tokens  (approximated as words)
-Overlap    : 50 tokens
+Chunk size : 350 tokens  (approximated as words)
+Overlap    : 35 tokens
 
 Dependencies (install once):
     pip install pymupdf tiktoken
@@ -21,8 +21,8 @@ import tiktoken      # pip install tiktoken
 
 
 # ── configuration ──────────────────────────────────────────────────────────────
-CHUNK_SIZE   = 500   # tokens per chunk
-OVERLAP_SIZE = 50    # tokens shared between consecutive chunks
+CHUNK_SIZE   = 350   # tokens per chunk
+OVERLAP_SIZE = 35    # tokens shared between consecutive chunks (10%)
 ENCODING     = "cl100k_base"   # same tokeniser used by GPT-4 / text-embedding-3
 DEFAULT_PDF  = Path(__file__).parent / "50-pages.pdf"
 OUTPUT_FILE  = Path(__file__).parent / "chunks.json"

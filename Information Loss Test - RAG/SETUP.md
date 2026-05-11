@@ -19,32 +19,32 @@ Download links if needed: [python.org](https://www.python.org/downloads/) · [no
 
 1. Go to the GitHub repository page.
 2. Click **Code → Download ZIP**.
-3. Unzip the file — you will get a folder named `UEF-Research-Project-main`.
-4. Open a terminal and navigate into it:
+3. Unzip the file — you will get a folder named `Information-Loss-Test-RAG`.
+4. Open a terminal and navigate into the `Information Loss Test - RAG` folder:
 
 **Mac / Linux**
 
 ```bash
-cd path/to/UEF-Research-Project-main
+cd path/to/Information-Loss-Test-RAG
 ```
 
 **Windows (Command Prompt)**
 
 ```cmd
-cd path\to\UEF-Research-Project-main
+cd path\to\Information-Loss-Test-RAG
 ```
 
 **Windows (PowerShell)**
 
 ```powershell
-cd path\to\UEF-Research-Project-main
+cd path\to\Information-Loss-Test-RAG
 ```
 
-> PowerShell also accepts forward slashes: `cd path/to/UEF-Research-Project-main`
+> PowerShell also accepts forward slashes: `cd path/to/Information-Loss-Test-RAG`
 
 ---
 
-## Step 2 — Create the Python virtual environment
+## Step 2 — Create a Python virtual environment
 
 **Mac / Linux**
 
@@ -98,27 +98,13 @@ Installation takes 2–5 minutes. PyTorch and transformers are pulled in automat
 
 ## Step 4 — Run the RAG pipeline
 
-Navigate into this folder from the project root:
-
-**Mac / Linux**
-
-```bash
-cd "Information Loss Test - RAG"
-```
-
-**Windows**
-
-```cmd
-cd "Information Loss Test - RAG"
-```
-
 ### 4a — Chunk the PDF
 
 ```bash
 python chunker.py
 ```
 
-Reads `50-pages.pdf` and writes `chunks.json` (79 chunks, ~500 tokens each). Completes in seconds.
+Reads `50-pages.pdf` and writes `chunks.json` (113 chunks, ~350 tokens each). Completes in seconds.
 
 ### 4b — Embed the chunks
 
@@ -157,7 +143,7 @@ Open a **new, second terminal window** — do not use the same terminal as the A
 **Mac / Linux**
 
 ```bash
-cd path/to/UEF-Research-Project-main/rag-ui
+cd path/to/Information-Loss-Test-RAG/rag-ui
 npm install
 npm run dev
 ```
@@ -165,7 +151,7 @@ npm run dev
 **Windows (Command Prompt)**
 
 ```cmd
-cd path\to\UEF-Research-Project-main\rag-ui
+cd path\to\Information-Loss-Test-RAG\rag-ui
 npm install
 npm run dev
 ```
@@ -173,7 +159,7 @@ npm run dev
 **Windows (PowerShell)**
 
 ```powershell
-cd path\to\UEF-Research-Project-main\rag-ui
+cd path\to\Information-Loss-Test-RAG\rag-ui
 npm install
 npm run dev
 ```
@@ -190,7 +176,7 @@ With the API server running (Step 4c), open another terminal:
 
 ```bash
 cd "Information Loss Test - RAG"
-source ../venv/bin/activate
+source venv/bin/activate
 python test_runner.py
 ```
 
@@ -223,16 +209,14 @@ You need **two terminal windows open at the same time**.
 Terminal 1 (backend):
 
 ```bash
-cd path/to/UEF-Research-Project-main
-source venv/bin/activate
-cd "Information Loss Test - RAG"
+cd path/to/Information-Loss-Test-RAG
 uvicorn api:app --port 8000
 ```
 
 Terminal 2 (frontend):
 
 ```bash
-cd path/to/UEF-Research-Project-main/rag-ui
+cd path/to/Information-Loss-Test-RAG/rag-ui
 npm run dev
 ```
 
@@ -241,16 +225,14 @@ npm run dev
 Terminal 1 (backend):
 
 ```cmd
-cd path\to\UEF-Research-Project-main
-venv\Scripts\activate.bat
-cd "Information Loss Test - RAG"
+cd path\to\Information-Loss-Test-RAG
 uvicorn api:app --port 8000
 ```
 
 Terminal 2 (frontend):
 
 ```cmd
-cd path\to\UEF-Research-Project-main\rag-ui
+cd path\to\Information-Loss-Test-RAG\rag-ui
 npm run dev
 ```
 
@@ -259,16 +241,14 @@ npm run dev
 Terminal 1 (backend):
 
 ```powershell
-cd path\to\UEF-Research-Project-main
-.\venv\Scripts\Activate.ps1
-cd "Information Loss Test - RAG"
+cd path\to\Information-Loss-Test-RAG
 uvicorn api:app --port 8000
 ```
 
 Terminal 2 (frontend):
 
 ```powershell
-cd path\to\UEF-Research-Project-main\rag-ui
+cd path\to\Information-Loss-Test-RAG\rag-ui
 npm run dev
 ```
 
@@ -280,8 +260,8 @@ Then open `http://localhost:5173` in a browser.
 
 | Problem                                                   | Fix                                                                                                                   |
 | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| `source: no such file or directory: ../venv/bin/activate` | The venv hasn't been created yet. Run Step 2 from the project root.                                                   |
-| `venv\Scripts\activate.bat is not recognized`             | Make sure you are in the project root folder (`UEF-Research-Project-main`), not inside a subfolder.                   |
+| `source: no such file or directory: venv/bin/activate` | The venv hasn't been created yet. Run Step 2 from inside this folder.                                                   |
+| `venv\Scripts\activate.bat is not recognized`             | Make sure you are inside the `Information Loss Test - RAG` folder before running this command.                   |
 | PowerShell says "running scripts is disabled"             | Run `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`, then retry `.\venv\Scripts\Activate.ps1`. |
 | `python3` not found on Windows                            | Use `python` instead of `python3` — Windows installers register the command as `python`.                              |
 | `ModuleNotFoundError`                                     | Confirm `(venv)` is shown in your prompt before running any Python script.                                            |

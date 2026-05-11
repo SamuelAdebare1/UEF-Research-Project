@@ -28,9 +28,14 @@ BASE_DIR        = Path(__file__).parent
 EMBEDDINGS_FILE = BASE_DIR / "embeddings.json"
 EMBED_MODEL     = "all-mpnet-base-v2"
 GPT4ALL_MODEL   = "Meta-Llama-3.1-8B-Instruct-128k-Q4_0.gguf"
+# Downloaded models (swap GPT4ALL_MODEL to switch):
+#   "Meta-Llama-3.1-8B-Instruct-128k-Q4_0.gguf" 
+#   "mistral-7b-instruct-v0.1.Q4_0.gguf"         
+#   "Llama-3.2-1B-Instruct-Q4_0.gguf"             
+#   "DeepSeek-R1-Distill-Qwen-14B-Q4_0.gguf"      
 MODEL_DIR       = Path.home() / "Library/Application Support/nomic.ai/GPT4All"
 TOP_K           = 5
-MAX_NEW_TOKENS  = 512
+MAX_NEW_TOKENS  = 64
 # 4096 balances context depth vs. KV-cache memory on Apple Silicon.
 # 8192 triggers a backend allocation crash (GGML_ASSERT) on this hardware.
 N_CTX           = 4096

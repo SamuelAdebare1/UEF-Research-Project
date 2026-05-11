@@ -100,8 +100,8 @@ and `top_k = 5` reliably surfaced every injected fact regardless of its depth in
 Llama missed the Perseus arm (Q11) despite chunk 54 appearing in `retrieved_chunk_ids`. The
 chunk was retrieved; the LLM failed to surface the right sentence within it. Similarly, Mistral's
 "aprons" answer (Q19) came from a chunk that contained "fig leaves" three words earlier. This
-suggests that with longer, denser chunks (500 tokens each), models can retrieve the right region
-yet still miss specific details.
+suggests that even with 350-token chunks, models can retrieve the right region yet still miss
+specific details within it.
 
 **3. LLMs assume — pre-training knowledge overrides retrieved context.**
 Mistral's Q23 answer (Genesis 15:18 covenant boundaries) and Q27 answer (Sarah's age confused
@@ -120,7 +120,7 @@ or the wrong action (Q19: aprons vs fig leaves).
 **5. Section depth had no clear effect on retrieval.**
 Both models performed similarly across early, middle, and late sections of the 50-page document.
 The dense embedding model appears to retrieve equally well at any document depth within this
-corpus size (79 chunks).
+corpus size (113 chunks).
 
 ---
 
@@ -150,7 +150,7 @@ The pipeline runs in three sequential steps:
 50-pages.pdf
      │
      ▼  chunker.py
-text extraction → sliding window (500 tokens, 50 overlap) → chunks.json
+text extraction → sliding window (350 tokens, 35 overlap) → chunks.json
      │
      ▼  embedder.py
 chunks.json → dense vectors (all-mpnet-base-v2, 768 dim) → embeddings.json
@@ -176,8 +176,8 @@ stride. Each chunk is saved with its ID, token count, and raw text.
 
 | Parameter    | Value         | Rationale                                                                                                                                   |
 | ------------ | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| `CHUNK_SIZE` | 500 tokens    | Keeps retrieved passages focused; reduces the amount of irrelevant context fed to the LLM per chunk                                         |
-| `OVERLAP`    | 50 tokens     | Prevents a needle from being split cleanly across two chunk boundaries                                                                      |
+| `CHUNK_SIZE` | 350 tokens    | Keeps retrieved passages focused; reduces the amount of irrelevant context fed to the LLM per chunk                                         |
+| `OVERLAP`    | 35 tokens (10%) | Prevents a needle from being split cleanly across two chunk boundaries                                                                    |
 | Tokeniser    | `cl100k_base` | The tiktoken tokeniser used by GPT-4 and OpenAI embedding models — ensures token counts are meaningful if the downstream model is API-based |
 
 > The tiktoken tokeniser here is **only used for window sizing**. It does not produce input
@@ -190,12 +190,12 @@ stride. Each chunk is saved with its ID, token count, and raw text.
 ```json
 {
   "chunk_id": 0,
-  "token_count": 500,
+  "token_count": 350,
   "text": "..."
 }
 ```
 
-Current stats: **79 chunks**, avg 497 tokens (~1820 chars) each.
+Current stats: **113 chunks**, avg 350 tokens (~1,300 chars) each.
 
 ### Run
 
@@ -243,7 +243,7 @@ means the needle is never shown to the model.
 ```json
 {
   "chunk_id": 0,
-  "token_count": 500,
+  "token_count": 350,
   "text": "...",
   "embedding": [0.0428, 0.0122, ...]   // 768 floats
 }
@@ -304,7 +304,7 @@ data: {"type": "done"}
 ### Run
 
 ```bash
-source ../venv/bin/activate
+source venv/bin/activate
 uvicorn api:app --reload --port 8000
 ```
 
@@ -324,10 +324,10 @@ A React chat interface for the API lives in [`../rag-ui/`](../rag-ui/). It uses 
 
 ### Environment
 
-This project uses a shared virtual environment at the repository root:
+Activate the virtual environment inside this folder:
 
 ```bash
-source ../venv/bin/activate
+source venv/bin/activate
 ```
 
 ### Dependencies
@@ -339,7 +339,7 @@ pip install -r ../requirements.txt
 ### Full pipeline (first time or after changing the PDF)
 
 ```bash
-source ../venv/bin/activate
+source venv/bin/activate
 python chunker.py
 python embedder.py
 uvicorn api:app --port 8000

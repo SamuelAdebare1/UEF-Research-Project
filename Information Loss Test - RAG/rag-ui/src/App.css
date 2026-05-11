@@ -859,6 +859,36 @@ body {
   letter-spacing: 0.2px;
 }
 
+/* ── needle indicator ── */
+.needle-card {
+  border-color: rgba(251, 146, 60, 0.35) !important;
+  box-shadow: 0 0 0 1px rgba(251, 146, 60, 0.12);
+}
+
+.needle-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #fb923c;
+  background: rgba(251, 146, 60, 0.12);
+  border: 1px solid rgba(251, 146, 60, 0.28);
+  border-radius: 100px;
+  padding: 2px 7px;
+  flex-shrink: 0;
+}
+
+.needle-highlight {
+  background: rgba(251, 146, 60, 0.2);
+  color: #fb923c;
+  border-radius: 3px;
+  padding: 1px 2px;
+  font-style: normal;
+}
+
 /* ── reset button ── */
 .reset-btn {
   width: 100%;

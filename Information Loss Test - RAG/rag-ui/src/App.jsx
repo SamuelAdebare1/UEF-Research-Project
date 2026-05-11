@@ -3,6 +3,18 @@ import "./App.css";
 
 const API = "http://localhost:8000";
 
+const NEEDLES = [
+  "neon-orange anti-static wristband on their left arm at all times",
+  "subject 402-B reported a distinct metallic taste in their mouth exactly forty-five minutes after the administration of the placebo",
+  "Request for Dissolution form directly to the managing director's office in Helsinki",
+  "temperature drop of 14 Kelvin near the coordinates of the minor asteroid designated Xylanthia-9",
+  "the Windsor Merchant, lost its secondary rudder during a sudden squall off the coast of Yarmouth",
+];
+
+function findNeedle(text) {
+  return NEEDLES.find((n) => text.toLowerCase().includes(n.toLowerCase())) ?? null;
+}
+
 const SUGGESTIONS = [
   "What are the main topics covered in this document?",
   "Summarize the key findings from the first section.",
@@ -259,13 +271,45 @@ function SettingsPanel({ settings, update, onClose }) {
 
 // ── source card ───────────────────────────────────────────────────────────────
 
+function NeedleIcon() {
+  return (
+    <svg width="11" height="11" viewBox="0 0 24 24" fill="none">
+      <path d="M12 2L8 8h8L12 2z" fill="currentColor" />
+      <path d="M12 8v14" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function HighlightedText({ text, needle }) {
+  if (!needle) return <p className="source-text">{text}</p>;
+  const idx = text.toLowerCase().indexOf(needle.toLowerCase());
+  if (idx === -1) return <p className="source-text">{text}</p>;
+  const before = text.slice(0, idx);
+  const match = text.slice(idx, idx + needle.length);
+  const after = text.slice(idx + needle.length);
+  return (
+    <p className="source-text">
+      {before}
+      <mark className="needle-highlight">{match}</mark>
+      {after}
+    </p>
+  );
+}
+
 function SourceCard({ chunk }) {
   const [open, setOpen] = useState(false);
+  const needle = findNeedle(chunk.text);
   return (
-    <div className={`source-card ${open ? "open" : ""}`}>
+    <div className={`source-card ${open ? "open" : ""} ${needle ? "needle-card" : ""}`}>
       <button className="source-header" onClick={() => setOpen(!open)}>
         <span className="source-icon"><DocIcon /></span>
         <span className="source-title">Chunk {chunk.chunk_id}</span>
+        {needle && (
+          <span className="needle-badge">
+            <NeedleIcon />
+            Needle
+          </span>
+        )}
         <span className="source-score">{(chunk.score * 100).toFixed(1)}%</span>
         <span className={`source-chevron ${open ? "flipped" : ""}`}>
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
@@ -273,7 +317,7 @@ function SourceCard({ chunk }) {
           </svg>
         </span>
       </button>
-      {open && <p className="source-text">{chunk.text}</p>}
+      {open && <HighlightedText text={chunk.text} needle={needle} />}
     </div>
   );
 }

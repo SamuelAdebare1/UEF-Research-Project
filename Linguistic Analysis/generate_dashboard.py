@@ -4,12 +4,19 @@ Run from inside the Linguistic Analysis folder:
     python3 generate_dashboard.py
 """
 import json
+from analysis_utils import load_text, split_sentences
 
 with open("results_anomalies.json") as f:    anomalies_data = json.load(f)
 with open("results_word_frequency.json") as f: wf_data = json.load(f)
 
+all_sentences = split_sentences(load_text("50-pages.pdf"))
+
+# Sentence indices that correspond to the 5 injected needle passages
+NEEDLE_INDICES = {18, 259, 441, 617, 902}
+
 # ── Anomaly chart data (bottom 15 sentences by score) ──────────────────────
-top_anomalies = sorted(anomalies_data["anomalies"], key=lambda x: x["similarity_score"])[:15]
+all_anomalies  = sorted(anomalies_data["anomalies"], key=lambda x: x["similarity_score"])
+top_anomalies  = all_anomalies[:15]
 anomaly_labels = [f"[{a['index']}] {a['sentence'][:40]}…" for a in top_anomalies]
 anomaly_scores = [a["similarity_score"] for a in top_anomalies]
 anomaly_colors = ["#ef4444" if s < 0 else "#f97316" if s < 0.15 else "#facc15"
@@ -22,6 +29,24 @@ wf_counts = [c for _, c in top_words]
 
 # ── Hapax legomena ────────────────────────────────────────────────────────────
 hapax_list = wf_data.get("hapax_legomena", [])
+
+# ── Anomaly table rows (built before the template to avoid nested f-string escaping) ──
+def _score_class(s):
+    return "score-negative" if s < 0 else "score-low" if s < 0.15 else "score-mid"
+
+anomaly_table_rows = ""
+for a in all_anomalies:
+    is_needle = a["index"] in NEEDLE_INDICES
+    row_class = "needle-row clickable-row" if is_needle else "clickable-row"
+    needle_cell = '<span class="needle-badge">&#x1FAA1; Needle</span>' if is_needle else ""
+    anomaly_table_rows += (
+        f'<tr class="{row_class}" onclick="showContext({a["index"]})">'
+        f'<td>{a["index"]}</td>'
+        f'<td class="{_score_class(a["similarity_score"])}">{a["similarity_score"]:.4f}</td>'
+        f'<td class="sent">{a["sentence"][:100].strip()}…</td>'
+        f'<td>{needle_cell}</td>'
+        '</tr>'
+    )
 
 # ── Embed into HTML ───────────────────────────────────────────────────────────
 html = f"""<!DOCTYPE html>
@@ -127,6 +152,54 @@ html = f"""<!DOCTYPE html>
   }}
   .hapax-pill.hidden {{ display: none; }}
   .hapax-none {{ color: var(--muted); font-size: 0.85rem; display: none; }}
+  .needle-row {{ background: rgba(251, 146, 60, 0.06); }}
+  .needle-row td:first-child {{ border-left: 3px solid #fb923c; }}
+  [data-theme="dark"] .needle-row {{ background: rgba(251, 146, 60, 0.07); }}
+  .needle-badge {{
+    display: inline-flex; align-items: center; gap: 0.3rem;
+    font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em;
+    padding: 0.18rem 0.55rem; border-radius: 999px;
+    background: rgba(251, 146, 60, 0.12);
+    border: 1px solid rgba(251, 146, 60, 0.35);
+    color: #ea580c; white-space: nowrap; text-transform: uppercase;
+  }}
+  [data-theme="dark"] .needle-badge {{ color: #fb923c; background: rgba(251, 146, 60, 0.15); }}
+  .clickable-row {{ cursor: pointer; transition: background 0.15s; }}
+  .clickable-row:hover td {{ background: rgba(37,99,235,0.06); }}
+  .modal-overlay {{
+    display: none; position: fixed; inset: 0;
+    background: rgba(0,0,0,0.45); z-index: 200;
+    align-items: center; justify-content: center;
+  }}
+  .modal-overlay.open {{ display: flex; }}
+  .modal-box {{
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 0.75rem; padding: 1.5rem;
+    width: min(680px, 92vw); max-height: 80vh;
+    overflow-y: auto; position: relative;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  }}
+  .modal-close {{
+    position: absolute; top: 1rem; right: 1rem;
+    background: none; border: 1px solid var(--border);
+    color: var(--muted); border-radius: 50%;
+    width: 1.8rem; height: 1.8rem; font-size: 1rem;
+    cursor: pointer; display: flex; align-items: center; justify-content: center;
+    transition: border-color 0.15s, color 0.15s;
+  }}
+  .modal-close:hover {{ border-color: var(--red); color: var(--red); }}
+  .modal-title {{ font-size: 0.8rem; color: var(--muted); margin-bottom: 1rem; font-weight: 500; }}
+  .ctx-sentence {{
+    padding: 0.5rem 0.75rem; border-radius: 0.4rem;
+    font-size: 0.88rem; line-height: 1.6; margin-bottom: 0.4rem;
+    color: var(--muted);
+  }}
+  .ctx-sentence.ctx-focus {{
+    background: rgba(37,99,235,0.1); border-left: 3px solid var(--blue);
+    color: var(--text); font-weight: 600;
+  }}
+  [data-theme="dark"] .ctx-sentence.ctx-focus {{ background: rgba(59,130,246,0.15); }}
+  .ctx-idx {{ font-size: 0.72rem; color: var(--muted); margin-right: 0.4rem; opacity: 0.7; }}
 </style>
 </head>
 <body>
@@ -185,18 +258,15 @@ html = f"""<!DOCTYPE html>
 
 <!-- ── ROW 2: Anomaly table ── -->
 <div class="card" style="margin-bottom:2rem">
-  <div class="section-title">Top Anomalous Sentences <span class="badge badge-red">Ranked by Score</span></div>
+  <div class="section-title">All Anomalous Sentences <span class="badge badge-red">{len(all_anomalies)} Ranked by Score</span></div>
+  <div style="max-height:480px;overflow-y:auto;border:1px solid var(--border);border-radius:0.5rem;">
   <table>
-    <thead><tr><th>#</th><th>Score</th><th>Sentence (truncated)</th></tr></thead>
+    <thead style="position:sticky;top:0;background:var(--surface);z-index:1;"><tr><th>#</th><th>Score</th><th>Sentence (truncated)</th><th>Needle?</th></tr></thead>
     <tbody>
-      {"".join(
-        f'<tr><td>{a["index"]}</td>'
-        f'<td class="{"score-negative" if a["similarity_score"] < 0 else "score-low" if a["similarity_score"] < 0.15 else "score-mid"}">{a["similarity_score"]:.4f}</td>'
-        f'<td class="sent">{a["sentence"][:100].strip()}…</td></tr>'
-        for a in top_anomalies
-      )}
+      {anomaly_table_rows}
     </tbody>
   </table>
+  </div>
 </div>
 
 <script>
@@ -259,6 +329,45 @@ const wordFreqChartObj = new Chart(document.getElementById('wordFreqChart'), {{
     }});
     document.getElementById('hapaxNone').style.display = visible === 0 ? 'block' : 'none';
   }}
+</script>
+
+<!-- ── CONTEXT MODAL ── -->
+<div class="modal-overlay" id="ctxModal" onclick="handleOverlayClick(event)">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()">&#x2715;</button>
+    <div class="modal-title" id="ctxTitle"></div>
+    <div id="ctxBody"></div>
+  </div>
+</div>
+
+<script>
+const ALL_SENTENCES = {json.dumps(all_sentences)};
+const NEEDLE_SET = new Set({json.dumps(list(NEEDLE_INDICES))});
+
+function showContext(idx) {{
+  const start = Math.max(0, idx - 5);
+  const end   = Math.min(ALL_SENTENCES.length - 1, idx + 5);
+  let html = '';
+  for (let i = start; i <= end; i++) {{
+    const isFocus = i === idx;
+    const cls = isFocus ? 'ctx-sentence ctx-focus' : 'ctx-sentence';
+    html += `<div class="${{cls}}"><span class="ctx-idx">[#${{i}}]</span>${{ALL_SENTENCES[i]}}</div>`;
+  }}
+  document.getElementById('ctxTitle').textContent =
+    `Sentence #${{idx}} — showing ${{idx - start}} before and ${{end - idx}} after`;
+  document.getElementById('ctxBody').innerHTML = html;
+  document.getElementById('ctxModal').classList.add('open');
+}}
+
+function closeModal() {{
+  document.getElementById('ctxModal').classList.remove('open');
+}}
+
+function handleOverlayClick(e) {{
+  if (e.target === document.getElementById('ctxModal')) closeModal();
+}}
+
+document.addEventListener('keydown', e => {{ if (e.key === 'Escape') closeModal(); }});
 </script>
 
 <script>
